@@ -1,454 +1,403 @@
-### SchemaUnitsML-v1.0-csd04.xsd
+## SchemaUnitsML-v1.0-csd04.xsd
+
+### <a href="diagrams/UnitsML-v1.0-csd04.png">Main diagram</a>
 
 
 
-<table><tr><td rowspan="1" colspan="1">schema location: </td>
-<td rowspan="1" colspan="1"><a href="UnitsML-v1.0-csd04.xsd">UnitsML-v1.0-csd04.xsd</a>
+
+<table><tr><td>schema location: </td>
+<td><a href="UnitsML-v1.0-csd04.xsd">UnitsML-v1.0-csd04.xsd</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">attributeFormDefault: </td>
-<td rowspan="1" colspan="1">unqualified</td>
+<tr><td>attributeFormDefault: </td>
+<td>unqualified</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">elementFormDefault: </td>
-<td rowspan="1" colspan="1">qualified</td>
+<tr><td>elementFormDefault: </td>
+<td>qualified</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">targetNamespace: </td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td>targetNamespace: </td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<tr><td></td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
 
 ---
-<table><tr><td rowspan="1" colspan="1">Elements</td>
-<td rowspan="1" colspan="1">Complex types</td>
-<td rowspan="1" colspan="1">Attr. groups</td>
+<table><tr><td>Elements</td>
+<td>Complex types</td>
+<td>Attr. groups</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link1" shape="rect">AmountOfSubstance</a>
+<tr><td><a href="#Link1">AmountOfSubstance</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link2" shape="rect">AmountOfSubstanceType</a>
+<td><a href="#Link2">AmountOfSubstanceType</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link3" shape="rect">dimensionURL</a>
+<td><a href="#Link3">dimensionURL</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link4" shape="rect">CodeListValue</a>
+<tr><td><a href="#Link4">CodeListValue</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link5" shape="rect">CodeListValueType</a>
+<td><a href="#Link5">CodeListValueType</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link6" shape="rect">initialUnit</a>
+<td><a href="#Link6">initialUnit</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7" shape="rect">ConversionDescription</a>
+<tr><td><a href="#Link7">ConversionDescription</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link8" shape="rect">ConversionsType</a>
+<td><a href="#Link8">ConversionsType</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link9" shape="rect">powerRational</a>
+<td><a href="#Link9">powerRational</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#LinkA" shape="rect">ConversionNote</a>
+<tr><td><a href="#LinkA">ConversionNote</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#LinkB" shape="rect">CountedItemSetType</a>
+<td><a href="#LinkB">CountedItemSetType</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#LinkC" shape="rect">prefix</a>
+<td><a href="#LinkC">prefix</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#LinkD" shape="rect">Conversions</a>
+<tr><td><a href="#LinkD">Conversions</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#LinkE" shape="rect">CountedItemType</a>
+<td><a href="#LinkE">CountedItemType</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#LinkF" shape="rect">sourceName</a>
+<td><a href="#LinkF">sourceName</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link10" shape="rect">CountedItem</a>
+<tr><td><a href="#Link10">CountedItem</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link11" shape="rect">DefinitionType</a>
+<td><a href="#Link11">DefinitionType</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link12" shape="rect">sourceURL</a>
+<td><a href="#Link12">sourceURL</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link13" shape="rect">CountedItemSet</a>
+<tr><td><a href="#Link13">CountedItemSet</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link14" shape="rect">DimensionSetType</a>
+<td><a href="#Link14">DimensionSetType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link15" shape="rect">Dimension</a>
+<tr><td><a href="#Link15">Dimension</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link16" shape="rect">DimensionType</a>
+<td><a href="#Link16">DimensionType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link17" shape="rect">DimensionSet</a>
+<tr><td><a href="#Link17">DimensionSet</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link18" shape="rect">ElectricCurrentType</a>
+<td><a href="#Link18">ElectricCurrentType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link19" shape="rect">ElectricCurrent</a>
+<tr><td><a href="#Link19">ElectricCurrent</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link1A" shape="rect">EnumeratedRootUnitType</a>
+<td><a href="#Link1A">EnumeratedRootUnitType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link1B" shape="rect">EnumeratedRootUnit</a>
+<tr><td><a href="#Link1B">EnumeratedRootUnit</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link1C" shape="rect">ExternalRootUnitType</a>
+<td><a href="#Link1C">ExternalRootUnitType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link1D" shape="rect">ExternalRootUnit</a>
+<tr><td><a href="#Link1D">ExternalRootUnit</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link1E" shape="rect">Float64ConversionFromType</a>
+<td><a href="#Link1E">Float64ConversionFromType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link1F" shape="rect">Float64ConversionFrom</a>
+<tr><td><a href="#Link1F">Float64ConversionFrom</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link20" shape="rect">HistoryType</a>
+<td><a href="#Link20">HistoryType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link21" shape="rect">Item</a>
+<tr><td><a href="#Link21">Item</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link22" shape="rect">ItemType</a>
+<td><a href="#Link22">ItemType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link23" shape="rect">ItemDefinition</a>
+<tr><td><a href="#Link23">ItemDefinition</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link24" shape="rect">LengthType</a>
+<td><a href="#Link24">LengthType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link25" shape="rect">ItemHistory</a>
+<tr><td><a href="#Link25">ItemHistory</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link26" shape="rect">LuminousIntensityType</a>
+<td><a href="#Link26">LuminousIntensityType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link27" shape="rect">ItemName</a>
+<tr><td><a href="#Link27">ItemName</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link28" shape="rect">MassType</a>
+<td><a href="#Link28">MassType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link29" shape="rect">ItemRemark</a>
+<tr><td><a href="#Link29">ItemRemark</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link2A" shape="rect">NameType</a>
+<td><a href="#Link2A">NameType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link2B" shape="rect">ItemSymbol</a>
+<tr><td><a href="#Link2B">ItemSymbol</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<td><a href="#Link2C">NoteType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link2D" shape="rect">ItemVersionHistory</a>
+<tr><td><a href="#Link2D">ItemVersionHistory</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link2E" shape="rect">PlaneAngleType</a>
+<td><a href="#Link2E">PlaneAngleType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link2F" shape="rect">Length</a>
+<tr><td><a href="#Link2F">Length</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link30" shape="rect">PrefixSetType</a>
+<td><a href="#Link30">PrefixSetType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link31" shape="rect">LuminousIntensity</a>
+<tr><td><a href="#Link31">LuminousIntensity</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link32" shape="rect">PrefixType</a>
+<td><a href="#Link32">PrefixType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link33" shape="rect">Mass</a>
+<tr><td><a href="#Link33">Mass</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link34" shape="rect">QuantitySetType</a>
+<td><a href="#Link34">QuantitySetType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link35" shape="rect">PlaneAngle</a>
+<tr><td><a href="#Link35">PlaneAngle</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link36" shape="rect">QuantityType</a>
+<td><a href="#Link36">QuantityType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link37" shape="rect">Prefix</a>
+<tr><td><a href="#Link37">Prefix</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link38" shape="rect">ReferenceType</a>
+<td><a href="#Link38">ReferenceType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link39" shape="rect">PrefixName</a>
+<tr><td><a href="#Link39">PrefixName</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link3A" shape="rect">RemarkType</a>
+<td><a href="#Link3A">RemarkType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link3B" shape="rect">PrefixSet</a>
+<tr><td><a href="#Link3B">PrefixSet</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link3C" shape="rect">RootUnitsType</a>
+<td><a href="#Link3C">RootUnitsType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link3D" shape="rect">PrefixSymbol</a>
+<tr><td><a href="#Link3D">PrefixSymbol</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link3E" shape="rect">SpecialConversionFromType</a>
+<td><a href="#Link3E">SpecialConversionFromType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link3F" shape="rect">Quantity</a>
+<tr><td><a href="#Link3F">Quantity</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link40" shape="rect">SymbolType</a>
+<td><a href="#Link40">SymbolType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link41" shape="rect">QuantityDefinition</a>
+<tr><td><a href="#Link41">QuantityDefinition</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link42" shape="rect">SystemType</a>
+<td><a href="#Link42">SystemType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link43" shape="rect">QuantityHistory</a>
+<tr><td><a href="#Link43">QuantityHistory</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link44" shape="rect">ThermodynamicTemperatureType</a>
+<td><a href="#Link44">ThermodynamicTemperatureType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link45" shape="rect">QuantityName</a>
+<tr><td><a href="#Link45">QuantityName</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link46" shape="rect">TimeType</a>
+<td><a href="#Link46">TimeType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link47" shape="rect">QuantityReference</a>
+<tr><td><a href="#Link47">QuantityReference</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link48" shape="rect">UnitSetType</a>
+<td><a href="#Link48">UnitSetType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link49" shape="rect">QuantityRemark</a>
+<tr><td><a href="#Link49">QuantityRemark</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link4A" shape="rect">UnitsMLType</a>
+<td><a href="#Link4A">UnitsMLType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link4B" shape="rect">QuantitySet</a>
+<tr><td><a href="#Link4B">QuantitySet</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link4C" shape="rect">UnitType</a>
+<td><a href="#Link4C">UnitType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link4D" shape="rect">QuantitySymbol</a>
+<tr><td><a href="#Link4D">QuantitySymbol</a>
 </td>
-<td rowspan="1" colspan="1"><a href="#Link4E" shape="rect">WSDLConversionFromType</a>
+<td><a href="#Link4E">WSDLConversionFromType</a>
 </td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link4F" shape="rect">QuantityVersionHistory</a>
+<tr><td><a href="#Link4F">QuantityVersionHistory</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link50" shape="rect">RootUnits</a>
+<tr><td><a href="#Link50">RootUnits</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link51" shape="rect">SpecialConversionFrom</a>
+<tr><td><a href="#Link51">SpecialConversionFrom</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link52" shape="rect">ThermodynamicTemperature</a>
+<tr><td><a href="#Link52">ThermodynamicTemperature</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link53" shape="rect">Time</a>
+<tr><td><a href="#Link53">Time</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link54" shape="rect">Unit</a>
+<tr><td><a href="#Link54">Unit</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link55" shape="rect">UnitDefinition</a>
+<tr><td><a href="#Link55">UnitDefinition</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link56" shape="rect">UnitHistory</a>
+<tr><td><a href="#Link56">UnitHistory</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link57" shape="rect">UnitName</a>
+<tr><td><a href="#Link57">UnitName</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link58" shape="rect">UnitReference</a>
+<tr><td><a href="#Link58">UnitReference</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link59" shape="rect">UnitRemark</a>
+<tr><td><a href="#Link59">UnitRemark</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link5A" shape="rect">UnitSet</a>
+<tr><td><a href="#Link5A">UnitSet</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link5B" shape="rect">UnitsML</a>
+<tr><td><a href="#Link5B">UnitsML</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link5C" shape="rect">UnitSymbol</a>
+<tr><td><a href="#Link5C">UnitSymbol</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link5D" shape="rect">UnitSystem</a>
+<tr><td><a href="#Link5D">UnitSystem</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link5E" shape="rect">UnitVersionHistory</a>
+<tr><td><a href="#Link5E">UnitVersionHistory</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link5F" shape="rect">WSDLConversionFrom</a>
+<tr><td><a href="#Link5F">WSDLConversionFrom</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link60" shape="rect">WSDLDescription</a>
+<tr><td><a href="#Link60">WSDLDescription</a>
 </td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-</tr>
-<tr></tr>
-</table>
-
----
-
-
-<table><tr><td rowspan="1" colspan="1">schema location: </td>
-<td rowspan="1" colspan="1"><a href="xml.xsd">xml.xsd</a>
-</td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1">attributeFormDefault: </td>
-<td rowspan="1" colspan="1"></td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1">elementFormDefault: </td>
-<td rowspan="1" colspan="1"></td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1">targetNamespace: </td>
-<td rowspan="1" colspan="1">http://www.w3.org/XML/1998/namespace</td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-</tr>
-<tr></tr>
-</table>
-
----
-<table><tr><td rowspan="1" colspan="1">Attributes</td>
-<td rowspan="1" colspan="1">Attr. groups</td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link61" shape="rect">base</a>
-</td>
-<td rowspan="1" colspan="1"><a href="#Link62" shape="rect">specialAttrs</a>
-</td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">id</a>
-</td>
-<td rowspan="1" colspan="1"></td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">lang</a>
-</td>
-<td rowspan="1" colspan="1"></td>
-</tr>
-<tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link65" shape="rect">space</a>
-</td>
-<td rowspan="1" colspan="1"></td>
+<td></td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
@@ -456,34 +405,88 @@
 ---
 
 
-<a name="Link1" shape="rect"></a>
+<table><tr><td>schema location: </td>
+<td><a href="xml.xsd">xml.xsd</a>
+</td>
+</tr>
+<tr></tr>
+<tr><td>attributeFormDefault: </td>
+<td></td>
+</tr>
+<tr></tr>
+<tr><td>elementFormDefault: </td>
+<td></td>
+</tr>
+<tr></tr>
+<tr><td>targetNamespace: </td>
+<td>http://www.w3.org/XML/1998/namespace</td>
+</tr>
+<tr></tr>
+<tr><td></td>
+<td></td>
+</tr>
+<tr></tr>
+</table>
+
+---
+<table><tr><td>Attributes</td>
+<td>Attr. groups</td>
+</tr>
+<tr></tr>
+<tr><td><a href="#Link61">base</a>
+</td>
+<td><a href="#Link62">specialAttrs</a>
+</td>
+</tr>
+<tr></tr>
+<tr><td><a href="#Link63">id</a>
+</td>
+<td></td>
+</tr>
+<tr></tr>
+<tr><td><a href="#Link64">lang</a>
+</td>
+<td></td>
+</tr>
+<tr></tr>
+<tr><td><a href="#Link65">space</a>
+</td>
+<td></td>
+</tr>
+<tr></tr>
+</table>
+
+---
+
+
+<a name="Link1"></a>
 
 
 element **AmountOfSubstance**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for AmountOfSubstance](/diagrams/UnitsML-v1.0-csd04_p1.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2" shape="rect">AmountOfSubstanceType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2">AmountOfSubstanceType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -491,39 +494,39 @@ element **AmountOfSubstance**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link66" shape="rect">symbol</a>
+<tr><td><a href="#Link66">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">N</td>
-<td rowspan="1" colspan="1">Symbol of the quantity amount of substance.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>N</td>
+<td>Symbol of the quantity amount of substance.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -531,11 +534,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity amount of substance.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity amount of substance.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -553,34 +556,34 @@ Attributes:
 
 ---
 
-<a name="Link4" shape="rect"></a>
+<a name="Link4"></a>
 
 
 element **CodeListValue**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for CodeListValue](/diagrams/UnitsML-v1.0-csd04_p2.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link5" shape="rect">CodeListValueType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link5">CodeListValueType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -588,75 +591,75 @@ element **CodeListValue**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link69" shape="rect">unitCodeValue</a>
+<tr><td><a href="#Link69">unitCodeValue</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The code associated for this unit in a specific code list.</td>
+<td>xsd:string</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>The code associated for this unit in a specific code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6A" shape="rect">codeListName</a>
+<tr><td><a href="#Link6A">codeListName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:normalizedString</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The name of the code list.</td>
+<td>xsd:normalizedString</td>
+<td></td>
+<td></td>
+<td></td>
+<td>The name of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6B" shape="rect">codeListVersion</a>
+<tr><td><a href="#Link6B">codeListVersion</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The version of the code list containing the unit code.</td>
+<td>xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>The version of the code list containing the unit code.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6C" shape="rect">locationURL</a>
+<tr><td><a href="#Link6C">locationURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Suggested retrieval location for this version of the code list.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Suggested retrieval location for this version of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6D" shape="rect">organizationName</a>
+<tr><td><a href="#Link6D">organizationName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:normalizedString</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Organization responsible for publication and/or maintenance of the code list.</td>
+<td>xsd:normalizedString</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Organization responsible for publication and/or maintenance of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6E" shape="rect">organizationURI</a>
+<tr><td><a href="#Link6E">organizationURI</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI for organization responsible for the code list.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URI for organization responsible for the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -664,11 +667,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for listing the unit code value from a specific code list.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for listing the unit code value from a specific code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -686,34 +689,34 @@ Attributes:
 
 ---
 
-<a name="Link7" shape="rect"></a>
+<a name="Link7"></a>
 
 
 element **ConversionDescription**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ConversionDescription](/diagrams/UnitsML-v1.0-csd04_p3.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2C">NoteType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link3E" shape="rect">SpecialConversionFromType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link3E">SpecialConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
@@ -721,20 +724,20 @@ element **ConversionDescription**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -776,11 +779,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for a description of the SpecialConversionFrom.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for a description of the SpecialConversionFrom.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -798,34 +801,34 @@ Attributes:
 
 ---
 
-<a name="LinkA" shape="rect"></a>
+<a name="LinkA"></a>
 
 
 element **ConversionNote**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ConversionNote](/diagrams/UnitsML-v1.0-csd04_p4.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2C">NoteType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link1E" shape="rect">Float64ConversionFromType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link1E">Float64ConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
@@ -833,20 +836,20 @@ element **ConversionNote**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -888,11 +891,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for descriptive information.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for descriptive information.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -910,49 +913,49 @@ Attributes:
 
 ---
 
-<a name="LinkD" shape="rect"></a>
+<a name="LinkD"></a>
 
 
 element **Conversions**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Conversions](/diagrams/UnitsML-v1.0-csd04_p5.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link8" shape="rect">ConversionsType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link8">ConversionsType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link1F" shape="rect">Float64ConversionFrom</a>
-<a href="#Link51" shape="rect">SpecialConversionFrom</a>
-<a href="#Link5F" shape="rect">WSDLConversionFrom</a>
+<tr><td align="right">children</td>
+<td><a href="#Link1F">Float64ConversionFrom</a>
+<a href="#Link51">SpecialConversionFrom</a>
+<a href="#Link5F">WSDLConversionFrom</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for providing conversion information to other units.</td>
+<tr><td align="right">annotation</td>
+<td>Container for providing conversion information to other units.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -970,44 +973,44 @@ element **Conversions**
 
 ---
 
-<a name="Link10" shape="rect"></a>
+<a name="Link10"></a>
 
 
 element **CountedItem**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for CountedItem](/diagrams/UnitsML-v1.0-csd04_p6.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">type</td>
+<td><a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link27" shape="rect">ItemName</a>
-<a href="#Link2B" shape="rect">ItemSymbol</a>
-<a href="#Link2D" shape="rect">ItemVersionHistory</a>
-<a href="#Link23" shape="rect">ItemDefinition</a>
-<a href="#Link25" shape="rect">ItemHistory</a>
-<a href="#Link29" shape="rect">ItemRemark</a>
+<tr><td align="right">children</td>
+<td><a href="#Link27">ItemName</a>
+<a href="#Link2B">ItemSymbol</a>
+<a href="#Link2D">ItemVersionHistory</a>
+<a href="#Link23">ItemDefinition</a>
+<a href="#Link25">ItemHistory</a>
+<a href="#Link29">ItemRemark</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkB" shape="rect">CountedItemSetType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkB">CountedItemSetType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1015,20 +1018,20 @@ element **CountedItem**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -1054,11 +1057,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for a single counted item.</td>
+<table><tr><td align="right">annotation</td>
+<td>Container for a single counted item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1076,47 +1079,47 @@ Attributes:
 
 ---
 
-<a name="Link13" shape="rect"></a>
+<a name="Link13"></a>
 
 
 element **CountedItemSet**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for CountedItemSet](/diagrams/UnitsML-v1.0-csd04_p7.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#LinkB" shape="rect">CountedItemSetType</a>
+<tr><td align="right">type</td>
+<td><a href="#LinkB">CountedItemSetType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link10" shape="rect">CountedItem</a>
+<tr><td align="right">children</td>
+<td><a href="#Link10">CountedItem</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4A" shape="rect">UnitsMLType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4A">UnitsMLType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for items that are counted and are (in practice) combined with scientific units of measure.</td>
+<tr><td align="right">annotation</td>
+<td>Container for items that are counted and are (in practice) combined with scientific units of measure.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1134,47 +1137,47 @@ element **CountedItemSet**
 
 ---
 
-<a name="Link15" shape="rect"></a>
+<a name="Link15"></a>
 
 
 element **Dimension**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Dimension](/diagrams/UnitsML-v1.0-csd04_p8.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link2F" shape="rect">Length</a>
-<a href="#Link33" shape="rect">Mass</a>
-<a href="#Link53" shape="rect">Time</a>
-<a href="#Link19" shape="rect">ElectricCurrent</a>
-<a href="#Link52" shape="rect">ThermodynamicTemperature</a>
-<a href="#Link1" shape="rect">AmountOfSubstance</a>
-<a href="#Link31" shape="rect">LuminousIntensity</a>
-<a href="#Link35" shape="rect">PlaneAngle</a>
-<a href="#Link21" shape="rect">Item</a>
+<tr><td align="right">children</td>
+<td><a href="#Link2F">Length</a>
+<a href="#Link33">Mass</a>
+<a href="#Link53">Time</a>
+<a href="#Link19">ElectricCurrent</a>
+<a href="#Link52">ThermodynamicTemperature</a>
+<a href="#Link1">AmountOfSubstance</a>
+<a href="#Link31">LuminousIntensity</a>
+<a href="#Link35">PlaneAngle</a>
+<a href="#Link21">Item</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link14" shape="rect">DimensionSetType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link14">DimensionSetType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1182,20 +1185,20 @@ element **Dimension**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -1216,13 +1219,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6F" shape="rect">dimensionless</a>
+<tr><td><a href="#Link6F">dimensionless</a>
 </td>
-<td rowspan="1" colspan="1">xsd:boolean</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">0</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Boolean to designate that a quantity or unit is dimensionless.</td>
+<td>xsd:boolean</td>
+<td>optional</td>
+<td>0</td>
+<td></td>
+<td>Boolean to designate that a quantity or unit is dimensionless.</td>
 </tr>
 <tr></tr>
 </table>
@@ -1230,11 +1233,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to express the dimension of a unit or quantity in terms of the SI base quantities length, mass, time, electric current, thermodynamic temperature, amount of substance, and luminous intensity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to express the dimension of a unit or quantity in terms of the SI base quantities length, mass, time, electric current, thermodynamic temperature, amount of substance, and luminous intensity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1252,47 +1255,47 @@ Attributes:
 
 ---
 
-<a name="Link17" shape="rect"></a>
+<a name="Link17"></a>
 
 
 element **DimensionSet**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for DimensionSet](/diagrams/UnitsML-v1.0-csd04_p9.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link14" shape="rect">DimensionSetType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link14">DimensionSetType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link15" shape="rect">Dimension</a>
+<tr><td align="right">children</td>
+<td><a href="#Link15">Dimension</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4A" shape="rect">UnitsMLType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4A">UnitsMLType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for dimensions.</td>
+<tr><td align="right">annotation</td>
+<td>Container for dimensions.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1310,34 +1313,34 @@ element **DimensionSet**
 
 ---
 
-<a name="Link19" shape="rect"></a>
+<a name="Link19"></a>
 
 
 element **ElectricCurrent**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ElectricCurrent](/diagrams/UnitsML-v1.0-csd04_p10.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link18" shape="rect">ElectricCurrentType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link18">ElectricCurrentType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1345,39 +1348,39 @@ element **ElectricCurrent**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link70" shape="rect">symbol</a>
+<tr><td><a href="#Link70">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">I</td>
-<td rowspan="1" colspan="1">Symbol of the quantity electric current.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>I</td>
+<td>Symbol of the quantity electric current.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -1385,11 +1388,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity electric current.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity electric current.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1407,34 +1410,34 @@ Attributes:
 
 ---
 
-<a name="Link1B" shape="rect"></a>
+<a name="Link1B"></a>
 
 
 element **EnumeratedRootUnit**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for EnumeratedRootUnit](/diagrams/UnitsML-v1.0-csd04_p11.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link1A" shape="rect">EnumeratedRootUnitType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link1A">EnumeratedRootUnitType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link3C" shape="rect">RootUnitsType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link3C">RootUnitsType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1442,57 +1445,57 @@ element **EnumeratedRootUnit**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link71" shape="rect">unit</a>
+<tr><td><a href="#Link71">unit</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Unit identifier; the enumerated list is basically English unit names in lowercase, with a few upper case exceptions, e.g., 32F, mmHg, pH.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Unit identifier; the enumerated list is basically English unit names in lowercase, with a few upper case exceptions, e.g., 32F, mmHg, pH.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link73" shape="rect">prefix</a>
+<tr><td><a href="#Link73">prefix</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<td>derived by: xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -1500,11 +1503,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for a root unit (from an extensive enumerated list) allowing an optional prefix and power. E.g., mm^2</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for a root unit (from an extensive enumerated list) allowing an optional prefix and power. E.g., mm^2</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1522,34 +1525,34 @@ Attributes:
 
 ---
 
-<a name="Link1D" shape="rect"></a>
+<a name="Link1D"></a>
 
 
 element **ExternalRootUnit**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ExternalRootUnit](/diagrams/UnitsML-v1.0-csd04_p12.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link1C" shape="rect">ExternalRootUnitType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link1C">ExternalRootUnitType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link3C" shape="rect">RootUnitsType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link3C">RootUnitsType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1557,47 +1560,47 @@ element **ExternalRootUnit**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link74" shape="rect">unit</a>
+<tr><td><a href="#Link74">unit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI to identify the unit.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI to identify the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link75" shape="rect">annotation</a>
+<tr><td><a href="#Link75">annotation</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Optional unit annotation; e.g., a unit name if the unit identifier above is an uncommon code.</td>
+<td>xsd:string</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Optional unit annotation; e.g., a unit name if the unit identifier above is an uncommon code.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -1634,31 +1637,31 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link73" shape="rect">prefix</a>
+<tr><td><a href="#Link73">prefix</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<td>derived by: xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -1666,11 +1669,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for those special cases where the root unit needed is not included in the enumerated list in the above element.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for those special cases where the root unit needed is not included in the enumerated list in the above element.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1688,39 +1691,39 @@ Attributes:
 
 ---
 
-<a name="Link1F" shape="rect"></a>
+<a name="Link1F"></a>
 
 
 element **Float64ConversionFrom**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Float64ConversionFrom](/diagrams/UnitsML-v1.0-csd04_p13.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link1E" shape="rect">Float64ConversionFromType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link1E">Float64ConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#LinkA" shape="rect">ConversionNote</a>
+<tr><td align="right">children</td>
+<td><a href="#LinkA">ConversionNote</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link8" shape="rect">ConversionsType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link8">ConversionsType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1728,20 +1731,20 @@ element **Float64ConversionFrom**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -1762,102 +1765,102 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link77" shape="rect">initialAddend</a>
+<tr><td><a href="#Link77">initialAddend</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">0</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number to be added at the start of the conversion (prior to multiplication or division) [factor 'a' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>Number to be added at the start of the conversion (prior to multiplication or division) [factor 'a' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link78" shape="rect">initialAddendDecimalPlace</a>
+<tr><td><a href="#Link78">initialAddendDecimalPlace</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Indicates the position of the least
+<td>xsd:byte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Indicates the position of the least
 significant digit (in decimal) of
 the initialAddend; the position of
 this digit is given by ten to
 additive inverse of this number.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link79" shape="rect">multiplicand</a>
+<tr><td><a href="#Link79">multiplicand</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number by which to multiply sum of initial addend and initial value [factor 'b' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td>Number by which to multiply sum of initial addend and initial value [factor 'b' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7A" shape="rect">multiplicandDigits</a>
+<tr><td><a href="#Link7A">multiplicandDigits</a>
 </td>
-<td rowspan="1" colspan="1">xsd:unsignedByte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number of significant digits in the multiplicand value.</td>
+<td>xsd:unsignedByte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Number of significant digits in the multiplicand value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7B" shape="rect">divisor</a>
+<tr><td><a href="#Link7B">divisor</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Divisor to be applied to the value at the same time as the multiplicand [factor 'c' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td>Divisor to be applied to the value at the same time as the multiplicand [factor 'c' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7C" shape="rect">divisorDigits</a>
+<tr><td><a href="#Link7C">divisorDigits</a>
 </td>
-<td rowspan="1" colspan="1">xsd:unsignedByte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number of significant digits in the divisor value.</td>
+<td>xsd:unsignedByte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Number of significant digits in the divisor value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7D" shape="rect">finalAddend</a>
+<tr><td><a href="#Link7D">finalAddend</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">0</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number to be added at the end of the conversion [factor 'd' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>Number to be added at the end of the conversion [factor 'd' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7E" shape="rect">finalAddendDecimalPlace</a>
+<tr><td><a href="#Link7E">finalAddendDecimalPlace</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Indicates the position of the least
+<td>xsd:byte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Indicates the position of the least
 significant digit (in decimal) of
 the finalAddend; the position of
 this digit is given by ten to
 additive inverse of this number.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7F" shape="rect">exact</a>
+<tr><td><a href="#Link7F">exact</a>
 </td>
-<td rowspan="1" colspan="1">xsd:boolean</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">false</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Indicates if the conversion is exact.</td>
+<td>xsd:boolean</td>
+<td></td>
+<td>false</td>
+<td></td>
+<td>Indicates if the conversion is exact.</td>
 </tr>
 <tr></tr>
 </table>
@@ -1865,11 +1868,11 @@ additive inverse of this number.</td>
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for providing factors for a conversion equation from another unit; y = d + ((b / c) (x + a))</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for providing factors for a conversion equation from another unit; y = d + ((b / c) (x + a))</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1887,34 +1890,34 @@ additive inverse of this number.</td>
 
 ---
 
-<a name="Link21" shape="rect"></a>
+<a name="Link21"></a>
 
 
 element **Item**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Item](/diagrams/UnitsML-v1.0-csd04_p14.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link22" shape="rect">ItemType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link22">ItemType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -1922,48 +1925,48 @@ element **Item**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link80" shape="rect">itemURL</a>
+<tr><td><a href="#Link80">itemURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Unique URL for identifying or describing the item.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Unique URL for identifying or describing the item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link81" shape="rect">itemSymbol</a>
+<tr><td><a href="#Link81">itemSymbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Symbol for the item.</td>
+<td>xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Symbol for the item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -1971,11 +1974,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of any item. Note: this element is meant to be used to allow counted items to be included in the dimensioning of a derived quantity, e.g., electrons per time; usage of this element does not conform to the SI description of the dimension of a quantity in terms of seven base quantities.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of any item. Note: this element is meant to be used to allow counted items to be included in the dimensioning of a derived quantity, e.g., electrons per time; usage of this element does not conform to the SI description of the dimension of a quantity in terms of seven base quantities.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -1993,34 +1996,34 @@ Attributes:
 
 ---
 
-<a name="Link23" shape="rect"></a>
+<a name="Link23"></a>
 
 
 element **ItemDefinition**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemDefinition](/diagrams/UnitsML-v1.0-csd04_p15.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link11" shape="rect">DefinitionType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link11">DefinitionType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2028,38 +2031,38 @@ element **ItemDefinition**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -2101,11 +2104,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the definition of the item.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the definition of the item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2123,34 +2126,34 @@ Attributes:
 
 ---
 
-<a name="Link25" shape="rect"></a>
+<a name="Link25"></a>
 
 
 element **ItemHistory**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemHistory](/diagrams/UnitsML-v1.0-csd04_p16.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link20" shape="rect">HistoryType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link20">HistoryType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2158,38 +2161,38 @@ element **ItemHistory**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -2231,11 +2234,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the historical development of the item.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the historical development of the item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2253,34 +2256,34 @@ Attributes:
 
 ---
 
-<a name="Link27" shape="rect"></a>
+<a name="Link27"></a>
 
 
 element **ItemName**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemName](/diagrams/UnitsML-v1.0-csd04_p17.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2A" shape="rect">NameType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2A">NameType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2288,20 +2291,20 @@ element **ItemName**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -2343,11 +2346,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the item name(s).</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the item name(s).</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2365,34 +2368,34 @@ Attributes:
 
 ---
 
-<a name="Link29" shape="rect"></a>
+<a name="Link29"></a>
 
 
 element **ItemRemark**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemRemark](/diagrams/UnitsML-v1.0-csd04_p18.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link3A" shape="rect">RemarkType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link3A">RemarkType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2400,39 +2403,39 @@ element **ItemRemark**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -2440,11 +2443,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element as a placeholder for additional information.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element as a placeholder for additional information.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2462,35 +2465,35 @@ Attributes:
 
 ---
 
-<a name="Link2B" shape="rect"></a>
+<a name="Link2B"></a>
 
 
 element **ItemSymbol**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemSymbol](/diagrams/UnitsML-v1.0-csd04_p19.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link40" shape="rect">SymbolType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link40">SymbolType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">content</td>
-<td rowspan="1" colspan="1">complex</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">content</td>
+<td>complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">mixed</td>
-<td rowspan="1" colspan="1">true</td>
+<tr><td align="right">mixed</td>
+<td>true</td>
 </tr>
 <tr></tr>
 </table>
@@ -2499,8 +2502,8 @@ element **ItemSymbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2508,20 +2511,20 @@ element **ItemSymbol**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -2558,13 +2561,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link83" shape="rect">type</a>
+<tr><td><a href="#Link83">type</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
 </tr>
 <tr></tr>
 </table>
@@ -2572,11 +2575,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing symbols for the item.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing symbols for the item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2594,34 +2597,34 @@ Attributes:
 
 ---
 
-<a name="Link2D" shape="rect"></a>
+<a name="Link2D"></a>
 
 
 element **ItemVersionHistory**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemVersionHistory](/diagrams/UnitsML-v1.0-csd04_p20.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2C">NoteType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#LinkE" shape="rect">CountedItemType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#LinkE">CountedItemType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2629,20 +2632,20 @@ element **ItemVersionHistory**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -2684,11 +2687,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for descriptive information, including version changes to the item.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for descriptive information, including version changes to the item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2706,34 +2709,34 @@ Attributes:
 
 ---
 
-<a name="Link2F" shape="rect"></a>
+<a name="Link2F"></a>
 
 
 element **Length**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Length](/diagrams/UnitsML-v1.0-csd04_p21.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link24" shape="rect">LengthType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link24">LengthType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2741,39 +2744,39 @@ element **Length**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link84" shape="rect">symbol</a>
+<tr><td><a href="#Link84">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">L</td>
-<td rowspan="1" colspan="1">Symbol of the quantity length.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>L</td>
+<td>Symbol of the quantity length.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -2781,11 +2784,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity length.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity length.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2803,34 +2806,34 @@ Attributes:
 
 ---
 
-<a name="Link31" shape="rect"></a>
+<a name="Link31"></a>
 
 
 element **LuminousIntensity**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for LuminousIntensity](/diagrams/UnitsML-v1.0-csd04_p22.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link26" shape="rect">LuminousIntensityType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link26">LuminousIntensityType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2838,39 +2841,39 @@ element **LuminousIntensity**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link85" shape="rect">symbol</a>
+<tr><td><a href="#Link85">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">J</td>
-<td rowspan="1" colspan="1">Symbol of the quantity luminous intensity.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>J</td>
+<td>Symbol of the quantity luminous intensity.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -2878,11 +2881,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity luminous intensity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity luminous intensity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2900,34 +2903,34 @@ Attributes:
 
 ---
 
-<a name="Link33" shape="rect"></a>
+<a name="Link33"></a>
 
 
 element **Mass**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Mass](/diagrams/UnitsML-v1.0-csd04_p23.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link28" shape="rect">MassType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link28">MassType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -2935,39 +2938,39 @@ element **Mass**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link86" shape="rect">symbol</a>
+<tr><td><a href="#Link86">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">M</td>
-<td rowspan="1" colspan="1">Symbol of the quantity mass.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>M</td>
+<td>Symbol of the quantity mass.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -2975,11 +2978,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity mass.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity mass.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -2997,34 +3000,34 @@ Attributes:
 
 ---
 
-<a name="Link35" shape="rect"></a>
+<a name="Link35"></a>
 
 
 element **PlaneAngle**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PlaneAngle](/diagrams/UnitsML-v1.0-csd04_p24.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2E" shape="rect">PlaneAngleType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2E">PlaneAngleType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3032,39 +3035,39 @@ element **PlaneAngle**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link87" shape="rect">symbol</a>
+<tr><td><a href="#Link87">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Symbol of the quantity plane angle.</td>
+<td>xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Symbol of the quantity plane angle.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -3072,11 +3075,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity plane angle.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity plane angle.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3094,40 +3097,40 @@ Attributes:
 
 ---
 
-<a name="Link37" shape="rect"></a>
+<a name="Link37"></a>
 
 
 element **Prefix**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Prefix](/diagrams/UnitsML-v1.0-csd04_p25.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link32" shape="rect">PrefixType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link32">PrefixType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link39" shape="rect">PrefixName</a>
-<a href="#Link3D" shape="rect">PrefixSymbol</a>
+<tr><td align="right">children</td>
+<td><a href="#Link39">PrefixName</a>
+<a href="#Link3D">PrefixSymbol</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link30" shape="rect">PrefixSetType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link30">PrefixSetType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3135,20 +3138,20 @@ element **Prefix**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3169,22 +3172,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link88" shape="rect">prefixBase</a>
+<tr><td><a href="#Link88">prefixBase</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">10</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The base of the prefix system, i.e., 10 (SI) or 2 (binary).</td>
+<td>derived by: xsd:byte</td>
+<td></td>
+<td>10</td>
+<td></td>
+<td>The base of the prefix system, i.e., 10 (SI) or 2 (binary).</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link89" shape="rect">prefixPower</a>
+<tr><td><a href="#Link89">prefixPower</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The exponential power of the prefix with relation to the base.</td>
+<td>xsd:byte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>The exponential power of the prefix with relation to the base.</td>
 </tr>
 <tr></tr>
 </table>
@@ -3192,11 +3195,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing information about a prefix.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing information about a prefix.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3214,34 +3217,34 @@ Attributes:
 
 ---
 
-<a name="Link39" shape="rect"></a>
+<a name="Link39"></a>
 
 
 element **PrefixName**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PrefixName](/diagrams/UnitsML-v1.0-csd04_p26.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2A" shape="rect">NameType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2A">NameType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link32" shape="rect">PrefixType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link32">PrefixType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3249,20 +3252,20 @@ element **PrefixName**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3304,11 +3307,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the prefix name.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the prefix name.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3326,47 +3329,47 @@ Attributes:
 
 ---
 
-<a name="Link3B" shape="rect"></a>
+<a name="Link3B"></a>
 
 
 element **PrefixSet**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PrefixSet](/diagrams/UnitsML-v1.0-csd04_p27.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link30" shape="rect">PrefixSetType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link30">PrefixSetType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link37" shape="rect">Prefix</a>
+<tr><td align="right">children</td>
+<td><a href="#Link37">Prefix</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4A" shape="rect">UnitsMLType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4A">UnitsMLType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for prefixes.</td>
+<tr><td align="right">annotation</td>
+<td>Container for prefixes.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3384,35 +3387,35 @@ element **PrefixSet**
 
 ---
 
-<a name="Link3D" shape="rect"></a>
+<a name="Link3D"></a>
 
 
 element **PrefixSymbol**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PrefixSymbol](/diagrams/UnitsML-v1.0-csd04_p28.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link40" shape="rect">SymbolType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link40">SymbolType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">content</td>
-<td rowspan="1" colspan="1">complex</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">content</td>
+<td>complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">mixed</td>
-<td rowspan="1" colspan="1">true</td>
+<tr><td align="right">mixed</td>
+<td>true</td>
 </tr>
 <tr></tr>
 </table>
@@ -3421,8 +3424,8 @@ element **PrefixSymbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link32" shape="rect">PrefixType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link32">PrefixType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3430,20 +3433,20 @@ element **PrefixSymbol**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3480,13 +3483,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link83" shape="rect">type</a>
+<tr><td><a href="#Link83">type</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
 </tr>
 <tr></tr>
 </table>
@@ -3494,11 +3497,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing prefix symbols.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing prefix symbols.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3516,45 +3519,45 @@ Attributes:
 
 ---
 
-<a name="Link3F" shape="rect"></a>
+<a name="Link3F"></a>
 
 
 element **Quantity**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Quantity](/diagrams/UnitsML-v1.0-csd04_p29.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link45" shape="rect">QuantityName</a>
-<a href="#Link4D" shape="rect">QuantitySymbol</a>
-<a href="#Link58" shape="rect">UnitReference</a>
-<a href="#Link4F" shape="rect">QuantityVersionHistory</a>
-<a href="#Link41" shape="rect">QuantityDefinition</a>
-<a href="#Link43" shape="rect">QuantityHistory</a>
-<a href="#Link49" shape="rect">QuantityRemark</a>
+<tr><td align="right">children</td>
+<td><a href="#Link45">QuantityName</a>
+<a href="#Link4D">QuantitySymbol</a>
+<a href="#Link58">UnitReference</a>
+<a href="#Link4F">QuantityVersionHistory</a>
+<a href="#Link41">QuantityDefinition</a>
+<a href="#Link43">QuantityHistory</a>
+<a href="#Link49">QuantityRemark</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link34" shape="rect">QuantitySetType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link34">QuantitySetType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3562,20 +3565,20 @@ element **Quantity**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3596,22 +3599,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8A" shape="rect">quantityType</a>
+<tr><td><a href="#Link8A">quantityType</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of the quantity.  For example base or derived.</td>
+<td>derived by: xsd:token</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Type of the quantity.  For example base or derived.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8B" shape="rect">dimensionURL</a>
+<tr><td><a href="#Link8B">dimensionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
 </table>
@@ -3619,11 +3622,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for describing quantities and referencing corresponding units. Use in container or directly incorporate into a host schema.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for describing quantities and referencing corresponding units. Use in container or directly incorporate into a host schema.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3641,34 +3644,34 @@ Attributes:
 
 ---
 
-<a name="Link41" shape="rect"></a>
+<a name="Link41"></a>
 
 
 element **QuantityDefinition**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityDefinition](/diagrams/UnitsML-v1.0-csd04_p30.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link11" shape="rect">DefinitionType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link11">DefinitionType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3676,38 +3679,38 @@ element **QuantityDefinition**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3749,11 +3752,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the definition of the quantity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the definition of the quantity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3771,34 +3774,34 @@ Attributes:
 
 ---
 
-<a name="Link43" shape="rect"></a>
+<a name="Link43"></a>
 
 
 element **QuantityHistory**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityHistory](/diagrams/UnitsML-v1.0-csd04_p31.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link20" shape="rect">HistoryType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link20">HistoryType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3806,38 +3809,38 @@ element **QuantityHistory**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3879,11 +3882,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the historical development of the quantity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the historical development of the quantity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -3901,34 +3904,34 @@ Attributes:
 
 ---
 
-<a name="Link45" shape="rect"></a>
+<a name="Link45"></a>
 
 
 element **QuantityName**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityName](/diagrams/UnitsML-v1.0-csd04_p32.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2A" shape="rect">NameType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2A">NameType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -3936,20 +3939,20 @@ element **QuantityName**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -3991,11 +3994,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the quantity name.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the quantity name.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4013,34 +4016,34 @@ Attributes:
 
 ---
 
-<a name="Link47" shape="rect"></a>
+<a name="Link47"></a>
 
 
 element **QuantityReference**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityReference](/diagrams/UnitsML-v1.0-csd04_p33.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link38" shape="rect">ReferenceType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link38">ReferenceType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4048,39 +4051,39 @@ element **QuantityReference**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8C" shape="rect">url</a>
+<tr><td><a href="#Link8C">url</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to the reference item.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URL to the reference item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8D" shape="rect">name</a>
+<tr><td><a href="#Link8D">name</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of the referenced item.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of the referenced item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -4088,11 +4091,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for all quantities that can be expressed using this unit.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for all quantities that can be expressed using this unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4110,34 +4113,34 @@ Attributes:
 
 ---
 
-<a name="Link49" shape="rect"></a>
+<a name="Link49"></a>
 
 
 element **QuantityRemark**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityRemark](/diagrams/UnitsML-v1.0-csd04_p34.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link3A" shape="rect">RemarkType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link3A">RemarkType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4145,39 +4148,39 @@ element **QuantityRemark**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -4185,11 +4188,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element as a placeholder for additional information.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element as a placeholder for additional information.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4207,47 +4210,47 @@ Attributes:
 
 ---
 
-<a name="Link4B" shape="rect"></a>
+<a name="Link4B"></a>
 
 
 element **QuantitySet**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantitySet](/diagrams/UnitsML-v1.0-csd04_p35.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link34" shape="rect">QuantitySetType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link34">QuantitySetType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link3F" shape="rect">Quantity</a>
+<tr><td align="right">children</td>
+<td><a href="#Link3F">Quantity</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4A" shape="rect">UnitsMLType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4A">UnitsMLType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for quantities.</td>
+<tr><td align="right">annotation</td>
+<td>Container for quantities.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4265,35 +4268,35 @@ element **QuantitySet**
 
 ---
 
-<a name="Link4D" shape="rect"></a>
+<a name="Link4D"></a>
 
 
 element **QuantitySymbol**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantitySymbol](/diagrams/UnitsML-v1.0-csd04_p36.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link40" shape="rect">SymbolType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link40">SymbolType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">content</td>
-<td rowspan="1" colspan="1">complex</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">content</td>
+<td>complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">mixed</td>
-<td rowspan="1" colspan="1">true</td>
+<tr><td align="right">mixed</td>
+<td>true</td>
 </tr>
 <tr></tr>
 </table>
@@ -4302,8 +4305,8 @@ element **QuantitySymbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4311,20 +4314,20 @@ element **QuantitySymbol**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -4361,13 +4364,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link83" shape="rect">type</a>
+<tr><td><a href="#Link83">type</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
 </tr>
 <tr></tr>
 </table>
@@ -4375,11 +4378,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing various quantity symbols.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing various quantity symbols.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4397,34 +4400,34 @@ Attributes:
 
 ---
 
-<a name="Link4F" shape="rect"></a>
+<a name="Link4F"></a>
 
 
 element **QuantityVersionHistory**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityVersionHistory](/diagrams/UnitsML-v1.0-csd04_p37.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2C">NoteType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4432,20 +4435,20 @@ element **QuantityVersionHistory**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -4487,11 +4490,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for descriptive information, including version changes to the unit.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for descriptive information, including version changes to the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4509,48 +4512,48 @@ Attributes:
 
 ---
 
-<a name="Link50" shape="rect"></a>
+<a name="Link50"></a>
 
 
 element **RootUnits**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for RootUnits](/diagrams/UnitsML-v1.0-csd04_p38.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link3C" shape="rect">RootUnitsType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link3C">RootUnitsType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link1B" shape="rect">EnumeratedRootUnit</a>
-<a href="#Link1D" shape="rect">ExternalRootUnit</a>
+<tr><td align="right">children</td>
+<td><a href="#Link1B">EnumeratedRootUnit</a>
+<a href="#Link1D">ExternalRootUnit</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for defining derived units in terms of their root units. This allows a precise definition of a wide range of units. The goal is to improve interoperability among applications and databases which use derived units based on commonly encountered root units.</td>
+<tr><td align="right">annotation</td>
+<td>Container for defining derived units in terms of their root units. This allows a precise definition of a wide range of units. The goal is to improve interoperability among applications and databases which use derived units based on commonly encountered root units.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4568,39 +4571,39 @@ element **RootUnits**
 
 ---
 
-<a name="Link51" shape="rect"></a>
+<a name="Link51"></a>
 
 
 element **SpecialConversionFrom**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for SpecialConversionFrom](/diagrams/UnitsML-v1.0-csd04_p39.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link3E" shape="rect">SpecialConversionFromType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link3E">SpecialConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link7" shape="rect">ConversionDescription</a>
+<tr><td align="right">children</td>
+<td><a href="#Link7">ConversionDescription</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link8" shape="rect">ConversionsType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link8">ConversionsType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4608,20 +4611,20 @@ element **SpecialConversionFrom**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -4642,22 +4645,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8E" shape="rect">conversionURL</a>
+<tr><td><a href="#Link8E">conversionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL for external description of the conversion or for an online convertor.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL for external description of the conversion or for an online convertor.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
 </table>
@@ -4665,11 +4668,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for providing unit conversion information for conversions that are more complex than the Float64ConversionFrom linear equation.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for providing unit conversion information for conversions that are more complex than the Float64ConversionFrom linear equation.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4687,34 +4690,34 @@ Attributes:
 
 ---
 
-<a name="Link52" shape="rect"></a>
+<a name="Link52"></a>
 
 
 element **ThermodynamicTemperature**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ThermodynamicTemperature](/diagrams/UnitsML-v1.0-csd04_p40.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link44" shape="rect">ThermodynamicTemperatureType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link44">ThermodynamicTemperatureType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4722,39 +4725,39 @@ element **ThermodynamicTemperature**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8F" shape="rect">symbol</a>
+<tr><td><a href="#Link8F">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Θ</td>
-<td rowspan="1" colspan="1">Symbol of the quantity thermodynamic temperature.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>Θ</td>
+<td>Symbol of the quantity thermodynamic temperature.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -4762,11 +4765,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity thermodynamic temerature.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity thermodynamic temerature.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4784,34 +4787,34 @@ Attributes:
 
 ---
 
-<a name="Link53" shape="rect"></a>
+<a name="Link53"></a>
 
 
 element **Time**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Time](/diagrams/UnitsML-v1.0-csd04_p41.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link46" shape="rect">TimeType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link46">TimeType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link16" shape="rect">DimensionType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link16">DimensionType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4819,39 +4822,39 @@ element **Time**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link90" shape="rect">symbol</a>
+<tr><td><a href="#Link90">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">T</td>
-<td rowspan="1" colspan="1">Symbol of the quantity time.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>T</td>
+<td>Symbol of the quantity time.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -4859,11 +4862,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the dimension of the quantity time.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the dimension of the quantity time.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -4881,49 +4884,49 @@ Attributes:
 
 ---
 
-<a name="Link54" shape="rect"></a>
+<a name="Link54"></a>
 
 
 element **Unit**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Unit](/diagrams/UnitsML-v1.0-csd04_p42.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link5D" shape="rect">UnitSystem</a>
-<a href="#Link57" shape="rect">UnitName</a>
-<a href="#Link5C" shape="rect">UnitSymbol</a>
-<a href="#Link4" shape="rect">CodeListValue</a>
-<a href="#Link50" shape="rect">RootUnits</a>
-<a href="#LinkD" shape="rect">Conversions</a>
-<a href="#Link47" shape="rect">QuantityReference</a>
-<a href="#Link5E" shape="rect">UnitVersionHistory</a>
-<a href="#Link55" shape="rect">UnitDefinition</a>
-<a href="#Link56" shape="rect">UnitHistory</a>
-<a href="#Link59" shape="rect">UnitRemark</a>
+<tr><td align="right">children</td>
+<td><a href="#Link5D">UnitSystem</a>
+<a href="#Link57">UnitName</a>
+<a href="#Link5C">UnitSymbol</a>
+<a href="#Link4">CodeListValue</a>
+<a href="#Link50">RootUnits</a>
+<a href="#LinkD">Conversions</a>
+<a href="#Link47">QuantityReference</a>
+<a href="#Link5E">UnitVersionHistory</a>
+<a href="#Link55">UnitDefinition</a>
+<a href="#Link56">UnitHistory</a>
+<a href="#Link59">UnitRemark</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link48" shape="rect">UnitSetType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link48">UnitSetType</a>
 </td>
 </tr>
 <tr></tr>
@@ -4931,20 +4934,20 @@ element **Unit**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -4965,22 +4968,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link91" shape="rect">timeStamp</a>
+<tr><td><a href="#Link91">timeStamp</a>
 </td>
-<td rowspan="1" colspan="1">xsd:dateTime</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</td>
+<td>xsd:dateTime</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8B" shape="rect">dimensionURL</a>
+<tr><td><a href="#Link8B">dimensionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
 </table>
@@ -4988,11 +4991,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for describing units. Use in containers UnitSet or directly incorporate into a host schema.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for describing units. Use in containers UnitSet or directly incorporate into a host schema.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5010,34 +5013,34 @@ Attributes:
 
 ---
 
-<a name="Link55" shape="rect"></a>
+<a name="Link55"></a>
 
 
 element **UnitDefinition**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitDefinition](/diagrams/UnitsML-v1.0-csd04_p43.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link11" shape="rect">DefinitionType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link11">DefinitionType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5045,38 +5048,38 @@ element **UnitDefinition**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -5118,11 +5121,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the definition of the unit.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the definition of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5140,34 +5143,34 @@ Attributes:
 
 ---
 
-<a name="Link56" shape="rect"></a>
+<a name="Link56"></a>
 
 
 element **UnitHistory**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitHistory](/diagrams/UnitsML-v1.0-csd04_p44.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link20" shape="rect">HistoryType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link20">HistoryType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5175,38 +5178,38 @@ element **UnitHistory**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -5248,11 +5251,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the historical development of the unit.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the historical development of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5270,34 +5273,34 @@ Attributes:
 
 ---
 
-<a name="Link57" shape="rect"></a>
+<a name="Link57"></a>
 
 
 element **UnitName**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitName](/diagrams/UnitsML-v1.0-csd04_p45.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2A" shape="rect">NameType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2A">NameType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5305,20 +5308,20 @@ element **UnitName**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -5360,11 +5363,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing the unit name.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing the unit name.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5382,34 +5385,34 @@ Attributes:
 
 ---
 
-<a name="Link58" shape="rect"></a>
+<a name="Link58"></a>
 
 
 element **UnitReference**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitReference](/diagrams/UnitsML-v1.0-csd04_p46.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link38" shape="rect">ReferenceType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link38">ReferenceType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link36" shape="rect">QuantityType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link36">QuantityType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5417,39 +5420,39 @@ element **UnitReference**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8C" shape="rect">url</a>
+<tr><td><a href="#Link8C">url</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to the reference item.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URL to the reference item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8D" shape="rect">name</a>
+<tr><td><a href="#Link8D">name</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of the referenced item.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of the referenced item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -5457,11 +5460,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for referencing a unit of measure from within the Quantity element.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for referencing a unit of measure from within the Quantity element.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5479,34 +5482,34 @@ Attributes:
 
 ---
 
-<a name="Link59" shape="rect"></a>
+<a name="Link59"></a>
 
 
 element **UnitRemark**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitRemark](/diagrams/UnitsML-v1.0-csd04_p47.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link3A" shape="rect">RemarkType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link3A">RemarkType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5514,39 +5517,39 @@ element **UnitRemark**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -5554,11 +5557,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element as a placeholder for additional information.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element as a placeholder for additional information.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5576,47 +5579,47 @@ Attributes:
 
 ---
 
-<a name="Link5A" shape="rect"></a>
+<a name="Link5A"></a>
 
 
 element **UnitSet**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitSet](/diagrams/UnitsML-v1.0-csd04_p48.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link48" shape="rect">UnitSetType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link48">UnitSetType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link54" shape="rect">Unit</a>
+<tr><td align="right">children</td>
+<td><a href="#Link54">Unit</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4A" shape="rect">UnitsMLType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4A">UnitsMLType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for units. Use in UnitsML container or directly incorporate into a host schema.</td>
+<tr><td align="right">annotation</td>
+<td>Container for units. Use in UnitsML container or directly incorporate into a host schema.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5634,46 +5637,46 @@ element **UnitSet**
 
 ---
 
-<a name="Link5B" shape="rect"></a>
+<a name="Link5B"></a>
 
 
 element **UnitsML**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitsML](/diagrams/UnitsML-v1.0-csd04_p49.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link4A" shape="rect">UnitsMLType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link4A">UnitsMLType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link5A" shape="rect">UnitSet</a>
-<a href="#Link13" shape="rect">CountedItemSet</a>
-<a href="#Link4B" shape="rect">QuantitySet</a>
-<a href="#Link17" shape="rect">DimensionSet</a>
-<a href="#Link3B" shape="rect">PrefixSet</a>
+<tr><td align="right">children</td>
+<td><a href="#Link5A">UnitSet</a>
+<a href="#Link13">CountedItemSet</a>
+<a href="#Link4B">QuantitySet</a>
+<a href="#Link17">DimensionSet</a>
+<a href="#Link3B">PrefixSet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for UnitsML units, quantities, and prefixes.</td>
+<tr><td align="right">annotation</td>
+<td>Container for UnitsML units, quantities, and prefixes.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5691,35 +5694,35 @@ element **UnitsML**
 
 ---
 
-<a name="Link5C" shape="rect"></a>
+<a name="Link5C"></a>
 
 
 element **UnitSymbol**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitSymbol](/diagrams/UnitsML-v1.0-csd04_p50.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link40" shape="rect">SymbolType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link40">SymbolType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">content</td>
-<td rowspan="1" colspan="1">complex</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">content</td>
+<td>complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">mixed</td>
-<td rowspan="1" colspan="1">true</td>
+<tr><td align="right">mixed</td>
+<td>true</td>
 </tr>
 <tr></tr>
 </table>
@@ -5728,8 +5731,8 @@ element **UnitSymbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5737,20 +5740,20 @@ element **UnitSymbol**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -5787,13 +5790,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link83" shape="rect">type</a>
+<tr><td><a href="#Link83">type</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
 </tr>
 <tr></tr>
 </table>
@@ -5801,11 +5804,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element containing various unit symbols.  Examples include Aring (ASCII), Ã (HTML).</td>
+<table><tr><td align="right">annotation</td>
+<td>Element containing various unit symbols.  Examples include Aring (ASCII), Ã (HTML).</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5823,34 +5826,34 @@ Attributes:
 
 ---
 
-<a name="Link5D" shape="rect"></a>
+<a name="Link5D"></a>
 
 
 element **UnitSystem**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitSystem](/diagrams/UnitsML-v1.0-csd04_p51.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link42" shape="rect">SystemType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link42">SystemType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5858,38 +5861,38 @@ element **UnitSystem**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link92" shape="rect">name</a>
+<tr><td><a href="#Link92">name</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of the unit system.   For example, SI, inch-pound, CGS, and MKS.</td>
+<td>xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Name of the unit system.   For example, SI, inch-pound, CGS, and MKS.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link93" shape="rect">type</a>
+<tr><td><a href="#Link93">type</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Description of the unit relative to the unit system.  Examples are SI_base and non-SI_not_acceptable.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Description of the unit relative to the unit system.  Examples are SI_base and non-SI_not_acceptable.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -5931,11 +5934,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Container for describing the system of units.</td>
+<table><tr><td align="right">annotation</td>
+<td>Container for describing the system of units.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -5953,34 +5956,34 @@ Attributes:
 
 ---
 
-<a name="Link5E" shape="rect"></a>
+<a name="Link5E"></a>
 
 
 element **UnitVersionHistory**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitVersionHistory](/diagrams/UnitsML-v1.0-csd04_p52.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2C">NoteType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -5988,20 +5991,20 @@ element **UnitVersionHistory**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -6043,11 +6046,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for descriptive information, including version changes to the unit.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for descriptive information, including version changes to the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6065,39 +6068,39 @@ Attributes:
 
 ---
 
-<a name="Link5F" shape="rect"></a>
+<a name="Link5F"></a>
 
 
 element **WSDLConversionFrom**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for WSDLConversionFrom](/diagrams/UnitsML-v1.0-csd04_p53.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link4E" shape="rect">WSDLConversionFromType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link4E">WSDLConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link60" shape="rect">WSDLDescription</a>
+<tr><td align="right">children</td>
+<td><a href="#Link60">WSDLDescription</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link8" shape="rect">ConversionsType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link8">ConversionsType</a>
 </td>
 </tr>
 <tr></tr>
@@ -6105,20 +6108,20 @@ element **WSDLConversionFrom**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -6139,22 +6142,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link94" shape="rect">wsdlURL</a>
+<tr><td><a href="#Link94">wsdlURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL for external WSDL definition file.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URL for external WSDL definition file.</td>
 </tr>
 <tr></tr>
 </table>
@@ -6162,11 +6165,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element for providing conversion based on SOAP/WSDL calls to a remote server.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element for providing conversion based on SOAP/WSDL calls to a remote server.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6184,34 +6187,34 @@ Attributes:
 
 ---
 
-<a name="Link60" shape="rect"></a>
+<a name="Link60"></a>
 
 
 element **WSDLDescription**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for WSDLDescription](/diagrams/UnitsML-v1.0-csd04_p54.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1"><a href="#Link2C" shape="rect">NoteType</a>
+<tr><td align="right">type</td>
+<td><a href="#Link2C">NoteType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">content complex</td>
+<tr><td align="right">properties</td>
+<td>content complex</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexType <a href="#Link4E" shape="rect">WSDLConversionFromType</a>
+<tr><td align="right">used by</td>
+<td>complexType <a href="#Link4E">WSDLConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
@@ -6219,20 +6222,20 @@ element **WSDLDescription**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -6274,11 +6277,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Element to describe the WSDL service.</td>
+<table><tr><td align="right">annotation</td>
+<td>Element to describe the WSDL service.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6296,25 +6299,25 @@ Attributes:
 
 ---
 
-<a name="Link2" shape="rect"></a>
+<a name="Link2"></a>
 
 
 complexType **AmountOfSubstanceType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for AmountOfSubstanceType](/diagrams/UnitsML-v1.0-csd04_p55.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link1" shape="rect">AmountOfSubstance</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link1">AmountOfSubstance</a>
 </td>
 </tr>
 <tr></tr>
@@ -6322,39 +6325,39 @@ complexType **AmountOfSubstanceType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link66" shape="rect">symbol</a>
+<tr><td><a href="#Link66">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">N</td>
-<td rowspan="1" colspan="1">Symbol of the quantity amount of substance.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>N</td>
+<td>Symbol of the quantity amount of substance.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -6362,11 +6365,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity amount of substance.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity amount of substance.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6390,22 +6393,22 @@ Attributes:
 
 ---
 
-<a name="Link66" shape="rect"></a>
+<a name="Link66"></a>
 
 
 attribute **AmountOfSubstanceType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">N</td>
+<tr><td align="right">fixed</td>
+<td>N</td>
 </tr>
 <tr></tr>
 </table>
@@ -6414,11 +6417,11 @@ attribute **AmountOfSubstanceType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity amount of substance.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity amount of substance.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6436,25 +6439,25 @@ attribute **AmountOfSubstanceType/@symbol**
 
 ---
 
-<a name="Link5" shape="rect"></a>
+<a name="Link5"></a>
 
 
 complexType **CodeListValueType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for CodeListValueType](/diagrams/UnitsML-v1.0-csd04_p56.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link4" shape="rect">CodeListValue</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link4">CodeListValue</a>
 </td>
 </tr>
 <tr></tr>
@@ -6462,75 +6465,75 @@ complexType **CodeListValueType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link69" shape="rect">unitCodeValue</a>
+<tr><td><a href="#Link69">unitCodeValue</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The code associated for this unit in a specific code list.</td>
+<td>xsd:string</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>The code associated for this unit in a specific code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6A" shape="rect">codeListName</a>
+<tr><td><a href="#Link6A">codeListName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:normalizedString</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The name of the code list.</td>
+<td>xsd:normalizedString</td>
+<td></td>
+<td></td>
+<td></td>
+<td>The name of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6B" shape="rect">codeListVersion</a>
+<tr><td><a href="#Link6B">codeListVersion</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The version of the code list containing the unit code.</td>
+<td>xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>The version of the code list containing the unit code.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6C" shape="rect">locationURL</a>
+<tr><td><a href="#Link6C">locationURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Suggested retrieval location for this version of the code list.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Suggested retrieval location for this version of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6D" shape="rect">organizationName</a>
+<tr><td><a href="#Link6D">organizationName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:normalizedString</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Organization responsible for publication and/or maintenance of the code list.</td>
+<td>xsd:normalizedString</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Organization responsible for publication and/or maintenance of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6E" shape="rect">organizationURI</a>
+<tr><td><a href="#Link6E">organizationURI</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI for organization responsible for the code list.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URI for organization responsible for the code list.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -6538,11 +6541,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the element for listing the unit code value from a specific code list.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the element for listing the unit code value from a specific code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6595,24 +6598,24 @@ Attributes:
 
 ---
 
-<a name="Link69" shape="rect"></a>
+<a name="Link69"></a>
 
 
 attribute **CodeListValueType/@unitCodeValue**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:string</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">The code associated for this unit in a specific code list.</td>
+<tr><td align="right">annotation</td>
+<td>The code associated for this unit in a specific code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6630,20 +6633,20 @@ attribute **CodeListValueType/@unitCodeValue**
 
 ---
 
-<a name="Link6A" shape="rect"></a>
+<a name="Link6A"></a>
 
 
 attribute **CodeListValueType/@codeListName**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:normalizedString</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:normalizedString</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">The name of the code list.</td>
+<tr><td align="right">annotation</td>
+<td>The name of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6661,20 +6664,20 @@ attribute **CodeListValueType/@codeListName**
 
 ---
 
-<a name="Link6B" shape="rect"></a>
+<a name="Link6B"></a>
 
 
 attribute **CodeListValueType/@codeListVersion**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">The version of the code list containing the unit code.</td>
+<tr><td align="right">annotation</td>
+<td>The version of the code list containing the unit code.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6692,20 +6695,20 @@ attribute **CodeListValueType/@codeListVersion**
 
 ---
 
-<a name="Link6C" shape="rect"></a>
+<a name="Link6C"></a>
 
 
 attribute **CodeListValueType/@locationURL**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Suggested retrieval location for this version of the code list.</td>
+<tr><td align="right">annotation</td>
+<td>Suggested retrieval location for this version of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6723,20 +6726,20 @@ attribute **CodeListValueType/@locationURL**
 
 ---
 
-<a name="Link6D" shape="rect"></a>
+<a name="Link6D"></a>
 
 
 attribute **CodeListValueType/@organizationName**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:normalizedString</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:normalizedString</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Organization responsible for publication and/or maintenance of the code list.</td>
+<tr><td align="right">annotation</td>
+<td>Organization responsible for publication and/or maintenance of the code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6754,20 +6757,20 @@ attribute **CodeListValueType/@organizationName**
 
 ---
 
-<a name="Link6E" shape="rect"></a>
+<a name="Link6E"></a>
 
 
 attribute **CodeListValueType/@organizationURI**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URI for organization responsible for the code list.</td>
+<tr><td align="right">annotation</td>
+<td>URI for organization responsible for the code list.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6785,40 +6788,40 @@ attribute **CodeListValueType/@organizationURI**
 
 ---
 
-<a name="Link8" shape="rect"></a>
+<a name="Link8"></a>
 
 
 complexType **ConversionsType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ConversionsType](/diagrams/UnitsML-v1.0-csd04_p57.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link1F" shape="rect">Float64ConversionFrom</a>
-<a href="#Link51" shape="rect">SpecialConversionFrom</a>
-<a href="#Link5F" shape="rect">WSDLConversionFrom</a>
+<tr><td align="right">children</td>
+<td><a href="#Link1F">Float64ConversionFrom</a>
+<a href="#Link51">SpecialConversionFrom</a>
+<a href="#Link5F">WSDLConversionFrom</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#LinkD" shape="rect">Conversions</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#LinkD">Conversions</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the container for providing conversion information to other units.</td>
+<tr><td align="right">annotation</td>
+<td>Type for the container for providing conversion information to other units.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6853,38 +6856,38 @@ complexType **ConversionsType**
 
 ---
 
-<a name="LinkB" shape="rect"></a>
+<a name="LinkB"></a>
 
 
 complexType **CountedItemSetType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for CountedItemSetType](/diagrams/UnitsML-v1.0-csd04_p58.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link10" shape="rect">CountedItem</a>
+<tr><td align="right">children</td>
+<td><a href="#Link10">CountedItem</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link13" shape="rect">CountedItemSet</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link13">CountedItemSet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for a set of counted items.</td>
+<tr><td align="right">annotation</td>
+<td>Type for a set of counted items.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -6905,35 +6908,35 @@ complexType **CountedItemSetType**
 
 ---
 
-<a name="LinkE" shape="rect"></a>
+<a name="LinkE"></a>
 
 
 complexType **CountedItemType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for CountedItemType](/diagrams/UnitsML-v1.0-csd04_p59.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link27" shape="rect">ItemName</a>
-<a href="#Link2B" shape="rect">ItemSymbol</a>
-<a href="#Link2D" shape="rect">ItemVersionHistory</a>
-<a href="#Link23" shape="rect">ItemDefinition</a>
-<a href="#Link25" shape="rect">ItemHistory</a>
-<a href="#Link29" shape="rect">ItemRemark</a>
+<tr><td align="right">children</td>
+<td><a href="#Link27">ItemName</a>
+<a href="#Link2B">ItemSymbol</a>
+<a href="#Link2D">ItemVersionHistory</a>
+<a href="#Link23">ItemDefinition</a>
+<a href="#Link25">ItemHistory</a>
+<a href="#Link29">ItemRemark</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link10" shape="rect">CountedItem</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link10">CountedItem</a>
 </td>
 </tr>
 <tr></tr>
@@ -6941,20 +6944,20 @@ complexType **CountedItemType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -6980,11 +6983,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for a single counted item.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for a single counted item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7011,35 +7014,35 @@ Attributes:
 
 ---
 
-<a name="Link11" shape="rect"></a>
+<a name="Link11"></a>
 
 
 complexType **DefinitionType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for DefinitionType](/diagrams/UnitsML-v1.0-csd04_p60.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">extension ofxsd:string</td>
+<tr><td align="right">type</td>
+<td>extension ofxsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">base xsd:string</td>
+<tr><td align="right">properties</td>
+<td>base xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link23" shape="rect">ItemDefinition</a>
-<a href="#Link41" shape="rect">QuantityDefinition</a>
-<a href="#Link55" shape="rect">UnitDefinition</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link23">ItemDefinition</a>
+<a href="#Link41">QuantityDefinition</a>
+<a href="#Link55">UnitDefinition</a>
 </td>
 </tr>
 <tr></tr>
@@ -7047,38 +7050,38 @@ complexType **DefinitionType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -7120,11 +7123,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for definition.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for definition.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7149,38 +7152,38 @@ Attributes:
 
 ---
 
-<a name="Link14" shape="rect"></a>
+<a name="Link14"></a>
 
 
 complexType **DimensionSetType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for DimensionSetType](/diagrams/UnitsML-v1.0-csd04_p61.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link15" shape="rect">Dimension</a>
+<tr><td align="right">children</td>
+<td><a href="#Link15">Dimension</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link17" shape="rect">DimensionSet</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link17">DimensionSet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the dimension container.</td>
+<tr><td align="right">annotation</td>
+<td>Type for the dimension container.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7205,38 +7208,38 @@ complexType **DimensionSetType**
 
 ---
 
-<a name="Link16" shape="rect"></a>
+<a name="Link16"></a>
 
 
 complexType **DimensionType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for DimensionType](/diagrams/UnitsML-v1.0-csd04_p62.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link2F" shape="rect">Length</a>
-<a href="#Link33" shape="rect">Mass</a>
-<a href="#Link53" shape="rect">Time</a>
-<a href="#Link19" shape="rect">ElectricCurrent</a>
-<a href="#Link52" shape="rect">ThermodynamicTemperature</a>
-<a href="#Link1" shape="rect">AmountOfSubstance</a>
-<a href="#Link31" shape="rect">LuminousIntensity</a>
-<a href="#Link35" shape="rect">PlaneAngle</a>
-<a href="#Link21" shape="rect">Item</a>
+<tr><td align="right">children</td>
+<td><a href="#Link2F">Length</a>
+<a href="#Link33">Mass</a>
+<a href="#Link53">Time</a>
+<a href="#Link19">ElectricCurrent</a>
+<a href="#Link52">ThermodynamicTemperature</a>
+<a href="#Link1">AmountOfSubstance</a>
+<a href="#Link31">LuminousIntensity</a>
+<a href="#Link35">PlaneAngle</a>
+<a href="#Link21">Item</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link15" shape="rect">Dimension</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link15">Dimension</a>
 </td>
 </tr>
 <tr></tr>
@@ -7244,20 +7247,20 @@ complexType **DimensionType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -7278,13 +7281,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link6F" shape="rect">dimensionless</a>
+<tr><td><a href="#Link6F">dimensionless</a>
 </td>
-<td rowspan="1" colspan="1">xsd:boolean</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">0</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Boolean to designate that a quantity or unit is dimensionless.</td>
+<td>xsd:boolean</td>
+<td>optional</td>
+<td>0</td>
+<td></td>
+<td>Boolean to designate that a quantity or unit is dimensionless.</td>
 </tr>
 <tr></tr>
 </table>
@@ -7292,11 +7295,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for dimension.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for dimension.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7338,22 +7341,22 @@ Attributes:
 
 ---
 
-<a name="Link6F" shape="rect"></a>
+<a name="Link6F"></a>
 
 
 attribute **DimensionType/@dimensionless**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:boolean</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:boolean</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">default</td>
-<td rowspan="1" colspan="1">0</td>
+<tr><td align="right">default</td>
+<td>0</td>
 </tr>
 <tr></tr>
 </table>
@@ -7362,11 +7365,11 @@ attribute **DimensionType/@dimensionless**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Boolean to designate that a quantity or unit is dimensionless.</td>
+<tr><td align="right">annotation</td>
+<td>Boolean to designate that a quantity or unit is dimensionless.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7384,25 +7387,25 @@ attribute **DimensionType/@dimensionless**
 
 ---
 
-<a name="Link18" shape="rect"></a>
+<a name="Link18"></a>
 
 
 complexType **ElectricCurrentType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ElectricCurrentType](/diagrams/UnitsML-v1.0-csd04_p63.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link19" shape="rect">ElectricCurrent</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link19">ElectricCurrent</a>
 </td>
 </tr>
 <tr></tr>
@@ -7410,39 +7413,39 @@ complexType **ElectricCurrentType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link70" shape="rect">symbol</a>
+<tr><td><a href="#Link70">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">I</td>
-<td rowspan="1" colspan="1">Symbol of the quantity electric current.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>I</td>
+<td>Symbol of the quantity electric current.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -7450,11 +7453,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity electric current.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity electric current.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7478,22 +7481,22 @@ Attributes:
 
 ---
 
-<a name="Link70" shape="rect"></a>
+<a name="Link70"></a>
 
 
 attribute **ElectricCurrentType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">I</td>
+<tr><td align="right">fixed</td>
+<td>I</td>
 </tr>
 <tr></tr>
 </table>
@@ -7502,11 +7505,11 @@ attribute **ElectricCurrentType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity electric current.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity electric current.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7524,25 +7527,25 @@ attribute **ElectricCurrentType/@symbol**
 
 ---
 
-<a name="Link1A" shape="rect"></a>
+<a name="Link1A"></a>
 
 
 complexType **EnumeratedRootUnitType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for EnumeratedRootUnitType](/diagrams/UnitsML-v1.0-csd04_p64.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link1B" shape="rect">EnumeratedRootUnit</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link1B">EnumeratedRootUnit</a>
 </td>
 </tr>
 <tr></tr>
@@ -7550,57 +7553,57 @@ complexType **EnumeratedRootUnitType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link71" shape="rect">unit</a>
+<tr><td><a href="#Link71">unit</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Unit identifier; the enumerated list is basically English unit names in lowercase, with a few upper case exceptions, e.g., 32F, mmHg, pH.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Unit identifier; the enumerated list is basically English unit names in lowercase, with a few upper case exceptions, e.g., 32F, mmHg, pH.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link73" shape="rect">prefix</a>
+<tr><td><a href="#Link73">prefix</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<td>derived by: xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -7608,11 +7611,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the element for a root unit (from an extensive enumerated list) allowing an optional prefix and power. E.g., mm^2</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the element for a root unit (from an extensive enumerated list) allowing an optional prefix and power. E.g., mm^2</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -7895,1268 +7898,1268 @@ Attributes:
 
 ---
 
-<a name="Link71" shape="rect"></a>
+<a name="Link71"></a>
 
 
 attribute **EnumeratedRootUnitType/@unit**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">restriction ofxsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>restriction ofxsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">facets</td>
-<td rowspan="1" colspan="1"><table><tr><td rowspan="1" colspan="1">Kind</td>
-<td rowspan="1" colspan="1">Value</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<tr><td align="right">facets</td>
+<td><table><tr><td>Kind</td>
+<td>Value</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">meter</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>meter</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gram</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gram</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">second</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>second</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ampere</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ampere</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">kelvin</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>kelvin</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">mole</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>mole</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">candela</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>candela</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">radian</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>radian</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">steradian</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>steradian</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">hertz</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>hertz</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">newton</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>newton</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">pascal</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>pascal</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">joule</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>joule</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">watt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>watt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">coulomb</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>coulomb</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">volt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>volt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">farad</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>farad</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ohm</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ohm</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">siemens</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>siemens</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">weber</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>weber</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">tesla</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>tesla</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">henry</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>henry</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">degree_Celsius</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>degree_Celsius</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">lumen</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>lumen</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">lux</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>lux</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">katal</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>katal</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">becquerel</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>becquerel</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gray</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gray</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">sievert</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>sievert</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">minute</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>minute</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">hour</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>hour</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">day</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>day</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">arc_degree</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>arc_degree</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">arc_minute</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>arc_minute</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">arc_second</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>arc_second</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">liter</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>liter</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">metric_ton</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>metric_ton</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">electronvolt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>electronvolt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">unified_atomic_mass_unit</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>unified_atomic_mass_unit</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">astronomical_unit</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>astronomical_unit</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_1st_hyperpolarizability</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_1st_hyperpolarizability</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_2nd_hyperpolarizability</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_2nd_hyperpolarizability</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_action</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_action</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_charge</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_charge</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_charge_density</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_charge_density</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_current</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_current</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_electric_dipole_moment</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_electric_dipole_moment</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_electric_field</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_electric_field</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_electric_field_gradient</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_electric_field_gradient</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_electric_polarizability</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_electric_polarizability</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_electric_potential</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_electric_potential</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_electric_quadrupole_moment</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_electric_quadrupole_moment</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_energy</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_energy</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_force</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_force</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_length</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_length</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_magnetic_dipole_moment</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_magnetic_dipole_moment</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_magnetic_flux_density</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_magnetic_flux_density</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_magnetizability</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_magnetizability</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_mass</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_mass</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_momentum</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_momentum</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_permittivity</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_permittivity</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_time</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_time</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">atomic_unit_of_velocity</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>atomic_unit_of_velocity</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_action</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_action</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_action_in_eV_s</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_action_in_eV_s</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_energy</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_energy</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_energy_in_MeV</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_energy_in_MeV</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_length</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_length</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_mass</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_mass</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_momentum</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_momentum</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_momentum_in_MeV_per_c</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_momentum_in_MeV_per_c</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_time</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_time</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">natural_unit_of_velocity</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>natural_unit_of_velocity</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">nautical_mile</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>nautical_mile</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">knot</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>knot</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">angstrom</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>angstrom</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">are</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>are</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">hectare</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>hectare</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">barn</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>barn</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">bar</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>bar</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gal</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gal</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">curie</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>curie</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">roentgen</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>roentgen</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">rad</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>rad</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">rem</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>rem</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">erg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>erg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">dyne</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>dyne</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">barye</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>barye</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">poise</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>poise</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">rhe</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>rhe</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">stokes</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>stokes</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">darcy</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>darcy</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">kayser</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>kayser</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">lambert</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>lambert</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">phot</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>phot</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">thermo_calorie</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>thermo_calorie</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">table_calorie</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>table_calorie</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">debye</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>debye</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abampere</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abampere</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abcoulomb</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abcoulomb</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abfarad</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abfarad</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abhenry</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abhenry</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abohm</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abohm</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abmho</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abmho</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abvolt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abvolt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">abwatt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>abwatt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">maxwell</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>maxwell</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gauss</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gauss</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gilbert</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gilbert</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">oersted</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>oersted</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">stilb</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>stilb</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statampere</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statampere</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statcoulomb</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statcoulomb</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statfarad</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statfarad</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">stathenry</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>stathenry</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statohm</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statohm</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statmho</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statmho</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statvolt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statvolt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statwatt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statwatt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">statweber</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>statweber</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">stattesla</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>stattesla</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">long_ton</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>long_ton</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">short_ton</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>short_ton</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gross_hundredweight</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gross_hundredweight</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">hundredweight</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>hundredweight</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">av_pound</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>av_pound</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">av_ounce</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>av_ounce</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">av_dram</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>av_dram</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">troy_pound</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>troy_pound</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">troy_ounce</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>troy_ounce</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">pennyweight</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>pennyweight</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">apothecaries_dram</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>apothecaries_dram</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">scruple</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>scruple</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">grain</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>grain</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">slug</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>slug</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">pound_force</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>pound_force</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">poundal</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>poundal</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">kip</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>kip</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ton_force</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ton_force</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gram_force</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gram_force</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">inch</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>inch</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">foot</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>foot</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">yard</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>yard</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">mile</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>mile</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_inch</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_inch</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_foot</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_foot</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_yard</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_yard</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_fathom</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_fathom</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_rod</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_rod</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_chain</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_chain</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_link</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_link</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_furlong</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_furlong</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_survey_mile</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_survey_mile</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_acre</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_acre</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">imperial_gallon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>imperial_gallon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">imperial_quart</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>imperial_quart</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">imperial_pint</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>imperial_pint</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">imperial_gill</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>imperial_gill</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">imperial_ounce</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>imperial_ounce</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_gallon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_gallon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_quart</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_quart</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_pint</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_pint</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_cup</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_cup</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_gill</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_gill</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_fluid_ounce</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_fluid_ounce</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_fluid_dram</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_fluid_dram</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_minim</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_minim</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_tablespoon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_tablespoon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_teaspoon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_teaspoon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_bushel</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_bushel</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_peck</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_peck</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_dry_quart</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_dry_quart</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_dry_pint</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_dry_pint</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">thermo_kg_calorie</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>thermo_kg_calorie</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">table_kg_calorie</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>table_kg_calorie</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_label_teaspoon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_label_teaspoon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_label_tablespoon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_label_tablespoon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_label_cup</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_label_cup</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_label_fluid_ounce</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_label_fluid_ounce</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_label_ounce</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_label_ounce</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">horsepower</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>horsepower</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">electric_horsepower</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>electric_horsepower</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">boiler_horsepower</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>boiler_horsepower</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">metric_horsepower</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>metric_horsepower</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">water_horsepower</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>water_horsepower</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">uk_horsepower</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>uk_horsepower</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">degree_Fahrenheit</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>degree_Fahrenheit</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">degree_Rankine</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>degree_Rankine</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">torr</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>torr</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">standard_atmosphere</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>standard_atmosphere</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">technical_atmosphere</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>technical_atmosphere</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">mm_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>mm_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">cm_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>cm_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">0C_cm_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>0C_cm_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">in_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>in_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">32F_in_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>32F_in_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">60F_in_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>60F_in_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ft_Hg</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ft_Hg</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">mm_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>mm_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">cm_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>cm_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">4C_cm_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>4C_cm_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">in_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>in_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">39F_in_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>39F_in_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">60F_in_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>60F_in_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ft_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ft_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">39F_ft_water</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>39F_ft_water</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">light_year</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>light_year</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">light_week</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>light_week</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">light_hour</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>light_hour</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">light_minute</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>light_minute</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">light_second</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>light_second</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">parsec</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>parsec</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">printers_pica</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>printers_pica</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">computer_pica</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>computer_pica</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">printers_point</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>printers_point</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">computer_point</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>computer_point</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">thermo_btu</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>thermo_btu</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">table_btu</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>table_btu</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">mean_btu</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>mean_btu</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">39F_btu</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>39F_btu</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">59F_btu</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>59F_btu</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">60F_btu</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>60F_btu</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">tons_of_tnt</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>tons_of_tnt</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ec_therm</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ec_therm</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">us_therm</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>us_therm</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">year_365</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>year_365</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">tropical_year</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>tropical_year</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">sidereal_year</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>sidereal_year</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">sidereal_day</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>sidereal_day</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">sidereal_hour</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>sidereal_hour</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">sidereal_minute</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>sidereal_minute</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">sidereal_second</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>sidereal_second</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">shake</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>shake</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">denier</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>denier</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">tex</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>tex</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">gon</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>gon</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">nato_mil</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>nato_mil</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">pound_mole</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>pound_mole</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">ton_refrigeration</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>ton_refrigeration</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">circular_mil</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>circular_mil</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">bel</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>bel</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">neper</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>neper</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">pH</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>pH</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">petro_barrel</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>petro_barrel</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">footlambert</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>footlambert</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">footcandle</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>footcandle</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">carat</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>carat</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">bit</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>bit</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">byte</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>byte</td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
@@ -9165,11 +9168,11 @@ attribute **EnumeratedRootUnitType/@unit**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Unit identifier; the enumerated list is basically English unit names in lowercase, with a few upper case exceptions, e.g., 32F, mmHg, pH.</td>
+<tr><td align="right">annotation</td>
+<td>Unit identifier; the enumerated list is basically English unit names in lowercase, with a few upper case exceptions, e.g., 32F, mmHg, pH.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -9440,25 +9443,25 @@ attribute **EnumeratedRootUnitType/@unit**
 
 ---
 
-<a name="Link1C" shape="rect"></a>
+<a name="Link1C"></a>
 
 
 complexType **ExternalRootUnitType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ExternalRootUnitType](/diagrams/UnitsML-v1.0-csd04_p65.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link1D" shape="rect">ExternalRootUnit</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link1D">ExternalRootUnit</a>
 </td>
 </tr>
 <tr></tr>
@@ -9466,47 +9469,47 @@ complexType **ExternalRootUnitType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link74" shape="rect">unit</a>
+<tr><td><a href="#Link74">unit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI to identify the unit.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI to identify the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link75" shape="rect">annotation</a>
+<tr><td><a href="#Link75">annotation</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Optional unit annotation; e.g., a unit name if the unit identifier above is an uncommon code.</td>
+<td>xsd:string</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Optional unit annotation; e.g., a unit name if the unit identifier above is an uncommon code.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -9543,31 +9546,31 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link73" shape="rect">prefix</a>
+<tr><td><a href="#Link73">prefix</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<td>derived by: xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -9575,11 +9578,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the element for those special cases where the root unit needed is not included in the enumerated list in the above element.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the element for those special cases where the root unit needed is not included in the enumerated list in the above element.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -9615,24 +9618,24 @@ Attributes:
 
 ---
 
-<a name="Link74" shape="rect"></a>
+<a name="Link74"></a>
 
 
 attribute **ExternalRootUnitType/@unit**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URI to identify the unit.</td>
+<tr><td align="right">annotation</td>
+<td>URI to identify the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -9650,20 +9653,20 @@ attribute **ExternalRootUnitType/@unit**
 
 ---
 
-<a name="Link75" shape="rect"></a>
+<a name="Link75"></a>
 
 
 attribute **ExternalRootUnitType/@annotation**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:string</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Optional unit annotation; e.g., a unit name if the unit identifier above is an uncommon code.</td>
+<tr><td align="right">annotation</td>
+<td>Optional unit annotation; e.g., a unit name if the unit identifier above is an uncommon code.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -9681,30 +9684,30 @@ attribute **ExternalRootUnitType/@annotation**
 
 ---
 
-<a name="Link1E" shape="rect"></a>
+<a name="Link1E"></a>
 
 
 complexType **Float64ConversionFromType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for Float64ConversionFromType](/diagrams/UnitsML-v1.0-csd04_p66.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#LinkA" shape="rect">ConversionNote</a>
+<tr><td align="right">children</td>
+<td><a href="#LinkA">ConversionNote</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link1F" shape="rect">Float64ConversionFrom</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link1F">Float64ConversionFrom</a>
 </td>
 </tr>
 <tr></tr>
@@ -9712,20 +9715,20 @@ complexType **Float64ConversionFromType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -9746,102 +9749,102 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link77" shape="rect">initialAddend</a>
+<tr><td><a href="#Link77">initialAddend</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">0</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number to be added at the start of the conversion (prior to multiplication or division) [factor 'a' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>Number to be added at the start of the conversion (prior to multiplication or division) [factor 'a' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link78" shape="rect">initialAddendDecimalPlace</a>
+<tr><td><a href="#Link78">initialAddendDecimalPlace</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Indicates the position of the least
+<td>xsd:byte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Indicates the position of the least
 significant digit (in decimal) of
 the initialAddend; the position of
 this digit is given by ten to
 additive inverse of this number.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link79" shape="rect">multiplicand</a>
+<tr><td><a href="#Link79">multiplicand</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number by which to multiply sum of initial addend and initial value [factor 'b' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td>Number by which to multiply sum of initial addend and initial value [factor 'b' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7A" shape="rect">multiplicandDigits</a>
+<tr><td><a href="#Link7A">multiplicandDigits</a>
 </td>
-<td rowspan="1" colspan="1">xsd:unsignedByte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number of significant digits in the multiplicand value.</td>
+<td>xsd:unsignedByte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Number of significant digits in the multiplicand value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7B" shape="rect">divisor</a>
+<tr><td><a href="#Link7B">divisor</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Divisor to be applied to the value at the same time as the multiplicand [factor 'c' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td>Divisor to be applied to the value at the same time as the multiplicand [factor 'c' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7C" shape="rect">divisorDigits</a>
+<tr><td><a href="#Link7C">divisorDigits</a>
 </td>
-<td rowspan="1" colspan="1">xsd:unsignedByte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number of significant digits in the divisor value.</td>
+<td>xsd:unsignedByte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Number of significant digits in the divisor value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7D" shape="rect">finalAddend</a>
+<tr><td><a href="#Link7D">finalAddend</a>
 </td>
-<td rowspan="1" colspan="1">xsd:double</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">0</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Number to be added at the end of the conversion [factor 'd' in equation].</td>
+<td>xsd:double</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>Number to be added at the end of the conversion [factor 'd' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7E" shape="rect">finalAddendDecimalPlace</a>
+<tr><td><a href="#Link7E">finalAddendDecimalPlace</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Indicates the position of the least
+<td>xsd:byte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Indicates the position of the least
 significant digit (in decimal) of
 the finalAddend; the position of
 this digit is given by ten to
 additive inverse of this number.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link7F" shape="rect">exact</a>
+<tr><td><a href="#Link7F">exact</a>
 </td>
-<td rowspan="1" colspan="1">xsd:boolean</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">false</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Indicates if the conversion is exact.</td>
+<td>xsd:boolean</td>
+<td></td>
+<td>false</td>
+<td></td>
+<td>Indicates if the conversion is exact.</td>
 </tr>
 <tr></tr>
 </table>
@@ -9849,11 +9852,11 @@ additive inverse of this number.</td>
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the element for providing factors for a conversion equation from another unit; y = d + ((b / c) (x + a))</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the element for providing factors for a conversion equation from another unit; y = d + ((b / c) (x + a))</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -9929,24 +9932,24 @@ additive inverse of this number.</xsd:documentation>
 
 ---
 
-<a name="Link77" shape="rect"></a>
+<a name="Link77"></a>
 
 
 attribute **Float64ConversionFromType/@initialAddend**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:double</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:double</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">default 0</td>
+<tr><td align="right">properties</td>
+<td>default 0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Number to be added at the start of the conversion (prior to multiplication or division) [factor 'a' in equation].</td>
+<tr><td align="right">annotation</td>
+<td>Number to be added at the start of the conversion (prior to multiplication or division) [factor 'a' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -9964,24 +9967,24 @@ attribute **Float64ConversionFromType/@initialAddend**
 
 ---
 
-<a name="Link78" shape="rect"></a>
+<a name="Link78"></a>
 
 
 attribute **Float64ConversionFromType/@initialAddendDecimalPlace**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:byte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:byte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Indicates the position of the least
+<tr><td align="right">annotation</td>
+<td>Indicates the position of the least
 significant digit (in decimal) of
 the initialAddend; the position of
 this digit is given by ten to
 additive inverse of this number.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10003,24 +10006,24 @@ additive inverse of this number.</xsd:documentation>
 
 ---
 
-<a name="Link79" shape="rect"></a>
+<a name="Link79"></a>
 
 
 attribute **Float64ConversionFromType/@multiplicand**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:double</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:double</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">default 1</td>
+<tr><td align="right">properties</td>
+<td>default 1</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Number by which to multiply sum of initial addend and initial value [factor 'b' in equation].</td>
+<tr><td align="right">annotation</td>
+<td>Number by which to multiply sum of initial addend and initial value [factor 'b' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10038,20 +10041,20 @@ attribute **Float64ConversionFromType/@multiplicand**
 
 ---
 
-<a name="Link7A" shape="rect"></a>
+<a name="Link7A"></a>
 
 
 attribute **Float64ConversionFromType/@multiplicandDigits**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:unsignedByte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:unsignedByte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Number of significant digits in the multiplicand value.</td>
+<tr><td align="right">annotation</td>
+<td>Number of significant digits in the multiplicand value.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10069,24 +10072,24 @@ attribute **Float64ConversionFromType/@multiplicandDigits**
 
 ---
 
-<a name="Link7B" shape="rect"></a>
+<a name="Link7B"></a>
 
 
 attribute **Float64ConversionFromType/@divisor**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:double</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:double</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">default 1</td>
+<tr><td align="right">properties</td>
+<td>default 1</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Divisor to be applied to the value at the same time as the multiplicand [factor 'c' in equation].</td>
+<tr><td align="right">annotation</td>
+<td>Divisor to be applied to the value at the same time as the multiplicand [factor 'c' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10104,20 +10107,20 @@ attribute **Float64ConversionFromType/@divisor**
 
 ---
 
-<a name="Link7C" shape="rect"></a>
+<a name="Link7C"></a>
 
 
 attribute **Float64ConversionFromType/@divisorDigits**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:unsignedByte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:unsignedByte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Number of significant digits in the divisor value.</td>
+<tr><td align="right">annotation</td>
+<td>Number of significant digits in the divisor value.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10135,24 +10138,24 @@ attribute **Float64ConversionFromType/@divisorDigits**
 
 ---
 
-<a name="Link7D" shape="rect"></a>
+<a name="Link7D"></a>
 
 
 attribute **Float64ConversionFromType/@finalAddend**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:double</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:double</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">default 0</td>
+<tr><td align="right">properties</td>
+<td>default 0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Number to be added at the end of the conversion [factor 'd' in equation].</td>
+<tr><td align="right">annotation</td>
+<td>Number to be added at the end of the conversion [factor 'd' in equation].</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10170,24 +10173,24 @@ attribute **Float64ConversionFromType/@finalAddend**
 
 ---
 
-<a name="Link7E" shape="rect"></a>
+<a name="Link7E"></a>
 
 
 attribute **Float64ConversionFromType/@finalAddendDecimalPlace**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:byte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:byte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Indicates the position of the least
+<tr><td align="right">annotation</td>
+<td>Indicates the position of the least
 significant digit (in decimal) of
 the finalAddend; the position of
 this digit is given by ten to
 additive inverse of this number.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10209,24 +10212,24 @@ additive inverse of this number.</xsd:documentation>
 
 ---
 
-<a name="Link7F" shape="rect"></a>
+<a name="Link7F"></a>
 
 
 attribute **Float64ConversionFromType/@exact**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:boolean</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:boolean</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">default false</td>
+<tr><td align="right">properties</td>
+<td>default false</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Indicates if the conversion is exact.</td>
+<tr><td align="right">annotation</td>
+<td>Indicates if the conversion is exact.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10244,35 +10247,35 @@ attribute **Float64ConversionFromType/@exact**
 
 ---
 
-<a name="Link20" shape="rect"></a>
+<a name="Link20"></a>
 
 
 complexType **HistoryType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for HistoryType](/diagrams/UnitsML-v1.0-csd04_p67.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">extension ofxsd:string</td>
+<tr><td align="right">type</td>
+<td>extension ofxsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">base xsd:string</td>
+<tr><td align="right">properties</td>
+<td>base xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link25" shape="rect">ItemHistory</a>
-<a href="#Link43" shape="rect">QuantityHistory</a>
-<a href="#Link56" shape="rect">UnitHistory</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link25">ItemHistory</a>
+<a href="#Link43">QuantityHistory</a>
+<a href="#Link56">UnitHistory</a>
 </td>
 </tr>
 <tr></tr>
@@ -10280,38 +10283,38 @@ complexType **HistoryType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -10353,11 +10356,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for history.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for history.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10382,25 +10385,25 @@ Attributes:
 
 ---
 
-<a name="Link22" shape="rect"></a>
+<a name="Link22"></a>
 
 
 complexType **ItemType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ItemType](/diagrams/UnitsML-v1.0-csd04_p68.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link21" shape="rect">Item</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link21">Item</a>
 </td>
 </tr>
 <tr></tr>
@@ -10408,48 +10411,48 @@ complexType **ItemType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link80" shape="rect">itemURL</a>
+<tr><td><a href="#Link80">itemURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Unique URL for identifying or describing the item.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Unique URL for identifying or describing the item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link81" shape="rect">itemSymbol</a>
+<tr><td><a href="#Link81">itemSymbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Symbol for the item.</td>
+<td>xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Symbol for the item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -10457,11 +10460,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity represented by a counted item, e.g., electron</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity represented by a counted item, e.g., electron</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10490,24 +10493,24 @@ Attributes:
 
 ---
 
-<a name="Link80" shape="rect"></a>
+<a name="Link80"></a>
 
 
 attribute **ItemType/@itemURL**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Unique URL for identifying or describing the item.</td>
+<tr><td align="right">annotation</td>
+<td>Unique URL for identifying or describing the item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10525,20 +10528,20 @@ attribute **ItemType/@itemURL**
 
 ---
 
-<a name="Link81" shape="rect"></a>
+<a name="Link81"></a>
 
 
 attribute **ItemType/@itemSymbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol for the item.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol for the item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10556,25 +10559,25 @@ attribute **ItemType/@itemSymbol**
 
 ---
 
-<a name="Link24" shape="rect"></a>
+<a name="Link24"></a>
 
 
 complexType **LengthType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for LengthType](/diagrams/UnitsML-v1.0-csd04_p69.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link2F" shape="rect">Length</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link2F">Length</a>
 </td>
 </tr>
 <tr></tr>
@@ -10582,39 +10585,39 @@ complexType **LengthType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link84" shape="rect">symbol</a>
+<tr><td><a href="#Link84">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">L</td>
-<td rowspan="1" colspan="1">Symbol of the quantity length.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>L</td>
+<td>Symbol of the quantity length.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -10622,11 +10625,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity length.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity length.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10650,22 +10653,22 @@ Attributes:
 
 ---
 
-<a name="Link84" shape="rect"></a>
+<a name="Link84"></a>
 
 
 attribute **LengthType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">L</td>
+<tr><td align="right">fixed</td>
+<td>L</td>
 </tr>
 <tr></tr>
 </table>
@@ -10674,11 +10677,11 @@ attribute **LengthType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity length.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity length.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10696,25 +10699,25 @@ attribute **LengthType/@symbol**
 
 ---
 
-<a name="Link26" shape="rect"></a>
+<a name="Link26"></a>
 
 
 complexType **LuminousIntensityType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for LuminousIntensityType](/diagrams/UnitsML-v1.0-csd04_p70.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link31" shape="rect">LuminousIntensity</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link31">LuminousIntensity</a>
 </td>
 </tr>
 <tr></tr>
@@ -10722,39 +10725,39 @@ complexType **LuminousIntensityType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link85" shape="rect">symbol</a>
+<tr><td><a href="#Link85">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">J</td>
-<td rowspan="1" colspan="1">Symbol of the quantity luminous intensity.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>J</td>
+<td>Symbol of the quantity luminous intensity.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -10762,11 +10765,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity luminous intensity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity luminous intensity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10790,22 +10793,22 @@ Attributes:
 
 ---
 
-<a name="Link85" shape="rect"></a>
+<a name="Link85"></a>
 
 
 attribute **LuminousIntensityType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">J</td>
+<tr><td align="right">fixed</td>
+<td>J</td>
 </tr>
 <tr></tr>
 </table>
@@ -10814,11 +10817,11 @@ attribute **LuminousIntensityType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity luminous intensity.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity luminous intensity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10836,25 +10839,25 @@ attribute **LuminousIntensityType/@symbol**
 
 ---
 
-<a name="Link28" shape="rect"></a>
+<a name="Link28"></a>
 
 
 complexType **MassType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for MassType](/diagrams/UnitsML-v1.0-csd04_p71.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link33" shape="rect">Mass</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link33">Mass</a>
 </td>
 </tr>
 <tr></tr>
@@ -10862,39 +10865,39 @@ complexType **MassType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link86" shape="rect">symbol</a>
+<tr><td><a href="#Link86">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">M</td>
-<td rowspan="1" colspan="1">Symbol of the quantity mass.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>M</td>
+<td>Symbol of the quantity mass.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -10902,11 +10905,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity mass.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity mass.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10930,22 +10933,22 @@ Attributes:
 
 ---
 
-<a name="Link86" shape="rect"></a>
+<a name="Link86"></a>
 
 
 attribute **MassType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">M</td>
+<tr><td align="right">fixed</td>
+<td>M</td>
 </tr>
 <tr></tr>
 </table>
@@ -10954,11 +10957,11 @@ attribute **MassType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity mass.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity mass.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -10976,36 +10979,36 @@ attribute **MassType/@symbol**
 
 ---
 
-<a name="Link2A" shape="rect"></a>
+<a name="Link2A"></a>
 
 
 complexType **NameType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for NameType](/diagrams/UnitsML-v1.0-csd04_p72.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">extension ofxsd:token</td>
+<tr><td align="right">type</td>
+<td>extension ofxsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">base xsd:token</td>
+<tr><td align="right">properties</td>
+<td>base xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link27" shape="rect">ItemName</a>
-<a href="#Link39" shape="rect">PrefixName</a>
-<a href="#Link45" shape="rect">QuantityName</a>
-<a href="#Link57" shape="rect">UnitName</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link27">ItemName</a>
+<a href="#Link39">PrefixName</a>
+<a href="#Link45">QuantityName</a>
+<a href="#Link57">UnitName</a>
 </td>
 </tr>
 <tr></tr>
@@ -11013,20 +11016,20 @@ complexType **NameType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -11068,11 +11071,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for name.  Used for names in units, quantities, and prefixes.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for name.  Used for names in units, quantities, and prefixes.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11095,38 +11098,38 @@ Attributes:
 
 ---
 
-<a name="Link2C" shape="rect"></a>
+<a name="Link2C"></a>
 
 
 complexType **NoteType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for NoteType](/diagrams/UnitsML-v1.0-csd04_p73.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">extension ofxsd:string</td>
+<tr><td align="right">type</td>
+<td>extension ofxsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">base xsd:string</td>
+<tr><td align="right">properties</td>
+<td>base xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link7" shape="rect">ConversionDescription</a>
-<a href="#LinkA" shape="rect">ConversionNote</a>
-<a href="#Link2D" shape="rect">ItemVersionHistory</a>
-<a href="#Link4F" shape="rect">QuantityVersionHistory</a>
-<a href="#Link5E" shape="rect">UnitVersionHistory</a>
-<a href="#Link60" shape="rect">WSDLDescription</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link7">ConversionDescription</a>
+<a href="#LinkA">ConversionNote</a>
+<a href="#Link2D">ItemVersionHistory</a>
+<a href="#Link4F">QuantityVersionHistory</a>
+<a href="#Link5E">UnitVersionHistory</a>
+<a href="#Link60">WSDLDescription</a>
 </td>
 </tr>
 <tr></tr>
@@ -11134,20 +11137,20 @@ complexType **NoteType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -11189,11 +11192,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for notes.  Used in units and conversion factors.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for notes.  Used in units and conversion factors.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11216,25 +11219,25 @@ Attributes:
 
 ---
 
-<a name="Link2E" shape="rect"></a>
+<a name="Link2E"></a>
 
 
 complexType **PlaneAngleType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PlaneAngleType](/diagrams/UnitsML-v1.0-csd04_p74.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link35" shape="rect">PlaneAngle</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link35">PlaneAngle</a>
 </td>
 </tr>
 <tr></tr>
@@ -11242,39 +11245,39 @@ complexType **PlaneAngleType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link87" shape="rect">symbol</a>
+<tr><td><a href="#Link87">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Symbol of the quantity plane angle.</td>
+<td>xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Symbol of the quantity plane angle.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -11282,11 +11285,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity plane angle.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity plane angle.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11310,20 +11313,20 @@ Attributes:
 
 ---
 
-<a name="Link87" shape="rect"></a>
+<a name="Link87"></a>
 
 
 attribute **PlaneAngleType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity plane angle.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity plane angle.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11341,38 +11344,38 @@ attribute **PlaneAngleType/@symbol**
 
 ---
 
-<a name="Link30" shape="rect"></a>
+<a name="Link30"></a>
 
 
 complexType **PrefixSetType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PrefixSetType](/diagrams/UnitsML-v1.0-csd04_p75.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link37" shape="rect">Prefix</a>
+<tr><td align="right">children</td>
+<td><a href="#Link37">Prefix</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link3B" shape="rect">PrefixSet</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link3B">PrefixSet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for container for prefixes.</td>
+<tr><td align="right">annotation</td>
+<td>Type for container for prefixes.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11393,31 +11396,31 @@ complexType **PrefixSetType**
 
 ---
 
-<a name="Link32" shape="rect"></a>
+<a name="Link32"></a>
 
 
 complexType **PrefixType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for PrefixType](/diagrams/UnitsML-v1.0-csd04_p76.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link39" shape="rect">PrefixName</a>
-<a href="#Link3D" shape="rect">PrefixSymbol</a>
+<tr><td align="right">children</td>
+<td><a href="#Link39">PrefixName</a>
+<a href="#Link3D">PrefixSymbol</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link37" shape="rect">Prefix</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link37">Prefix</a>
 </td>
 </tr>
 <tr></tr>
@@ -11425,20 +11428,20 @@ complexType **PrefixType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -11459,22 +11462,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link88" shape="rect">prefixBase</a>
+<tr><td><a href="#Link88">prefixBase</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">10</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The base of the prefix system, i.e., 10 (SI) or 2 (binary).</td>
+<td>derived by: xsd:byte</td>
+<td></td>
+<td>10</td>
+<td></td>
+<td>The base of the prefix system, i.e., 10 (SI) or 2 (binary).</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link89" shape="rect">prefixPower</a>
+<tr><td><a href="#Link89">prefixPower</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">The exponential power of the prefix with relation to the base.</td>
+<td>xsd:byte</td>
+<td></td>
+<td></td>
+<td></td>
+<td>The exponential power of the prefix with relation to the base.</td>
 </tr>
 <tr></tr>
 </table>
@@ -11482,11 +11485,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for element for describing prefixes. Use in container PrefixSet.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for element for describing prefixes. Use in container PrefixSet.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11525,33 +11528,33 @@ Attributes:
 
 ---
 
-<a name="Link88" shape="rect"></a>
+<a name="Link88"></a>
 
 
 attribute **PrefixType/@prefixBase**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">restriction ofxsd:byte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>restriction ofxsd:byte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">default 10</td>
+<tr><td align="right">properties</td>
+<td>default 10</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">facets</td>
-<td rowspan="1" colspan="1"><table><tr><td rowspan="1" colspan="1">Kind</td>
-<td rowspan="1" colspan="1">Value</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<tr><td align="right">facets</td>
+<td><table><tr><td>Kind</td>
+<td>Value</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">10</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>10</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">2</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>2</td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
@@ -11560,11 +11563,11 @@ attribute **PrefixType/@prefixBase**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">The base of the prefix system, i.e., 10 (SI) or 2 (binary).</td>
+<tr><td align="right">annotation</td>
+<td>The base of the prefix system, i.e., 10 (SI) or 2 (binary).</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11588,20 +11591,20 @@ attribute **PrefixType/@prefixBase**
 
 ---
 
-<a name="Link89" shape="rect"></a>
+<a name="Link89"></a>
 
 
 attribute **PrefixType/@prefixPower**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:byte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:byte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">The exponential power of the prefix with relation to the base.</td>
+<tr><td align="right">annotation</td>
+<td>The exponential power of the prefix with relation to the base.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11619,38 +11622,38 @@ attribute **PrefixType/@prefixPower**
 
 ---
 
-<a name="Link34" shape="rect"></a>
+<a name="Link34"></a>
 
 
 complexType **QuantitySetType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantitySetType](/diagrams/UnitsML-v1.0-csd04_p77.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link3F" shape="rect">Quantity</a>
+<tr><td align="right">children</td>
+<td><a href="#Link3F">Quantity</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link4B" shape="rect">QuantitySet</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link4B">QuantitySet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for quantity container.</td>
+<tr><td align="right">annotation</td>
+<td>Type for quantity container.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11671,36 +11674,36 @@ complexType **QuantitySetType**
 
 ---
 
-<a name="Link36" shape="rect"></a>
+<a name="Link36"></a>
 
 
 complexType **QuantityType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for QuantityType](/diagrams/UnitsML-v1.0-csd04_p78.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link45" shape="rect">QuantityName</a>
-<a href="#Link4D" shape="rect">QuantitySymbol</a>
-<a href="#Link58" shape="rect">UnitReference</a>
-<a href="#Link4F" shape="rect">QuantityVersionHistory</a>
-<a href="#Link41" shape="rect">QuantityDefinition</a>
-<a href="#Link43" shape="rect">QuantityHistory</a>
-<a href="#Link49" shape="rect">QuantityRemark</a>
+<tr><td align="right">children</td>
+<td><a href="#Link45">QuantityName</a>
+<a href="#Link4D">QuantitySymbol</a>
+<a href="#Link58">UnitReference</a>
+<a href="#Link4F">QuantityVersionHistory</a>
+<a href="#Link41">QuantityDefinition</a>
+<a href="#Link43">QuantityHistory</a>
+<a href="#Link49">QuantityRemark</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link3F" shape="rect">Quantity</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link3F">Quantity</a>
 </td>
 </tr>
 <tr></tr>
@@ -11708,20 +11711,20 @@ complexType **QuantityType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -11742,22 +11745,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8A" shape="rect">quantityType</a>
+<tr><td><a href="#Link8A">quantityType</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of the quantity.  For example base or derived.</td>
+<td>derived by: xsd:token</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Type of the quantity.  For example base or derived.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8B" shape="rect">dimensionURL</a>
+<tr><td><a href="#Link8B">dimensionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
 </table>
@@ -11765,11 +11768,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the quantity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the quantity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11822,33 +11825,33 @@ Attributes:
 
 ---
 
-<a name="Link8A" shape="rect"></a>
+<a name="Link8A"></a>
 
 
 attribute **QuantityType/@quantityType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">restriction ofxsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>restriction ofxsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use optional</td>
+<tr><td align="right">properties</td>
+<td>use optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">facets</td>
-<td rowspan="1" colspan="1"><table><tr><td rowspan="1" colspan="1">Kind</td>
-<td rowspan="1" colspan="1">Value</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<tr><td align="right">facets</td>
+<td><table><tr><td>Kind</td>
+<td>Value</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">base</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>base</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">derived</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>derived</td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
@@ -11857,11 +11860,11 @@ attribute **QuantityType/@quantityType**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity.  For example base or derived.</td>
+<tr><td align="right">annotation</td>
+<td>Type of the quantity.  For example base or derived.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11886,26 +11889,26 @@ attribute **QuantityType/@quantityType**
 
 ---
 
-<a name="Link38" shape="rect"></a>
+<a name="Link38"></a>
 
 
 complexType **ReferenceType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ReferenceType](/diagrams/UnitsML-v1.0-csd04_p79.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link47" shape="rect">QuantityReference</a>
-<a href="#Link58" shape="rect">UnitReference</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link47">QuantityReference</a>
+<a href="#Link58">UnitReference</a>
 </td>
 </tr>
 <tr></tr>
@@ -11913,39 +11916,39 @@ complexType **ReferenceType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8C" shape="rect">url</a>
+<tr><td><a href="#Link8C">url</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to the reference item.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URL to the reference item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8D" shape="rect">name</a>
+<tr><td><a href="#Link8D">name</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of the referenced item.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of the referenced item.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -11953,11 +11956,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for reference to a unit or quantity.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for reference to a unit or quantity.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -11990,24 +11993,24 @@ Attributes:
 
 ---
 
-<a name="Link8C" shape="rect"></a>
+<a name="Link8C"></a>
 
 
 attribute **ReferenceType/@url**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URL to the reference item.</td>
+<tr><td align="right">annotation</td>
+<td>URL to the reference item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12025,24 +12028,24 @@ attribute **ReferenceType/@url**
 
 ---
 
-<a name="Link8D" shape="rect"></a>
+<a name="Link8D"></a>
 
 
 attribute **ReferenceType/@name**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use optional</td>
+<tr><td align="right">properties</td>
+<td>use optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Name of the referenced item.</td>
+<tr><td align="right">annotation</td>
+<td>Name of the referenced item.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12060,35 +12063,35 @@ attribute **ReferenceType/@name**
 
 ---
 
-<a name="Link3A" shape="rect"></a>
+<a name="Link3A"></a>
 
 
 complexType **RemarkType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for RemarkType](/diagrams/UnitsML-v1.0-csd04_p80.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">extension ofxsd:string</td>
+<tr><td align="right">type</td>
+<td>extension ofxsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">base xsd:string</td>
+<tr><td align="right">properties</td>
+<td>base xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link29" shape="rect">ItemRemark</a>
-<a href="#Link49" shape="rect">QuantityRemark</a>
-<a href="#Link59" shape="rect">UnitRemark</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link29">ItemRemark</a>
+<a href="#Link49">QuantityRemark</a>
+<a href="#Link59">UnitRemark</a>
 </td>
 </tr>
 <tr></tr>
@@ -12096,39 +12099,39 @@ complexType **RemarkType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -12136,11 +12139,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for remark.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for remark.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12169,39 +12172,39 @@ Attributes:
 
 ---
 
-<a name="Link3C" shape="rect"></a>
+<a name="Link3C"></a>
 
 
 complexType **RootUnitsType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for RootUnitsType](/diagrams/UnitsML-v1.0-csd04_p81.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link1B" shape="rect">EnumeratedRootUnit</a>
-<a href="#Link1D" shape="rect">ExternalRootUnit</a>
+<tr><td align="right">children</td>
+<td><a href="#Link1B">EnumeratedRootUnit</a>
+<a href="#Link1D">ExternalRootUnit</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link50" shape="rect">RootUnits</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link50">RootUnits</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the container for defining derived units in terms of their root units. This allows a precise definition of a wide range of units. The goal is to improve interoperability among applications and databases which use derived units based on commonly encountered base units.</td>
+<tr><td align="right">annotation</td>
+<td>Type for the container for defining derived units in terms of their root units. This allows a precise definition of a wide range of units. The goal is to improve interoperability among applications and databases which use derived units based on commonly encountered base units.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12231,30 +12234,30 @@ complexType **RootUnitsType**
 
 ---
 
-<a name="Link3E" shape="rect"></a>
+<a name="Link3E"></a>
 
 
 complexType **SpecialConversionFromType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for SpecialConversionFromType](/diagrams/UnitsML-v1.0-csd04_p82.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link7" shape="rect">ConversionDescription</a>
+<tr><td align="right">children</td>
+<td><a href="#Link7">ConversionDescription</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link51" shape="rect">SpecialConversionFrom</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link51">SpecialConversionFrom</a>
 </td>
 </tr>
 <tr></tr>
@@ -12262,20 +12265,20 @@ complexType **SpecialConversionFromType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -12296,22 +12299,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8E" shape="rect">conversionURL</a>
+<tr><td><a href="#Link8E">conversionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL for external description of the conversion or for an online convertor.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL for external description of the conversion or for an online convertor.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
 </table>
@@ -12319,11 +12322,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the element for providing unit conversion information for conversions that are more complex than the Float64ConversionFrom linear equation.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the element for providing unit conversion information for conversions that are more complex than the Float64ConversionFrom linear equation.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12355,20 +12358,20 @@ Attributes:
 
 ---
 
-<a name="Link8E" shape="rect"></a>
+<a name="Link8E"></a>
 
 
 attribute **SpecialConversionFromType/@conversionURL**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URL for external description of the conversion or for an online convertor.</td>
+<tr><td align="right">annotation</td>
+<td>URL for external description of the conversion or for an online convertor.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12386,32 +12389,32 @@ attribute **SpecialConversionFromType/@conversionURL**
 
 ---
 
-<a name="Link40" shape="rect"></a>
+<a name="Link40"></a>
 
 
 complexType **SymbolType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for SymbolType](/diagrams/UnitsML-v1.0-csd04_p83.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">mixed true</td>
+<tr><td align="right">properties</td>
+<td>mixed true</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">elements <a href="#Link2B" shape="rect">ItemSymbol</a>
-<a href="#Link3D" shape="rect">PrefixSymbol</a>
-<a href="#Link4D" shape="rect">QuantitySymbol</a>
-<a href="#Link5C" shape="rect">UnitSymbol</a>
+<tr><td align="right">used by</td>
+<td>elements <a href="#Link2B">ItemSymbol</a>
+<a href="#Link3D">PrefixSymbol</a>
+<a href="#Link4D">QuantitySymbol</a>
+<a href="#Link5C">UnitSymbol</a>
 </td>
 </tr>
 <tr></tr>
@@ -12419,20 +12422,20 @@ complexType **SymbolType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -12469,13 +12472,13 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link83" shape="rect">type</a>
+<tr><td><a href="#Link83">type</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
+<td>derived by: xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
 </tr>
 <tr></tr>
 </table>
@@ -12483,11 +12486,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for symbols.  Used in units, quantities, and prefixes.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for symbols.  Used in units, quantities, and prefixes.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12528,24 +12531,24 @@ Attributes:
 
 ---
 
-<a name="Link83" shape="rect"></a>
+<a name="Link83"></a>
 
 
 attribute **SymbolType/@type**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">union of (xsd:token,restriction ofxsd:token)</td>
+<table border="1"><tr><td align="right">type</td>
+<td>union of (xsd:token,restriction ofxsd:token)</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
+<tr><td align="right">annotation</td>
+<td>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12577,25 +12580,25 @@ attribute **SymbolType/@type**
 
 ---
 
-<a name="Link42" shape="rect"></a>
+<a name="Link42"></a>
 
 
 complexType **SystemType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for SystemType](/diagrams/UnitsML-v1.0-csd04_p84.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link5D" shape="rect">UnitSystem</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link5D">UnitSystem</a>
 </td>
 </tr>
 <tr></tr>
@@ -12603,38 +12606,38 @@ complexType **SystemType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link92" shape="rect">name</a>
+<tr><td><a href="#Link92">name</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of the unit system.   For example, SI, inch-pound, CGS, and MKS.</td>
+<td>xsd:token</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>Name of the unit system.   For example, SI, inch-pound, CGS, and MKS.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link93" shape="rect">type</a>
+<tr><td><a href="#Link93">type</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Description of the unit relative to the unit system.  Examples are SI_base and non-SI_not_acceptable.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Description of the unit relative to the unit system.  Examples are SI_base and non-SI_not_acceptable.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -12676,11 +12679,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for unit system.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for unit system.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12709,24 +12712,24 @@ Attributes:
 
 ---
 
-<a name="Link92" shape="rect"></a>
+<a name="Link92"></a>
 
 
 attribute **SystemType/@name**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Name of the unit system.   For example, SI, inch-pound, CGS, and MKS.</td>
+<tr><td align="right">annotation</td>
+<td>Name of the unit system.   For example, SI, inch-pound, CGS, and MKS.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12744,24 +12747,24 @@ attribute **SystemType/@name**
 
 ---
 
-<a name="Link93" shape="rect"></a>
+<a name="Link93"></a>
 
 
 attribute **SystemType/@type**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:string</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use optional</td>
+<tr><td align="right">properties</td>
+<td>use optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Description of the unit relative to the unit system.  Examples are SI_base and non-SI_not_acceptable.</td>
+<tr><td align="right">annotation</td>
+<td>Description of the unit relative to the unit system.  Examples are SI_base and non-SI_not_acceptable.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12779,25 +12782,25 @@ attribute **SystemType/@type**
 
 ---
 
-<a name="Link44" shape="rect"></a>
+<a name="Link44"></a>
 
 
 complexType **ThermodynamicTemperatureType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for ThermodynamicTemperatureType](/diagrams/UnitsML-v1.0-csd04_p85.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link52" shape="rect">ThermodynamicTemperature</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link52">ThermodynamicTemperature</a>
 </td>
 </tr>
 <tr></tr>
@@ -12805,39 +12808,39 @@ complexType **ThermodynamicTemperatureType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8F" shape="rect">symbol</a>
+<tr><td><a href="#Link8F">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Θ</td>
-<td rowspan="1" colspan="1">Symbol of the quantity thermodynamic temperature.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>Θ</td>
+<td>Symbol of the quantity thermodynamic temperature.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -12845,11 +12848,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity thermodynamic temperature.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity thermodynamic temperature.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12873,22 +12876,22 @@ Attributes:
 
 ---
 
-<a name="Link8F" shape="rect"></a>
+<a name="Link8F"></a>
 
 
 attribute **ThermodynamicTemperatureType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">Θ</td>
+<tr><td align="right">fixed</td>
+<td>Θ</td>
 </tr>
 <tr></tr>
 </table>
@@ -12897,11 +12900,11 @@ attribute **ThermodynamicTemperatureType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity thermodynamic temperature.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity thermodynamic temperature.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -12919,25 +12922,25 @@ attribute **ThermodynamicTemperatureType/@symbol**
 
 ---
 
-<a name="Link46" shape="rect"></a>
+<a name="Link46"></a>
 
 
 complexType **TimeType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for TimeType](/diagrams/UnitsML-v1.0-csd04_p86.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link53" shape="rect">Time</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link53">Time</a>
 </td>
 </tr>
 <tr></tr>
@@ -12945,39 +12948,39 @@ complexType **TimeType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link90" shape="rect">symbol</a>
+<tr><td><a href="#Link90">symbol</a>
 </td>
-<td rowspan="1" colspan="1">xsd:token</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">T</td>
-<td rowspan="1" colspan="1">Symbol of the quantity time.</td>
+<td>xsd:token</td>
+<td>optional</td>
+<td></td>
+<td>T</td>
+<td>Symbol of the quantity time.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -12985,11 +12988,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type of the quantity time.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type of the quantity time.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13013,22 +13016,22 @@ Attributes:
 
 ---
 
-<a name="Link90" shape="rect"></a>
+<a name="Link90"></a>
 
 
 attribute **TimeType/@symbol**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">fixed</td>
-<td rowspan="1" colspan="1">T</td>
+<tr><td align="right">fixed</td>
+<td>T</td>
 </tr>
 <tr></tr>
 </table>
@@ -13037,11 +13040,11 @@ attribute **TimeType/@symbol**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Symbol of the quantity time.</td>
+<tr><td align="right">annotation</td>
+<td>Symbol of the quantity time.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13059,38 +13062,38 @@ attribute **TimeType/@symbol**
 
 ---
 
-<a name="Link48" shape="rect"></a>
+<a name="Link48"></a>
 
 
 complexType **UnitSetType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitSetType](/diagrams/UnitsML-v1.0-csd04_p87.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link54" shape="rect">Unit</a>
+<tr><td align="right">children</td>
+<td><a href="#Link54">Unit</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link5A" shape="rect">UnitSet</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link5A">UnitSet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the unit container.</td>
+<tr><td align="right">annotation</td>
+<td>Type for the unit container.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13115,42 +13118,42 @@ complexType **UnitSetType**
 
 ---
 
-<a name="Link4A" shape="rect"></a>
+<a name="Link4A"></a>
 
 
 complexType **UnitsMLType**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table border="1"><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitsMLType](/diagrams/UnitsML-v1.0-csd04_p88.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link5A" shape="rect">UnitSet</a>
-<a href="#Link13" shape="rect">CountedItemSet</a>
-<a href="#Link4B" shape="rect">QuantitySet</a>
-<a href="#Link17" shape="rect">DimensionSet</a>
-<a href="#Link3B" shape="rect">PrefixSet</a>
+<tr><td align="right">children</td>
+<td><a href="#Link5A">UnitSet</a>
+<a href="#Link13">CountedItemSet</a>
+<a href="#Link4B">QuantitySet</a>
+<a href="#Link17">DimensionSet</a>
+<a href="#Link3B">PrefixSet</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link5B" shape="rect">UnitsML</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link5B">UnitsML</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">ComplexType for the root element of an UnitsML document.</td>
+<tr><td align="right">annotation</td>
+<td>ComplexType for the root element of an UnitsML document.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13175,40 +13178,40 @@ complexType **UnitsMLType**
 
 ---
 
-<a name="Link4C" shape="rect"></a>
+<a name="Link4C"></a>
 
 
 complexType **UnitType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for UnitType](/diagrams/UnitsML-v1.0-csd04_p89.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link5D" shape="rect">UnitSystem</a>
-<a href="#Link57" shape="rect">UnitName</a>
-<a href="#Link5C" shape="rect">UnitSymbol</a>
-<a href="#Link4" shape="rect">CodeListValue</a>
-<a href="#Link50" shape="rect">RootUnits</a>
-<a href="#LinkD" shape="rect">Conversions</a>
-<a href="#Link47" shape="rect">QuantityReference</a>
-<a href="#Link5E" shape="rect">UnitVersionHistory</a>
-<a href="#Link55" shape="rect">UnitDefinition</a>
-<a href="#Link56" shape="rect">UnitHistory</a>
-<a href="#Link59" shape="rect">UnitRemark</a>
+<tr><td align="right">children</td>
+<td><a href="#Link5D">UnitSystem</a>
+<a href="#Link57">UnitName</a>
+<a href="#Link5C">UnitSymbol</a>
+<a href="#Link4">CodeListValue</a>
+<a href="#Link50">RootUnits</a>
+<a href="#LinkD">Conversions</a>
+<a href="#Link47">QuantityReference</a>
+<a href="#Link5E">UnitVersionHistory</a>
+<a href="#Link55">UnitDefinition</a>
+<a href="#Link56">UnitHistory</a>
+<a href="#Link59">UnitRemark</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link54" shape="rect">Unit</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link54">Unit</a>
 </td>
 </tr>
 <tr></tr>
@@ -13216,20 +13219,20 @@ complexType **UnitType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -13250,22 +13253,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link91" shape="rect">timeStamp</a>
+<tr><td><a href="#Link91">timeStamp</a>
 </td>
-<td rowspan="1" colspan="1">xsd:dateTime</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</td>
+<td>xsd:dateTime</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8B" shape="rect">dimensionURL</a>
+<tr><td><a href="#Link8B">dimensionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
 </table>
@@ -13273,11 +13276,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the unit.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13331,20 +13334,20 @@ Attributes:
 
 ---
 
-<a name="Link91" shape="rect"></a>
+<a name="Link91"></a>
 
 
 attribute **UnitType/@timeStamp**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:dateTime</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:dateTime</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</td>
+<tr><td align="right">annotation</td>
+<td>Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13362,30 +13365,30 @@ attribute **UnitType/@timeStamp**
 
 ---
 
-<a name="Link4E" shape="rect"></a>
+<a name="Link4E"></a>
 
 
 complexType **WSDLConversionFromType**
 
-<table><tr><td align="right" rowspan="1" colspan="1">diagram</td>
-<td rowspan="1" colspan="1">
+<table><tr><td align="right">diagram</td>
+<td>
 
 ![Diagram for WSDLConversionFromType](/diagrams/UnitsML-v1.0-csd04_p90.png)
 
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">children</td>
-<td rowspan="1" colspan="1"><a href="#Link60" shape="rect">WSDLDescription</a>
+<tr><td align="right">children</td>
+<td><a href="#Link60">WSDLDescription</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">element <a href="#Link5F" shape="rect">WSDLConversionFrom</a>
+<tr><td align="right">used by</td>
+<td>element <a href="#Link5F">WSDLConversionFrom</a>
 </td>
 </tr>
 <tr></tr>
@@ -13393,20 +13396,20 @@ complexType **WSDLConversionFromType**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td>required</td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -13427,22 +13430,22 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link94" shape="rect">wsdlURL</a>
+<tr><td><a href="#Link94">wsdlURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL for external WSDL definition file.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URL for external WSDL definition file.</td>
 </tr>
 <tr></tr>
 </table>
@@ -13450,11 +13453,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Type for the element for providing unit conversion information for conversions that are more complex than the Float64ConversionFrom linear equation.</td>
+<table><tr><td align="right">annotation</td>
+<td>Type for the element for providing unit conversion information for conversions that are more complex than the Float64ConversionFrom linear equation.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13486,24 +13489,24 @@ Attributes:
 
 ---
 
-<a name="Link94" shape="rect"></a>
+<a name="Link94"></a>
 
 
 attribute **WSDLConversionFromType/@wsdlURL**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URL for external WSDL definition file.</td>
+<tr><td align="right">annotation</td>
+<td>URL for external WSDL definition file.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13521,18 +13524,18 @@ attribute **WSDLConversionFromType/@wsdlURL**
 
 ---
 
-<a name="Link3" shape="rect"></a>
+<a name="Link3"></a>
 
 
 attributeGroup **dimensionURL**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<table><tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexTypes <a href="#Link36" shape="rect">QuantityType</a>
-<a href="#Link4C" shape="rect">UnitType</a>
+<tr><td align="right">used by</td>
+<td>complexTypes <a href="#Link36">QuantityType</a>
+<a href="#Link4C">UnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -13540,21 +13543,21 @@ attributeGroup **dimensionURL**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link8B" shape="rect">dimensionURL</a>
+<tr><td><a href="#Link8B">dimensionURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
 </table>
@@ -13562,11 +13565,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<table><tr><td align="right">annotation</td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13589,20 +13592,20 @@ Attributes:
 
 ---
 
-<a name="Link8B" shape="rect"></a>
+<a name="Link8B"></a>
 
 
 attribute **dimensionURL/@dimensionURL**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
+<tr><td align="right">annotation</td>
+<td>URL to a representation of the unit or quantity in terms of the 7 SI base dimensions.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13620,19 +13623,19 @@ attribute **dimensionURL/@dimensionURL**
 
 ---
 
-<a name="Link6" shape="rect"></a>
+<a name="Link6"></a>
 
 
 attributeGroup **initialUnit**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<table><tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexTypes <a href="#Link1E" shape="rect">Float64ConversionFromType</a>
-<a href="#Link3E" shape="rect">SpecialConversionFromType</a>
-<a href="#Link4E" shape="rect">WSDLConversionFromType</a>
+<tr><td align="right">used by</td>
+<td>complexTypes <a href="#Link1E">Float64ConversionFromType</a>
+<a href="#Link3E">SpecialConversionFromType</a>
+<a href="#Link4E">WSDLConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
@@ -13640,21 +13643,21 @@ attributeGroup **initialUnit**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link76" shape="rect">initialUnit</a>
+<tr><td><a href="#Link76">initialUnit</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">required</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<td>xsd:anyURI</td>
+<td>required</td>
+<td></td>
+<td></td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
 </table>
@@ -13662,11 +13665,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<table><tr><td align="right">annotation</td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13689,24 +13692,24 @@ Attributes:
 
 ---
 
-<a name="Link76" shape="rect"></a>
+<a name="Link76"></a>
 
 
 attribute **initialUnit/@initialUnit**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use required</td>
+<tr><td align="right">properties</td>
+<td>use required</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
+<tr><td align="right">annotation</td>
+<td>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13724,27 +13727,27 @@ attribute **initialUnit/@initialUnit**
 
 ---
 
-<a name="Link9" shape="rect"></a>
+<a name="Link9"></a>
 
 
 attributeGroup **powerRational**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<table><tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexTypes <a href="#Link2" shape="rect">AmountOfSubstanceType</a>
-<a href="#Link18" shape="rect">ElectricCurrentType</a>
-<a href="#Link1A" shape="rect">EnumeratedRootUnitType</a>
-<a href="#Link1C" shape="rect">ExternalRootUnitType</a>
-<a href="#Link22" shape="rect">ItemType</a>
-<a href="#Link24" shape="rect">LengthType</a>
-<a href="#Link26" shape="rect">LuminousIntensityType</a>
-<a href="#Link28" shape="rect">MassType</a>
-<a href="#Link2E" shape="rect">PlaneAngleType</a>
-<a href="#Link44" shape="rect">ThermodynamicTemperatureType</a>
-<a href="#Link46" shape="rect">TimeType</a>
+<tr><td align="right">used by</td>
+<td>complexTypes <a href="#Link2">AmountOfSubstanceType</a>
+<a href="#Link18">ElectricCurrentType</a>
+<a href="#Link1A">EnumeratedRootUnitType</a>
+<a href="#Link1C">ExternalRootUnitType</a>
+<a href="#Link22">ItemType</a>
+<a href="#Link24">LengthType</a>
+<a href="#Link26">LuminousIntensityType</a>
+<a href="#Link28">MassType</a>
+<a href="#Link2E">PlaneAngleType</a>
+<a href="#Link44">ThermodynamicTemperatureType</a>
+<a href="#Link46">TimeType</a>
 </td>
 </tr>
 <tr></tr>
@@ -13752,30 +13755,30 @@ attributeGroup **powerRational**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link67" shape="rect">powerNumerator</a>
+<tr><td><a href="#Link67">powerNumerator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link68" shape="rect">powerDenominator</a>
+<tr><td><a href="#Link68">powerDenominator</a>
 </td>
-<td rowspan="1" colspan="1">xsd:byte</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1">1</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<td>xsd:byte</td>
+<td>optional</td>
+<td>1</td>
+<td></td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
 </table>
@@ -13783,11 +13786,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">An exponent of the unit, specified as powerNumerator and powerDenominator.</td>
+<table><tr><td align="right">annotation</td>
+<td>An exponent of the unit, specified as powerNumerator and powerDenominator.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13815,22 +13818,22 @@ Attributes:
 
 ---
 
-<a name="Link67" shape="rect"></a>
+<a name="Link67"></a>
 
 
 attribute **powerRational/@powerNumerator**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:byte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:byte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">default</td>
-<td rowspan="1" colspan="1">1</td>
+<tr><td align="right">default</td>
+<td>1</td>
 </tr>
 <tr></tr>
 </table>
@@ -13839,11 +13842,11 @@ attribute **powerRational/@powerNumerator**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">An integer exponent of the unit.</td>
+<tr><td align="right">annotation</td>
+<td>An integer exponent of the unit.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13861,22 +13864,22 @@ attribute **powerRational/@powerNumerator**
 
 ---
 
-<a name="Link68" shape="rect"></a>
+<a name="Link68"></a>
 
 
 attribute **powerRational/@powerDenominator**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:byte</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:byte</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">use</td>
-<td rowspan="1" colspan="1">optional</td>
+<tr><td align="right">properties</td>
+<td><table><tr><td align="right">use</td>
+<td>optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">default</td>
-<td rowspan="1" colspan="1">1</td>
+<tr><td align="right">default</td>
+<td>1</td>
 </tr>
 <tr></tr>
 </table>
@@ -13885,11 +13888,11 @@ attribute **powerRational/@powerDenominator**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
+<tr><td align="right">annotation</td>
+<td>An integer value divided into the powerNumerator to create a non integer exponent of a unit.  For example 1/2.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -13907,18 +13910,18 @@ attribute **powerRational/@powerDenominator**
 
 ---
 
-<a name="LinkC" shape="rect"></a>
+<a name="LinkC"></a>
 
 
 attributeGroup **prefix**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<table><tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexTypes <a href="#Link1A" shape="rect">EnumeratedRootUnitType</a>
-<a href="#Link1C" shape="rect">ExternalRootUnitType</a>
+<tr><td align="right">used by</td>
+<td>complexTypes <a href="#Link1A">EnumeratedRootUnitType</a>
+<a href="#Link1C">ExternalRootUnitType</a>
 </td>
 </tr>
 <tr></tr>
@@ -13926,21 +13929,21 @@ attributeGroup **prefix**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link73" shape="rect">prefix</a>
+<tr><td><a href="#Link73">prefix</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:token</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<td>derived by: xsd:token</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
 </table>
@@ -13948,11 +13951,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<table><tr><td align="right">annotation</td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14007,159 +14010,159 @@ Attributes:
 
 ---
 
-<a name="Link73" shape="rect"></a>
+<a name="Link73"></a>
 
 
 attribute **prefix/@prefix**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">restriction ofxsd:token</td>
+<table border="1"><tr><td align="right">type</td>
+<td>restriction ofxsd:token</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">facets</td>
-<td rowspan="1" colspan="1"><table><tr><td rowspan="1" colspan="1">Kind</td>
-<td rowspan="1" colspan="1">Value</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<tr><td align="right">facets</td>
+<td><table><tr><td>Kind</td>
+<td>Value</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Y</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Y</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Z</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Z</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">E</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>E</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">P</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>P</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">T</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>T</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">G</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>G</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">M</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>M</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">k</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>k</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">h</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>h</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">da</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>da</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">d</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>d</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">c</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>c</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">m</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>m</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">u</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>u</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">n</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>n</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">p</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>p</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">f</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>f</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">a</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>a</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">z</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>z</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">y</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>y</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Ki</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Ki</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Mi</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Mi</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Gi</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Gi</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Ti</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Ti</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Pi</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Pi</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Ei</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Ei</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Zi</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Zi</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">Yi</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>Yi</td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
@@ -14168,11 +14171,11 @@ attribute **prefix/@prefix**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
+<tr><td align="right">annotation</td>
+<td>Prefix identifier; e.g., m, k, M, G.  [Enumeration order is by prefix magnitude (Y to y) followed by binary prefixes.]</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14222,19 +14225,19 @@ attribute **prefix/@prefix**
 
 ---
 
-<a name="LinkF" shape="rect"></a>
+<a name="LinkF"></a>
 
 
 attributeGroup **sourceName**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<table><tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexTypes <a href="#Link11" shape="rect">DefinitionType</a>
-<a href="#Link20" shape="rect">HistoryType</a>
-<a href="#Link3A" shape="rect">RemarkType</a>
+<tr><td align="right">used by</td>
+<td>complexTypes <a href="#Link11">DefinitionType</a>
+<a href="#Link20">HistoryType</a>
+<a href="#Link3A">RemarkType</a>
 </td>
 </tr>
 <tr></tr>
@@ -14242,21 +14245,21 @@ attributeGroup **sourceName**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link82" shape="rect">sourceName</a>
+<tr><td><a href="#Link82">sourceName</a>
 </td>
-<td rowspan="1" colspan="1">xsd:string</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<td>xsd:string</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
 </table>
@@ -14264,11 +14267,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<table><tr><td align="right">annotation</td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14291,24 +14294,24 @@ Attributes:
 
 ---
 
-<a name="Link82" shape="rect"></a>
+<a name="Link82"></a>
 
 
 attribute **sourceName/@sourceName**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:string</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:string</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use optional</td>
+<tr><td align="right">properties</td>
+<td>use optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Name of relevant publication.</td>
+<tr><td align="right">annotation</td>
+<td>Name of relevant publication.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14326,21 +14329,21 @@ attribute **sourceName/@sourceName**
 
 ---
 
-<a name="Link12" shape="rect"></a>
+<a name="Link12"></a>
 
 
 attributeGroup **sourceURL**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
+<table><tr><td align="right">namespace</td>
+<td>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">complexTypes <a href="#Link11" shape="rect">DefinitionType</a>
-<a href="#Link1A" shape="rect">EnumeratedRootUnitType</a>
-<a href="#Link1C" shape="rect">ExternalRootUnitType</a>
-<a href="#Link20" shape="rect">HistoryType</a>
-<a href="#Link3A" shape="rect">RemarkType</a>
+<tr><td align="right">used by</td>
+<td>complexTypes <a href="#Link11">DefinitionType</a>
+<a href="#Link1A">EnumeratedRootUnitType</a>
+<a href="#Link1C">ExternalRootUnitType</a>
+<a href="#Link20">HistoryType</a>
+<a href="#Link3A">RemarkType</a>
 </td>
 </tr>
 <tr></tr>
@@ -14348,21 +14351,21 @@ attributeGroup **sourceURL**
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link72" shape="rect">sourceURL</a>
+<tr><td><a href="#Link72">sourceURL</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1">optional</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<td>xsd:anyURI</td>
+<td>optional</td>
+<td></td>
+<td></td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
 </table>
@@ -14370,11 +14373,11 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<table><tr><td align="right">annotation</td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14397,24 +14400,24 @@ Attributes:
 
 ---
 
-<a name="Link72" shape="rect"></a>
+<a name="Link72"></a>
 
 
 attribute **sourceURL/@sourceURL**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<table border="1"><tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">properties</td>
-<td rowspan="1" colspan="1">use optional</td>
+<tr><td align="right">properties</td>
+<td>use optional</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
-<td rowspan="1" colspan="1">Relevant URL for available information.</td>
+<tr><td align="right">annotation</td>
+<td>Relevant URL for available information.</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14432,25 +14435,25 @@ attribute **sourceURL/@sourceURL**
 
 ---
 
-<a name="Link61" shape="rect"></a>
+<a name="Link61"></a>
 
 
 attribute **base**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">http://www.w3.org/XML/1998/namespace</td>
+<table border="1"><tr><td align="right">namespace</td>
+<td>http://www.w3.org/XML/1998/namespace</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
+<tr><td align="right">type</td>
+<td>xsd:anyURI</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">attributeGroup <a href="#Link62" shape="rect">specialAttrs</a>
+<tr><td align="right">used by</td>
+<td>attributeGroup <a href="#Link62">specialAttrs</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
+<tr><td align="right">annotation</td>
 <td>
 
 ```
@@ -14472,7 +14475,7 @@ attribute **base**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14504,34 +14507,34 @@ attribute **base**
 
 ---
 
-<a name="Link63" shape="rect"></a>
+<a name="Link63"></a>
 
 
 attribute **id**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">http://www.w3.org/XML/1998/namespace</td>
+<table border="1"><tr><td align="right">namespace</td>
+<td>http://www.w3.org/XML/1998/namespace</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">xsd:ID</td>
+<tr><td align="right">type</td>
+<td>xsd:ID</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">complexTypes</td>
-<td rowspan="1" colspan="1"><a href="#LinkE" shape="rect">CountedItemType</a>
-<a href="#Link16" shape="rect">DimensionType</a>
-<a href="#Link1E" shape="rect">Float64ConversionFromType</a>
-<a href="#Link32" shape="rect">PrefixType</a>
-<a href="#Link36" shape="rect">QuantityType</a>
-<a href="#Link3E" shape="rect">SpecialConversionFromType</a>
-<a href="#Link4C" shape="rect">UnitType</a>
-<a href="#Link4E" shape="rect">WSDLConversionFromType</a>
+<tr><td align="right">used by</td>
+<td><table><tr><td align="right">complexTypes</td>
+<td><a href="#LinkE">CountedItemType</a>
+<a href="#Link16">DimensionType</a>
+<a href="#Link1E">Float64ConversionFromType</a>
+<a href="#Link32">PrefixType</a>
+<a href="#Link36">QuantityType</a>
+<a href="#Link3E">SpecialConversionFromType</a>
+<a href="#Link4C">UnitType</a>
+<a href="#Link4E">WSDLConversionFromType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">attributeGroup</td>
-<td rowspan="1" colspan="1"><a href="#Link62" shape="rect">specialAttrs</a>
+<tr><td align="right">attributeGroup</td>
+<td><a href="#Link62">specialAttrs</a>
 </td>
 </tr>
 <tr></tr>
@@ -14541,7 +14544,7 @@ attribute **id**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
+<tr><td align="right">annotation</td>
 <td>
 
 ```
@@ -14562,7 +14565,7 @@ attribute **id**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14593,36 +14596,36 @@ attribute **id**
 
 ---
 
-<a name="Link64" shape="rect"></a>
+<a name="Link64"></a>
 
 
 attribute **lang**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">http://www.w3.org/XML/1998/namespace</td>
+<table border="1"><tr><td align="right">namespace</td>
+<td>http://www.w3.org/XML/1998/namespace</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">union of (xsd:language,restriction ofxsd:string)</td>
+<tr><td align="right">type</td>
+<td>union of (xsd:language,restriction ofxsd:string)</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1"><table><tr><td align="right" rowspan="1" colspan="1">complexTypes</td>
-<td rowspan="1" colspan="1"><a href="#Link5" shape="rect">CodeListValueType</a>
-<a href="#Link11" shape="rect">DefinitionType</a>
-<a href="#Link1C" shape="rect">ExternalRootUnitType</a>
-<a href="#Link20" shape="rect">HistoryType</a>
-<a href="#Link2A" shape="rect">NameType</a>
-<a href="#Link2C" shape="rect">NoteType</a>
-<a href="#Link38" shape="rect">ReferenceType</a>
-<a href="#Link3A" shape="rect">RemarkType</a>
-<a href="#Link40" shape="rect">SymbolType</a>
-<a href="#Link42" shape="rect">SystemType</a>
+<tr><td align="right">used by</td>
+<td><table><tr><td align="right">complexTypes</td>
+<td><a href="#Link5">CodeListValueType</a>
+<a href="#Link11">DefinitionType</a>
+<a href="#Link1C">ExternalRootUnitType</a>
+<a href="#Link20">HistoryType</a>
+<a href="#Link2A">NameType</a>
+<a href="#Link2C">NoteType</a>
+<a href="#Link38">ReferenceType</a>
+<a href="#Link3A">RemarkType</a>
+<a href="#Link40">SymbolType</a>
+<a href="#Link42">SystemType</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">attributeGroup</td>
-<td rowspan="1" colspan="1"><a href="#Link62" shape="rect">specialAttrs</a>
+<tr><td align="right">attributeGroup</td>
+<td><a href="#Link62">specialAttrs</a>
 </td>
 </tr>
 <tr></tr>
@@ -14632,7 +14635,7 @@ attribute **lang**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
+<tr><td align="right">annotation</td>
 <td>
 
 ```
@@ -14669,7 +14672,7 @@ attribute **lang**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14725,38 +14728,38 @@ attribute **lang**
 
 ---
 
-<a name="Link65" shape="rect"></a>
+<a name="Link65"></a>
 
 
 attribute **space**
 
-<table border="1"><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">http://www.w3.org/XML/1998/namespace</td>
+<table border="1"><tr><td align="right">namespace</td>
+<td>http://www.w3.org/XML/1998/namespace</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">type</td>
-<td rowspan="1" colspan="1">restriction ofxsd:NCName</td>
+<tr><td align="right">type</td>
+<td>restriction ofxsd:NCName</td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">used by</td>
-<td rowspan="1" colspan="1">attributeGroup <a href="#Link62" shape="rect">specialAttrs</a>
+<tr><td align="right">used by</td>
+<td>attributeGroup <a href="#Link62">specialAttrs</a>
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">facets</td>
-<td rowspan="1" colspan="1"><table><tr><td rowspan="1" colspan="1">Kind</td>
-<td rowspan="1" colspan="1">Value</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<tr><td align="right">facets</td>
+<td><table><tr><td>Kind</td>
+<td>Value</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">default</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>default</td>
+<td></td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1">enumeration</td>
-<td rowspan="1" colspan="1">preserve</td>
-<td rowspan="1" colspan="1"></td>
+<tr><td>enumeration</td>
+<td>preserve</td>
+<td></td>
 </tr>
 <tr></tr>
 </table>
@@ -14765,7 +14768,7 @@ attribute **space**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">annotation</td>
+<tr><td align="right">annotation</td>
 <td>
 
 ```
@@ -14783,7 +14786,7 @@ attribute **space**
 </td>
 </tr>
 <tr></tr>
-<tr><td align="right" rowspan="1" colspan="1">source</td>
+<tr><td align="right">source</td>
 <td>
 
 ```
@@ -14817,33 +14820,33 @@ attribute **space**
 
 ---
 
-<a name="Link62" shape="rect"></a>
+<a name="Link62"></a>
 
 
 attributeGroup **specialAttrs**
 
-<table><tr><td align="right" rowspan="1" colspan="1">namespace</td>
-<td rowspan="1" colspan="1">http://www.w3.org/XML/1998/namespace</td>
+<table><tr><td align="right">namespace</td>
+<td>http://www.w3.org/XML/1998/namespace</td>
 </tr>
 <tr></tr>
 </table>
 
 
 Attributes:
-<table><tr><td rowspan="1" colspan="1">Name</td>
-<td rowspan="1" colspan="1">Type</td>
-<td rowspan="1" colspan="1">Use</td>
-<td rowspan="1" colspan="1">Default</td>
-<td rowspan="1" colspan="1">Fixed</td>
-<td rowspan="1" colspan="1">Annotation</td>
+<table><tr><td>Name</td>
+<td>Type</td>
+<td>Use</td>
+<td>Default</td>
+<td>Fixed</td>
+<td>Annotation</td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link61" shape="rect">xml:base</a>
+<tr><td><a href="#Link61">xml:base</a>
 </td>
-<td rowspan="1" colspan="1">xsd:anyURI</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:anyURI</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -14865,12 +14868,12 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link64" shape="rect">xml:lang</a>
+<tr><td><a href="#Link64">xml:lang</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:language</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:language</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -14907,12 +14910,12 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link65" shape="rect">xml:space</a>
+<tr><td><a href="#Link65">xml:space</a>
 </td>
-<td rowspan="1" colspan="1">derived by: xsd:NCName</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>derived by: xsd:NCName</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -14930,12 +14933,12 @@ Attributes:
 </td>
 </tr>
 <tr></tr>
-<tr><td rowspan="1" colspan="1"><a href="#Link63" shape="rect">xml:id</a>
+<tr><td><a href="#Link63">xml:id</a>
 </td>
-<td rowspan="1" colspan="1">xsd:ID</td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
-<td rowspan="1" colspan="1"></td>
+<td>xsd:ID</td>
+<td></td>
+<td></td>
+<td></td>
 <td>
 
 ```
@@ -14961,7 +14964,7 @@ Attributes:
 ---
 
 
-<table><tr><td align="right" rowspan="1" colspan="1">source</td>
+<table><tr><td align="right">source</td>
 <td>
 
 ```
