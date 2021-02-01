@@ -406,7 +406,7 @@
 
 
 <table><tr><td>schema location: </td>
-<td><a href="xml.xsd">xml.xsd</a>
+<td><a href="https://www.w3.org/2009/01/xml.xsd">xml.xsd</a>
 </td>
 </tr>
 <tr></tr>
