@@ -37,7 +37,7 @@ gitupdate:
 	
 $(DESTDIR):
 	mkdir -p $@
-	echo date > $@.date
+	date > $@.date
 
 $(XSDVIDIR):
 	mkdir -p $@
@@ -46,7 +46,6 @@ clean:
 	rm -rf $(DESTDIR)
 
 cleanxsdvi:
-	echo "Delete"
 	rm -rf $(XSDVIDIR)
 
 .PHONY: all clean doc xsdvi/xsdvi.jar
