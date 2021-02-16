@@ -40,4 +40,4 @@ clean:
 cleanxsdvi:
 	rm -rf $(XSDVIDIR)
 
-.PHONY: all clean doc
+.PHONY: all clean doc xsdvi/xsdvi.jar
