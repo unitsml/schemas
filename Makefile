@@ -14,11 +14,12 @@ XSDVIDIR := xsdvi
 XSLT_FILE := xsl/xs3p.xsl
 
 xsdvi/xsdvi.jar: $(XSDVIDIR)
-	pushd $<; \
-	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip; \
-	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar; \
-	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar; \
+	pushd $<
+	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip
+	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar
+	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar
 	popd
+
 
 all: clean schemadoc
 
