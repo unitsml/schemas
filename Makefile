@@ -21,14 +21,17 @@ xsdvi/xsdvi.jar: $(XSDVIDIR)
 	popd
 
 
-all: clean schemadoc cleanxsdvi
+all: clean schemasvg schemadoc cleanxsdvi
 
 
-schemadoc: xsdvi/xsdvi.jar $(DESTDIR)
+schemasvg: xsdvi/xsdvi.jar $(DESTDIR)
 	cd $(XSDVIDIR); \
 	java -jar xsdvi.jar $(XSDSRC); \
 	mv $(SVGDEST) $(DESTDIR)
-#	xsltproc --nonet --output $(DESTDIR)/$(SRC).html $(XSLT_FILE) $(XSDSRC)
+	
+
+schemadoc: $(DESTDIR)
+	xsltproc --nonet --output $(DESTDIR)index.html $(XSLT_FILE) $(XSDSRC)
 
 gitupdate: 
 	git add doc
