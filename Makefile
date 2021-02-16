@@ -7,25 +7,27 @@ endif
 
 SRC := UnitsML-v1.0-csd04
 
-XSDSRC := $(SRC).xsd
+XSDSRC := ${CURDIR}/$(SRC).xsd
 SVGDEST := $(SRC).svg
-DESTDIR := doc
+DESTDIR := ${CURDIR}/doc/
 XSDVIDIR := xsdvi
 XSLT_FILE := xsl/xs3p.xsl
 
 xsdvi/xsdvi.jar: $(XSDVIDIR)
-	pushd $<
-	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip
-	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar
-	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar
+	pushd $<; \
+	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip; \
+	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar; \
+	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar; \
 	popd
 
 
-all: clean schemadoc
+all: clean schemadoc cleanxsdvi
 
-schemadoc: xsdvi/xsdvi.jar $(DESTDIR) cleanxsdvi
-	java -jar $(XSDVIDIR)/xsdvi.jar $(XSDSRC)
-	cp $(SVGDEST) $(DESTDIR)/
+
+schemadoc: xsdvi/xsdvi.jar $(DESTDIR)
+	cd $(XSDVIDIR); \
+	java -jar xsdvi.jar $(XSDSRC); \
+	mv $(SVGDEST) $(DESTDIR)
 #	xsltproc --nonet --output $(DESTDIR)/$(SRC).html $(XSLT_FILE) $(XSDSRC)
 
 $(DESTDIR):
@@ -38,6 +40,7 @@ clean:
 	rm -rf $(DESTDIR)
 
 cleanxsdvi:
+	echo "Delete"
 	rm -rf $(XSDVIDIR)
 
 .PHONY: all clean doc xsdvi/xsdvi.jar
