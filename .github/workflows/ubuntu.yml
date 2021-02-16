@@ -15,7 +15,7 @@ jobs:
 
       - name: XSD documentation generataion
         run: |
-          make all published
+          make all
 
       - uses: actions/upload-artifact@v2
         with:
