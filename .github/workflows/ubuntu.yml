@@ -17,13 +17,13 @@ jobs:
         run: |
           make all
 
-#      - name: Repository update          
-#        run: |
-#          git config user.name github-actions
-#          git config user.email github-actions@github.com
-#          git add doc
-#          git commit -m "XSD docs generated"
-#          git push
+      - name: Repository update          
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add doc
+          git commit -m "XSD docs generated"
+          git push
 
 #      - uses: actions/upload-artifact@v2
 #        with:
