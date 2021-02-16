@@ -21,7 +21,7 @@ xsdvi/xsdvi.jar: $(XSDVIDIR)
 	popd
 
 
-all: clean schemadoc cleanxsdvi
+all: clean gitupdate cleanxsdvi
 
 
 schemadoc: xsdvi/xsdvi.jar $(DESTDIR)
@@ -29,6 +29,11 @@ schemadoc: xsdvi/xsdvi.jar $(DESTDIR)
 	java -jar xsdvi.jar $(XSDSRC); \
 	mv $(SVGDEST) $(DESTDIR)
 #	xsltproc --nonet --output $(DESTDIR)/$(SRC).html $(XSLT_FILE) $(XSDSRC)
+
+gitupdate: schemadoc
+	git add doc
+	git commit -m "XSD docs generated"
+	git push
 
 $(DESTDIR):
 	mkdir -p $@
