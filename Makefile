@@ -34,9 +34,10 @@ gitupdate: schemadoc
 	git add doc
 	git commit -m "XSD docs generated"
 	git push
-
+	
 $(DESTDIR):
 	mkdir -p $@
+	echo date > $@.date
 
 $(XSDVIDIR):
 	mkdir -p $@
