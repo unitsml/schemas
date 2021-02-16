@@ -13,12 +13,15 @@ jobs:
         run: |
           sudo apt-get install xsltproc
 
-      - name: XSD documentation generataion
+      - name: XSD documentation generation
         run: |
           make all
+
+      - name: Repository update          
+        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add doc/UnitsML-v1.0-csd04.svg
+          git add doc
           git commit -m "XSD docs generated"
           git push
 
