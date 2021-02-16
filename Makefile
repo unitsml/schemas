@@ -17,7 +17,7 @@ xsdvi/xsdvi.jar: $(XSDVIDIR)
 	pushd $<; \
 	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip; \
 	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar; \
-	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar
+	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar; \
 	popd
 
 all: clean schemadoc
