@@ -25,10 +25,10 @@ jobs:
           git commit -m "XSD docs generated"
           git push
 
-#      - uses: actions/upload-artifact@v2
-#        with:
-#          name: published-ubuntu
-#          path: doc
+      - uses: actions/upload-artifact@v2
+        with:
+          name: published-ubuntu
+          path: doc
           
   deploy-gh-pages:
     if: github.ref == 'refs/heads/doc'
