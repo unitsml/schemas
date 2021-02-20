@@ -9,6 +9,7 @@ SRC := UnitsML-v1.0-csd04
 
 XSDSRC := ${CURDIR}/$(SRC).xsd
 SVGDEST := $(SRC).svg
+DIAGRAMSDIR := ${CURDIR}/diagrams/
 DESTDIR := ${CURDIR}/doc/
 XSDVIDIR := xsdvi
 XSLT_FILE := xsl/xs3p.xsl
@@ -28,10 +29,11 @@ schemasvg: xsdvi/xsdvi.jar $(DESTDIR)
 	cd $(XSDVIDIR); \
 	java -jar xsdvi.jar $(XSDSRC); \
 	mv $(SVGDEST) $(DESTDIR)
+	cp -R $(DIAGRAMSDIR) $(DESTDIR)
 	
 
 schemadoc: $(DESTDIR)
-	xsltproc --nonet --output $(DESTDIR)index.html $(XSLT_FILE) $(XSDSRC)
+	xsltproc --nonet --param title "'Units Markup language (UnitsML) Schema Documentation'" --output $(DESTDIR)index.html $(XSLT_FILE) $(XSDSRC)
 
 gitupdate: 
 	git add doc
