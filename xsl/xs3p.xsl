@@ -782,7 +782,11 @@
       <xsl:call-template name="ComponentSectionHeader">
          <xsl:with-param name="component" select="."/>
       </xsl:call-template>
-
+      
+      <xsl:if test="local-name() = 'element'">
+         <object data="diagrams/{@name}.svg" type="image/svg+xml"></object>
+      </xsl:if>
+      
       <!-- Hierarchy table (for types and elements) -->
       <xsl:apply-templates select="." mode="hierarchy"/>
 
@@ -1074,11 +1078,13 @@ body {
 
 //.nav-list-elements
 .nav {
-   background-color: #efe;
+   //background-color: #efe;
+   background-color: #e4ecff;
 }
 
 .xs3p-sidenav {
-    background-color: #efe;
+    //background-color: #efe;
+    background-color: #e4ecff;
 }
 
 code {
