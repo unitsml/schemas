@@ -2336,6 +2336,8 @@ nav {
      attribute group or model group definition.
      -->
    <xsl:template match="xsd:attributeGroup | xsd:group" mode="properties">
+      <!-- Commented, not necessary to repeat  @name -->
+      <!--
       <xsl:call-template name="CollapseableBox">
          <xsl:with-param name="id">
             <xsl:call-template name="GetComponentID">
@@ -2347,8 +2349,7 @@ nav {
          <xsl:with-param name="styleClass">sample</xsl:with-param>
          <xsl:with-param name="caption">Properties</xsl:with-param>
          <xsl:with-param name="contents">
-            <!-- Commented, not necessary to repeat  @name -->
-            <!-- <table class="table tables-striped xs3p-in-panel-table">
+            <table class="table tables-striped xs3p-in-panel-table">
                <tbody> -->
                   <!-- Name -->
                  <!--  <tr>
@@ -2356,30 +2357,52 @@ nav {
                      <td><xsl:value-of select="@name"/></td>
                   </tr>
                </tbody>
-            </table> -->
+            </table>
          </xsl:with-param>
          <xsl:with-param name="isOpened">true</xsl:with-param>
          <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
       </xsl:call-template>
+      -->
       <!-- Annotation -->
-      <xsl:call-template name="CollapseableBox">
-         <xsl:with-param name="id">
-            <xsl:call-template name="GetComponentID">
-               <xsl:with-param name="component" select="."/>
+      <xsl:choose>
+         <xsl:when test="$showCollapseableBox = 'true'">
+            <xsl:call-template name="CollapseableBox">
+               <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="help" select="$HELP_DOCUMENTATION"/>
+               <xsl:with-param name="anchor">doc-panel</xsl:with-param>
+               <xsl:with-param name="styleClass">sample</xsl:with-param>
+               <xsl:with-param name="caption">Documentation</xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:call-template name="PrintAnnotation">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="isOpened">true</xsl:with-param>
+               <xsl:with-param name="containsCode">false</xsl:with-param>
             </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="help" select="$HELP_DOCUMENTATION"/>
-         <xsl:with-param name="anchor">doc-panel</xsl:with-param>
-         <xsl:with-param name="styleClass">sample</xsl:with-param>
-         <xsl:with-param name="caption">Documentation</xsl:with-param>
-         <xsl:with-param name="contents">
-            <xsl:call-template name="PrintAnnotation">
-               <xsl:with-param name="component" select="."/>
+         </xsl:when>
+         <xsl:otherwise>
+            <!-- Annotation -->
+            <xsl:call-template name="AnnotationBlock">
+              <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="caption">Documentation</xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:call-template name="PrintAnnotation">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="containsCode">false</xsl:with-param>
             </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="isOpened">true</xsl:with-param>
-         <xsl:with-param name="containsCode">false</xsl:with-param>
-      </xsl:call-template>
+         </xsl:otherwise>
+      </xsl:choose>
    </xsl:template>
 
    <!--
