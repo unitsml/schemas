@@ -264,6 +264,7 @@ line, polyline, polygon {fill: none; stroke: black;}
 .filled {fill: black; stroke: none;}
 
 .boxelement, .boxany, .boxattribute1, .boxanyattribute {fill: #FFFFBB; stroke: #776633; pointer-events: all;}
+.boxelementoptional {fill: #FFFFBB; stroke: #776633; pointer-events: all; stroke-dasharray: 2;}
 .boxattribute2 {fill: #FFFFBB; stroke: #776633; pointer-events: all; stroke-dasharray: 2;}
 .boxschema, .boxloop, .boxcompositor {fill: #E7EBF3; stroke: #666677;}
 .boxselector, .boxfield, .boxidc {fill: #E0F7B7; stroke: #667733;}
@@ -273,6 +274,8 @@ line, polyline, polygon {fill: none; stroke: black;}
 .strict {fill: black; stroke: none;}
 
 .border {fill: #f9f9f9; stroke: #dddddd;}
+
+.elementlink {fill: blue;}
 ]]></style>
   <symbol class='button' id='plus'>
     <rect x='1' y='1' width='10' height='10'/>
@@ -286,27 +289,25 @@ line, polyline, polygon {fill: none; stroke: black;}
 
 </defs>
 <a href="#" onclick="window.parent.location.href = window.parent.location.href.split('#')[0]  + '#element_ConversionDescription'">
-<g id='_1' class='box' transform='translate(20,50)'>
-<rect class='shadow' x='3' y='3' width='345' height='46'/>
-<rect class='boxelement' x='0' y='0' width='345' height='46'
-onmouseover='makeVisible("_1")' onmouseout='makeHidden("_1")'/>
-<text class='visible' x='5' y='13'>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ConversionDescription</text>
+<g id='_1' class='box' transform='translate(20,20)'>
+<rect class='shadow' x='3' y='3' width='159' height='46'/>
+<rect class='boxelement' x='0' y='0' width='159' height='46'
+/>
+<text class='strong elementlink' x='5' y='27'>ConversionDescription</text>
 <text class='visible' x='5' y='41'>type: NoteType</text>
-<use x='344' y='17' xlink:href='#minus' id='s_1' onclick='show("_1")'/>
+<text x='5' y='59'></text>
+<use x='158' y='17' xlink:href='#minus' id='s_1' onclick='show("_1")'/>
 </g>
 
 </a>
-<g id='_1_1' class='box' transform='translate(410,50)'>
+<g id='_1_1' class='box' transform='translate(224,20)'>
 <rect class='shadow' x='3' y='3' width='231' height='46' rx='9'/>
 <rect class='boxattribute2' x='0' y='0' width='231' height='46' rx='9'
-onmouseover='makeVisible("_1_1")' onmouseout='makeHidden("_1_1")'/>
+/>
 <text class='visible' x='5' y='13'>http://www.w3.org/XML/1998/namespace</text>
 <text class='strong' x='5' y='27'><tspan class='big'>@</tspan> lang</text>
 <text class='visible' x='5' y='41'>base: anySimpleType</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>use: optional</text>
+<text x='5' y='59'></text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 

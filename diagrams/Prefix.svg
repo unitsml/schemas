@@ -264,6 +264,7 @@ line, polyline, polygon {fill: none; stroke: black;}
 .filled {fill: black; stroke: none;}
 
 .boxelement, .boxany, .boxattribute1, .boxanyattribute {fill: #FFFFBB; stroke: #776633; pointer-events: all;}
+.boxelementoptional {fill: #FFFFBB; stroke: #776633; pointer-events: all; stroke-dasharray: 2;}
 .boxattribute2 {fill: #FFFFBB; stroke: #776633; pointer-events: all; stroke-dasharray: 2;}
 .boxschema, .boxloop, .boxcompositor {fill: #E7EBF3; stroke: #666677;}
 .boxselector, .boxfield, .boxidc {fill: #E0F7B7; stroke: #667733;}
@@ -273,6 +274,8 @@ line, polyline, polygon {fill: none; stroke: black;}
 .strict {fill: black; stroke: none;}
 
 .border {fill: #f9f9f9; stroke: #dddddd;}
+
+.elementlink {fill: blue;}
 ]]></style>
   <symbol class='button' id='plus'>
     <rect x='1' y='1' width='10' height='10'/>
@@ -286,20 +289,18 @@ line, polyline, polygon {fill: none; stroke: black;}
 
 </defs>
 <a href="#" onclick="window.parent.location.href = window.parent.location.href.split('#')[0]  + '#element_Prefix'">
-<g id='_1' class='box' transform='translate(20,50)'>
-<rect class='shadow' x='3' y='3' width='345' height='46'/>
-<rect class='boxelement' x='0' y='0' width='345' height='46'
-onmouseover='makeVisible("_1")' onmouseout='makeHidden("_1")'/>
-<text class='visible' x='5' y='13'>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>Prefix</text>
+<g id='_1' class='box' transform='translate(20,20)'>
+<rect class='shadow' x='3' y='3' width='111' height='46'/>
+<rect class='boxelement' x='0' y='0' width='111' height='46'
+/>
+<text class='strong elementlink' x='5' y='27'>Prefix</text>
 <text class='visible' x='5' y='41'>type: PrefixType</text>
-<use x='344' y='17' xlink:href='#minus' id='s_1' onclick='show("_1")'/>
+<text x='5' y='59'></text>
+<use x='110' y='17' xlink:href='#minus' id='s_1' onclick='show("_1")'/>
 </g>
 
 </a>
-<g id='_1_1' class='box' transform='translate(410,50)'>
+<g id='_1_1' class='box' transform='translate(176,20)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -313,14 +314,11 @@ onmouseover='makeVisible("_1")' onmouseout='makeHidden("_1")'/>
 </g>
 
 <a href="#" onclick="window.parent.location.href = window.parent.location.href.split('#')[0]  + '#element_PrefixName'">
-<g id='_1_1_1' class='box' transform='translate(515,50)'>
-<rect class='shadow' x='3' y='3' width='345' height='46'/>
-<rect class='boxelement' x='0' y='0' width='345' height='46'
-onmouseover='makeVisible("_1_1_1")' onmouseout='makeHidden("_1_1_1")'/>
-<text class='visible' x='5' y='13'>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PrefixName</text>
+<g id='_1_1_1' class='box' transform='translate(281,20)'>
+<rect class='shadow' x='3' y='3' width='99' height='46'/>
+<rect class='boxelement' x='0' y='0' width='99' height='46'
+/>
+<text class='strong elementlink' x='5' y='27'>PrefixName</text>
 <text class='visible' x='5' y='41'>type: NameType</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -328,14 +326,11 @@ onmouseover='makeVisible("_1_1_1")' onmouseout='makeHidden("_1_1_1")'/>
 
 </a>
 <a href="#" onclick="window.parent.location.href = window.parent.location.href.split('#')[0]  + '#element_PrefixSymbol'">
-<g id='_1_1_2' class='box' transform='translate(515,121)'>
-<rect class='shadow' x='3' y='3' width='345' height='46'/>
-<rect class='boxelement' x='0' y='0' width='345' height='46'
-onmouseover='makeVisible("_1_1_2")' onmouseout='makeHidden("_1_1_2")'/>
-<text class='visible' x='5' y='13'>urn:oasis:names:tc:unitsml:schema:xsd:UnitsMLSchema-1.0</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>PrefixSymbol</text>
+<g id='_1_1_2' class='box' transform='translate(281,91)'>
+<rect class='shadow' x='3' y='3' width='111' height='46'/>
+<rect class='boxelementoptional' x='0' y='0' width='111' height='46'
+/>
+<text class='strong elementlink' x='5' y='27'>PrefixSymbol</text>
 <text class='visible' x='5' y='41'>type: SymbolType</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' id='p_1_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
@@ -343,35 +338,35 @@ onmouseover='makeVisible("_1_1_2")' onmouseout='makeHidden("_1_1_2")'/>
 </g>
 
 </a>
-<g id='_1_2' class='box' transform='translate(410,192)'>
+<g id='_1_2' class='box' transform='translate(176,162)'>
 <rect class='shadow' x='3' y='3' width='231' height='46' rx='9'/>
 <rect class='boxattribute1' x='0' y='0' width='231' height='46' rx='9'
-onmouseover='makeVisible("_1_2")' onmouseout='makeHidden("_1_2")'/>
+/>
 <text class='visible' x='5' y='13'>http://www.w3.org/XML/1998/namespace</text>
 <text class='strong' x='5' y='27'><tspan class='big'>@</tspan> id</text>
 <text class='visible' x='5' y='41'>type: ID</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>use: required</text>
+<text x='5' y='59'></text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3' class='box' transform='translate(410,263)'>
+<g id='_1_3' class='box' transform='translate(176,233)'>
 <rect class='shadow' x='3' y='3' width='93' height='46' rx='9'/>
 <rect class='boxattribute2' x='0' y='0' width='93' height='46' rx='9'
-onmouseover='makeVisible("_1_3")' onmouseout='makeHidden("_1_3")'/>
+/>
 <text class='hidden' visibility='hidden' x='5' y='13'>default: 10</text>
 <text class='strong' x='5' y='27'><tspan class='big'>@</tspan> prefixBase</text>
 <text class='visible' x='5' y='41'>base: byte</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>use: optional</text>
+<text x='5' y='59'>default: 10</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_4' class='box' transform='translate(410,334)'>
-<rect class='shadow' x='3' y='3' width='93' height='46' rx='9'/>
-<rect class='boxattribute2' x='0' y='0' width='93' height='46' rx='9'
-onmouseover='makeVisible("_1_4")' onmouseout='makeHidden("_1_4")'/>
+<g id='_1_4' class='box' transform='translate(176,304)'>
+<rect class='shadow' x='3' y='3' width='99' height='46' rx='9'/>
+<rect class='boxattribute2' x='0' y='0' width='99' height='46' rx='9'
+/>
 <text class='strong' x='5' y='27'><tspan class='big'>@</tspan> prefixPower</text>
 <text class='visible' x='5' y='41'>type: byte</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>use: optional</text>
+<text x='5' y='59'></text>
 <line class='connection' id='p_1_4' x1='-35' y1='-261' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
