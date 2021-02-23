@@ -2464,10 +2464,30 @@ nav {
                      <td><xsl:value-of select="$block"/></td>
                   </tr>
                </xsl:if>
+               
             </tbody>
          </table>
       </xsl:variable>
-      
+      <xsl:variable name="contents_usedby">
+         <table class="table table-striped xs3p-in-panel-table">
+            <tbody>
+               <xsl:variable name="usedBy">
+                  <xsl:for-each select="/xsd:schema//*[@type = current()/@name]">
+                      <xsl:call-template name="PrintElementRef">
+                        <xsl:with-param name="ref" select="@name"/>
+                     </xsl:call-template>
+                     <xsl:if test="position() != last()">, </xsl:if>
+                  </xsl:for-each>
+               </xsl:variable>
+               <xsl:if test="normalize-space($usedBy)!=''">
+                  <tr>
+                    <th>Used By</th>
+                    <td><xsl:copy-of select="$usedBy"/></td>
+                 </tr>
+               </xsl:if>
+            </tbody>
+         </table>
+      </xsl:variable>
       <xsl:choose>
          <xsl:when test="$showCollapseableBox = 'true'">
             <xsl:call-template name="CollapseableBox">
@@ -2507,6 +2527,16 @@ nav {
             </xsl:call-template>
          </xsl:when>
          <xsl:otherwise>
+            <xsl:call-template name="DLBlock">
+              <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:apply-templates select="exslt:node-set($contents_usedby)" mode="table_to_dl"/>
+               </xsl:with-param>
+            </xsl:call-template>
             <xsl:call-template name="DLBlock">
               <xsl:with-param name="id">
                   <xsl:call-template name="GetComponentID">
