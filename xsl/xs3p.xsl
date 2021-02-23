@@ -91,6 +91,7 @@
  xmlns:html="http://www.w3.org/1999/xhtml"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:ppp="http://titanium.dstc.edu.au/xml/xs3p"
+ xmlns:exslt="http://exslt.org/common"
  version="1.0"
  exclude-result-prefixes="xsd ppp html">
 
@@ -576,75 +577,95 @@
      current schema.
      -->
    <xsl:template match="xsd:schema" mode="namespaces">
-      <xsl:call-template name="CollapseableBox">
-         <xsl:with-param name="id">
-            <xsl:call-template name="GetComponentID">
-               <xsl:with-param name="component" select="."/>
-            </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="anchor">declared-namespaces</xsl:with-param>
-         <xsl:with-param name="styleClass">sample</xsl:with-param>
-         <xsl:with-param name="caption">Declared Namespaces</xsl:with-param>
-         <xsl:with-param name="contents">
-            <table class="table table-striped xs3p-in-panel-table">
-               <thead>
+      <xsl:variable name="contents">
+         <table class="table table-striped xs3p-in-panel-table">
+            <thead>
+               <tr>
+                  <th>Prefix</th>
+                  <th>Namespace</th>
+               </tr>
+            </thead>
+            <tbody>
+               <!-- Default namespace (no prefix) -->
+               <xsl:if test="namespace::*[local-name(.)='']">
+                  <xsl:variable name="ns" select="namespace::*[local-name(.)='']"/>
                   <tr>
-                     <th>Prefix</th>
-                     <th>Namespace</th>
+                     <td>
+                        <a id="{$NS_PREFIX}">Default namespace</a>
+                     </td>
+                     <td>
+                        <xsl:choose>
+                           <xsl:when test="/xsd:schema/@targetNamespace and $ns=normalize-space(/xsd:schema/@targetNamespace)">
+                              <span class="targetNS">
+                                 <xsl:value-of select="$ns"/>
+                              </span>
+                           </xsl:when>
+                           <xsl:otherwise>
+                              <xsl:value-of select="$ns"/>
+                           </xsl:otherwise>
+                        </xsl:choose>
+                     </td>
                   </tr>
-               </thead>
-               <tbody>
-                  <!-- Default namespace (no prefix) -->
-                  <xsl:if test="namespace::*[local-name(.)='']">
-                     <xsl:variable name="ns" select="namespace::*[local-name(.)='']"/>
-                     <tr>
-                        <td>
-                           <a id="{$NS_PREFIX}">Default namespace</a>
-                        </td>
-                        <td>
-                           <xsl:choose>
-                              <xsl:when test="/xsd:schema/@targetNamespace and $ns=normalize-space(/xsd:schema/@targetNamespace)">
-                                 <span class="targetNS">
-                                    <xsl:value-of select="$ns"/>
-                                 </span>
-                              </xsl:when>
-                              <xsl:otherwise>
+               </xsl:if>
+               <!-- Namespaces with prefixes -->
+               <xsl:for-each select="namespace::*[local-name(.)!='']">
+                  <xsl:variable name="prefix" select="local-name(.)"/>
+                  <xsl:variable name="ns" select="."/>
+                  <tr>
+                     <td>
+                        <a id="{concat($NS_PREFIX, $prefix)}">
+                           <xsl:value-of select="$prefix"/>
+                        </a>
+                     </td>
+                     <td>
+                        <xsl:choose>
+                           <xsl:when test="/xsd:schema/@targetNamespace and $ns=normalize-space(/xsd:schema/@targetNamespace)">
+                              <span class="targetNS">
                                  <xsl:value-of select="$ns"/>
-                              </xsl:otherwise>
-                           </xsl:choose>
-                        </td>
-                     </tr>
-                  </xsl:if>
-                  <!-- Namespaces with prefixes -->
-                  <xsl:for-each select="namespace::*[local-name(.)!='']">
-                     <xsl:variable name="prefix" select="local-name(.)"/>
-                     <xsl:variable name="ns" select="."/>
-                     <tr>
-                        <td>
-                           <a id="{concat($NS_PREFIX, $prefix)}">
-                              <xsl:value-of select="$prefix"/>
-                           </a>
-                        </td>
-                        <td>
-                           <xsl:choose>
-                              <xsl:when test="/xsd:schema/@targetNamespace and $ns=normalize-space(/xsd:schema/@targetNamespace)">
-                                 <span class="targetNS">
-                                    <xsl:value-of select="$ns"/>
-                                 </span>
-                              </xsl:when>
-                              <xsl:otherwise>
-                                 <xsl:value-of select="$ns"/>
-                              </xsl:otherwise>
-                           </xsl:choose>
-                        </td>
-                     </tr>
-                  </xsl:for-each>
-               </tbody>
-            </table>
-         </xsl:with-param>
-         <xsl:with-param name="isOpened">true</xsl:with-param>
-         <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
-      </xsl:call-template>
+                              </span>
+                           </xsl:when>
+                           <xsl:otherwise>
+                              <xsl:value-of select="$ns"/>
+                           </xsl:otherwise>
+                        </xsl:choose>
+                     </td>
+                  </tr>
+               </xsl:for-each>
+            </tbody>
+         </table>
+      </xsl:variable>
+      <xsl:choose>
+         <xsl:when test="$showCollapseableBox = 'true'">
+            <xsl:call-template name="CollapseableBox">
+               <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="anchor">declared-namespaces</xsl:with-param>
+               <xsl:with-param name="styleClass">sample</xsl:with-param>
+               <xsl:with-param name="caption">Declared Namespaces</xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:copy-of select="$contents"/>
+               </xsl:with-param>
+               <xsl:with-param name="isOpened">true</xsl:with-param>
+               <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
+            </xsl:call-template>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:call-template name="DLBlock">
+              <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="caption">Declared Namespaces</xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:apply-templates select="exslt:node-set($contents)" mode="table_to_dl"/>
+               </xsl:with-param>
+            </xsl:call-template>
+         </xsl:otherwise>
+      </xsl:choose>
    </xsl:template>
 
    <!--
@@ -1095,6 +1116,15 @@ a.name {
     padding-top: 65px;
 }
 
+a:not([href]) {
+   color:#1c476c;
+}
+
+a:not([href]):hover {
+  text-decoration: none;
+}
+
+
 h3.xs3p-subsection-heading {
     margin-bottom: 30px;
 }
@@ -1170,6 +1200,28 @@ pre {
 
 dl {
   margin-bottom: 10px;
+}
+
+dt {
+	font-weight: normal;
+
+	margin-bottom: 10px;
+}
+
+dt.header{
+	font-weight: 700;
+}
+
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+dd.header{
+	font-weight: 700;
+}
+
+dd ul {
+	margin-left: 0em;
 }
 
 .bs-callout {
@@ -2425,183 +2477,37 @@ nav {
      element declaration.
      -->
    <xsl:template match="xsd:element" mode="properties">
-      <xsl:if test="$showCollapseableBox = 'true'">
-         <xsl:call-template name="CollapseableBox">
-            <xsl:with-param name="id">
-               <xsl:call-template name="GetComponentID">
-                  <xsl:with-param name="component" select="."/>
-               </xsl:call-template>
-            </xsl:with-param>
-            <xsl:with-param name="help" select="$HELP_PROPERTIES"/>
-            <xsl:with-param name="anchor">properties-table</xsl:with-param>
-            <xsl:with-param name="styleClass">sample</xsl:with-param>
-            <xsl:with-param name="caption">Properties</xsl:with-param>
-            <xsl:with-param name="contents">
-               <table class="table table-striped xs3p-in-panel-table">
-                  <tbody>
-                     <!-- Name -->
-                     <!-- Commented, not necessary to repeat  @name -->
-                     <!-- <tr>
-                        <th>Name</th>
-                        <td><xsl:value-of select="@name"/></td>
-                     </tr> -->
-                     <!-- Type -->
-                     <tr>
-                        <th>Type</th>
-                        <td>
-                           <xsl:choose>
-                              <xsl:when test="xsd:simpleType">
-                                 <xsl:text>Locally-defined simple type</xsl:text>
-                              </xsl:when>
-                              <xsl:when test="xsd:complexType">
-                                 <xsl:text>Locally-defined complex type</xsl:text>
-                              </xsl:when>
-                              <xsl:when test="@type">
-                                 <xsl:call-template name="PrintTypeRef">
-                                    <xsl:with-param name="ref" select="@type"/>
-                                 </xsl:call-template>
-                              </xsl:when>
-                              <xsl:otherwise>
-                                 <xsl:text>anyType</xsl:text>
-                              </xsl:otherwise>
-                           </xsl:choose>
-                        </td>
-                     </tr>
-                     <!-- Nillable -->
-                     <tr>
-                        <th>
-                           <xsl:call-template name="PrintGlossaryTermRef">
-                              <xsl:with-param name="code">Nillable</xsl:with-param>
-                              <xsl:with-param name="term">Nillable</xsl:with-param>
-                           </xsl:call-template>
-                        </th>
-                        <td>
-                           <xsl:call-template name="PrintBoolean">
-                              <xsl:with-param name="boolean" select="@nillable"/>
-                           </xsl:call-template>
-                        </td>
-                     </tr>
-                     <!-- Abstract -->
-                     <tr>
-                        <th>
-                           <xsl:call-template name="PrintGlossaryTermRef">
-                              <xsl:with-param name="code">Abstract</xsl:with-param>
-                              <xsl:with-param name="term">Abstract</xsl:with-param>
-                           </xsl:call-template>
-                        </th>
-                        <td>
-                           <xsl:call-template name="PrintBoolean">
-                              <xsl:with-param name="boolean" select="@abstract"/>
-                           </xsl:call-template>
-                        </td>
-                     </tr>
-                     <!-- Default Value -->
-                     <xsl:if test="@default">
-                        <tr>
-                           <th>Default Value</th>
-                           <td><xsl:value-of select="@default"/></td>
-                        </tr>
-                     </xsl:if>
-                     <!-- Fixed Value -->
-                     <xsl:if test="@fixed">
-                        <tr>
-                           <th>Fixed Value</th>
-                           <td><xsl:value-of select="@fixed"/></td>
-                        </tr>
-                     </xsl:if>
-                     <!-- Final -->
-                     <xsl:variable name="final">
-                        <xsl:call-template name="PrintDerivationSet">
-                           <xsl:with-param name="EBV">
-                              <xsl:choose>
-                                 <xsl:when test="@final">
-                                    <xsl:value-of select="@final"/>
-                                 </xsl:when>
-                                 <xsl:otherwise>
-                                    <xsl:value-of select="/xsd:schema/@finalDefault"/>
-                                 </xsl:otherwise>
-                              </xsl:choose>
-                           </xsl:with-param>
-                        </xsl:call-template>
-                     </xsl:variable>
-                     <xsl:if test="normalize-space($final)!=''">
-                        <tr>
-                           <th>
-                              <xsl:call-template name="PrintGlossaryTermRef">
-                                 <xsl:with-param name="code">ElemFinal</xsl:with-param>
-                                 <xsl:with-param name="term">Substitution Group Exclusions</xsl:with-param>
-                              </xsl:call-template>
-                           </th>
-                           <td><xsl:value-of select="$final"/></td>
-                        </tr>
-                     </xsl:if>
-                     <!-- Block -->
-                     <xsl:variable name="block">
-                        <xsl:call-template name="PrintBlockSet">
-                           <xsl:with-param name="EBV">
-                              <xsl:choose>
-                                 <xsl:when test="@block">
-                                    <xsl:value-of select="@block"/>
-                                 </xsl:when>
-                                 <xsl:otherwise>
-                                    <xsl:value-of select="/xsd:schema/@blockDefault"/>
-                                 </xsl:otherwise>
-                              </xsl:choose>
-                           </xsl:with-param>
-                        </xsl:call-template>
-                     </xsl:variable>
-                     <xsl:if test="normalize-space($block)!=''">
-                        <tr>
-                           <th>
-                              <xsl:call-template name="PrintGlossaryTermRef">
-                                 <xsl:with-param name="code">ElemBlock</xsl:with-param>
-                                 <xsl:with-param name="term">Disallowed Substitutions</xsl:with-param>
-                              </xsl:call-template>
-                           </th>
-                           <td><xsl:value-of select="$block"/></td>
-                        </tr>
-                     </xsl:if>
-                  </tbody>
-               </table>
-            </xsl:with-param>
-            <xsl:with-param name="isOpened">true</xsl:with-param>
-            <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
-         </xsl:call-template>
-      </xsl:if>
-      <xsl:call-template name="DLBlock">
-        <xsl:with-param name="id">
-            <xsl:call-template name="GetComponentID">
-               <xsl:with-param name="component" select="."/>
-            </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="contents">
-            <!-- Name -->
-            <!-- Commented, not necessary to repeat  @name -->
-            <!-- <tr>
-               <th>Name</th>
-               <td><xsl:value-of select="@name"/></td>
-            </tr> -->
-            <dl class="dl-horizontal">
+      <xsl:variable name="contents">
+         <table class="table table-striped xs3p-in-panel-table">
+            <tbody>
+               <!-- Name -->
+               <!-- Commented, not necessary to repeat  @name -->
+               <!-- <tr>
+                  <th>Name</th>
+                  <td><xsl:value-of select="@name"/></td>
+               </tr> -->
                <!-- Type -->
-               <dt>Type</dt>
-               <dd>
-                  <xsl:choose>
-                     <xsl:when test="xsd:simpleType">
-                        <xsl:text>Locally-defined simple type</xsl:text>
-                     </xsl:when>
-                     <xsl:when test="xsd:complexType">
-                        <xsl:text>Locally-defined complex type</xsl:text>
-                     </xsl:when>
-                     <xsl:when test="@type">
-                        <xsl:call-template name="PrintTypeRef">
-                           <xsl:with-param name="ref" select="@type"/>
-                        </xsl:call-template>
-                     </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:text>anyType</xsl:text>
-                     </xsl:otherwise>
-                  </xsl:choose>
-               </dd>
+               <tr>
+                  <th>Type</th>
+                  <td>
+                     <xsl:choose>
+                        <xsl:when test="xsd:simpleType">
+                           <xsl:text>Locally-defined simple type</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="xsd:complexType">
+                           <xsl:text>Locally-defined complex type</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="@type">
+                           <xsl:call-template name="PrintTypeRef">
+                              <xsl:with-param name="ref" select="@type"/>
+                           </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                           <xsl:text>anyType</xsl:text>
+                        </xsl:otherwise>
+                     </xsl:choose>
+                  </td>
+               </tr>
                
                <xsl:variable name="usedBy">
                   <xsl:for-each select="/xsd:schema//xsd:element[@ref = current()/@name]">
@@ -2612,48 +2518,57 @@ nav {
                   </xsl:for-each>
                </xsl:variable>
                <xsl:if test="normalize-space($usedBy)!=''">
-                 <dt>Used By</dt>
-                 <dd><xsl:copy-of select="$usedBy"/></dd>
+                  <tr>
+                    <th>Used By</th>
+                    <td><xsl:copy-of select="$usedBy"/></td>
+                 </tr>
                </xsl:if>
                
                <!-- Nillable -->
                <xsl:if test="@nillable">
-                  <dt>
-                     <xsl:call-template name="PrintGlossaryTermRef">
-                        <xsl:with-param name="code">Nillable</xsl:with-param>
-                        <xsl:with-param name="term">Nillable</xsl:with-param>
-                     </xsl:call-template>
-                  </dt>
-                  <dd>
-                     <xsl:call-template name="PrintBoolean">
-                        <xsl:with-param name="boolean" select="@nillable"/>
-                     </xsl:call-template>
-                  </dd>
-              </xsl:if>
+                  <tr>
+                     <th>
+                        <xsl:call-template name="PrintGlossaryTermRef">
+                           <xsl:with-param name="code">Nillable</xsl:with-param>
+                           <xsl:with-param name="term">Nillable</xsl:with-param>
+                        </xsl:call-template>
+                     </th>
+                     <td>
+                        <xsl:call-template name="PrintBoolean">
+                           <xsl:with-param name="boolean" select="@nillable"/>
+                        </xsl:call-template>
+                     </td>
+                  </tr>
+               </xsl:if>
                <!-- Abstract -->
                <xsl:if test="@abstract">
-                  <dt>
-                     <xsl:call-template name="PrintGlossaryTermRef">
-                        <xsl:with-param name="code">Abstract</xsl:with-param>
-                        <xsl:with-param name="term">Abstract</xsl:with-param>
-                     </xsl:call-template>
-                  </dt>
-                  <dd>
-                     <xsl:call-template name="PrintBoolean">
-                        <xsl:with-param name="boolean" select="@abstract"/>
-                     </xsl:call-template>
-                  </dd>
-                </xsl:if>
-               
+                  <tr>
+                     <th>
+                        <xsl:call-template name="PrintGlossaryTermRef">
+                           <xsl:with-param name="code">Abstract</xsl:with-param>
+                           <xsl:with-param name="term">Abstract</xsl:with-param>
+                        </xsl:call-template>
+                     </th>
+                     <td>
+                        <xsl:call-template name="PrintBoolean">
+                           <xsl:with-param name="boolean" select="@abstract"/>
+                        </xsl:call-template>
+                     </td>
+                  </tr>
+               </xsl:if>
                <!-- Default Value -->
                <xsl:if test="@default">
-                   <dt>Default Value</dt>
-                   <dd><xsl:value-of select="@default"/></dd>
+                  <tr>
+                     <th>Default Value</th>
+                     <td><xsl:value-of select="@default"/></td>
+                  </tr>
                </xsl:if>
                <!-- Fixed Value -->
                <xsl:if test="@fixed">
-                   <dt>Fixed Value</dt>
-                   <dd><xsl:value-of select="@fixed"/></dd>
+                  <tr>
+                     <th>Fixed Value</th>
+                     <td><xsl:value-of select="@fixed"/></td>
+                  </tr>
                </xsl:if>
                <!-- Final -->
                <xsl:variable name="final">
@@ -2671,13 +2586,15 @@ nav {
                   </xsl:call-template>
                </xsl:variable>
                <xsl:if test="normalize-space($final)!=''">
-                 <dt>
-                    <xsl:call-template name="PrintGlossaryTermRef">
-                       <xsl:with-param name="code">ElemFinal</xsl:with-param>
-                       <xsl:with-param name="term">Substitution Group Exclusions</xsl:with-param>
-                    </xsl:call-template>
-                 </dt>
-                 <dd><xsl:value-of select="$final"/></dd>
+                  <tr>
+                     <th>
+                        <xsl:call-template name="PrintGlossaryTermRef">
+                           <xsl:with-param name="code">ElemFinal</xsl:with-param>
+                           <xsl:with-param name="term">Substitution Group Exclusions</xsl:with-param>
+                        </xsl:call-template>
+                     </th>
+                     <td><xsl:value-of select="$final"/></td>
+                  </tr>
                </xsl:if>
                <!-- Block -->
                <xsl:variable name="block">
@@ -2695,17 +2612,52 @@ nav {
                   </xsl:call-template>
                </xsl:variable>
                <xsl:if test="normalize-space($block)!=''">
-                 <dt>
-                    <xsl:call-template name="PrintGlossaryTermRef">
-                       <xsl:with-param name="code">ElemBlock</xsl:with-param>
-                       <xsl:with-param name="term">Disallowed Substitutions</xsl:with-param>
-                    </xsl:call-template>
-                 </dt>
-                 <dd><xsl:value-of select="$block"/></dd>
+                  <tr>
+                     <th>
+                        <xsl:call-template name="PrintGlossaryTermRef">
+                           <xsl:with-param name="code">ElemBlock</xsl:with-param>
+                           <xsl:with-param name="term">Disallowed Substitutions</xsl:with-param>
+                        </xsl:call-template>
+                     </th>
+                     <td><xsl:value-of select="$block"/></td>
+                  </tr>
                </xsl:if>
-            </dl>
-         </xsl:with-param>
-      </xsl:call-template>
+            </tbody>
+         </table>
+      </xsl:variable>
+   
+      <xsl:choose>
+         <xsl:when test="$showCollapseableBox = 'true'">
+            <xsl:call-template name="CollapseableBox">
+               <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="help" select="$HELP_PROPERTIES"/>
+               <xsl:with-param name="anchor">properties-table</xsl:with-param>
+               <xsl:with-param name="styleClass">sample</xsl:with-param>
+               <xsl:with-param name="caption">Properties</xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:copy-of select="$contents"/>
+               </xsl:with-param>
+               <xsl:with-param name="isOpened">true</xsl:with-param>
+               <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
+            </xsl:call-template>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:call-template name="DLBlock">
+              <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:apply-templates select="exslt:node-set($contents)" mode="table_to_dl"/>
+               </xsl:with-param>
+            </xsl:call-template>
+         </xsl:otherwise>
+      </xsl:choose>
       
       <!-- Annotation -->
       <!-- <xsl:call-template name="CollapseableBox">
@@ -2741,6 +2693,41 @@ nav {
          <xsl:with-param name="containsCode">false</xsl:with-param>
       </xsl:call-template>
    </xsl:template>
+
+   <!-- ======================== -->
+   <!-- table to definition list convertor          -->
+   <!-- ======================== -->
+   <xsl:template match="@*|node()" mode="table_to_dl">
+      <xsl:copy>
+            <xsl:apply-templates select="@*|node()" mode="table_to_dl"/>
+      </xsl:copy>
+   </xsl:template>
+   
+   <xsl:template match="*[local-name() = 'table']" mode="table_to_dl">
+      <dl class="dl-horizontal">
+         <xsl:apply-templates mode="table_to_dl"/>
+      </dl>
+   </xsl:template>
+   
+    <xsl:template match="*[local-name() = 'tbody'] | *[local-name() = 'thead'] | *[local-name() = 'tr']" mode="table_to_dl">
+      <xsl:apply-templates mode="table_to_dl"/>
+   </xsl:template>
+   
+   <xsl:template match="*[local-name() = 'td'] | *[local-name() = 'th']" mode="table_to_dl">
+      <xsl:variable name="class"><xsl:if test="local-name() = 'th'">header</xsl:if></xsl:variable>
+      <xsl:choose>
+         <xsl:when test="not(preceding-sibling::*[local-name() = 'td'] or preceding-sibling::*[local-name() = 'th'])">
+            <dt class="{$class}"><xsl:apply-templates mode="table_to_dl"/></dt>
+         </xsl:when>
+         <xsl:otherwise>
+            <dd class="{$class}"><xsl:apply-templates mode="table_to_dl"/></dd>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
+
+   <!-- ======================== -->
+   <!-- table to definition list convertor  END    -->
+   <!-- ======================== -->
 
    <!--
      Prints out the Properties table for a top-level
@@ -2810,169 +2797,208 @@ nav {
      schema element.
      -->
    <xsl:template match="xsd:schema" mode="properties">
-      <xsl:call-template name="CollapseableBox">
-         <xsl:with-param name="id">
-            <xsl:call-template name="GetComponentID">
-               <xsl:with-param name="component" select="."/>
-            </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="help" select="$HELP_PROPERTIES"/>
-         <xsl:with-param name="anchor">properties-table</xsl:with-param>
-         <xsl:with-param name="styleClass">sample</xsl:with-param>
-         <xsl:with-param name="caption">Properties</xsl:with-param>
-         <xsl:with-param name="contents">
-            <table class="table table-striped xs3p-in-panel-table">
-               <tbody>
-                  <!-- Target Namespace -->
+      <xsl:variable name="contents">
+         <table class="table table-striped xs3p-in-panel-table">
+            <tbody>
+               <!-- Target Namespace -->
+               <tr>
+                  <th>
+                     <xsl:call-template name="PrintGlossaryTermRef">
+                        <xsl:with-param name="code">TargetNS</xsl:with-param>
+                        <xsl:with-param name="term">Target Namespace</xsl:with-param>
+                     </xsl:call-template>
+                  </th>
+                  <td>
+                     <xsl:choose>
+                        <xsl:when test="@targetNamespace">
+                           <span class="targetNS">
+                              <xsl:value-of select="@targetNamespace"/>
+                           </span>
+                        </xsl:when>
+                        <xsl:otherwise>
+                           <xsl:text>None</xsl:text>
+                        </xsl:otherwise>
+                     </xsl:choose>
+                  </td>
+               </tr>
+               <!-- Version -->
+               <xsl:if test="@version">
                   <tr>
-                     <th>
-                        <xsl:call-template name="PrintGlossaryTermRef">
-                           <xsl:with-param name="code">TargetNS</xsl:with-param>
-                           <xsl:with-param name="term">Target Namespace</xsl:with-param>
-                        </xsl:call-template>
-                     </th>
-                     <td>
-                        <xsl:choose>
-                           <xsl:when test="@targetNamespace">
-                              <span class="targetNS">
-                                 <xsl:value-of select="@targetNamespace"/>
-                              </span>
-                           </xsl:when>
-                           <xsl:otherwise>
-                              <xsl:text>None</xsl:text>
-                           </xsl:otherwise>
-                        </xsl:choose>
-                     </td>
+                     <th>Version</th>
+                     <td><xsl:value-of select="@version"/></td>
                   </tr>
-                  <!-- Version -->
-                  <xsl:if test="@version">
-                     <tr>
-                        <th>Version</th>
-                        <td><xsl:value-of select="@version"/></td>
-                     </tr>
-                  </xsl:if>
-                  <!-- Language -->
-                  <xsl:if test="@xml:lang">
-                     <tr>
-                        <th>Language</th>
-                        <td><xsl:value-of select="@xml:lang"/></td>
-                     </tr>
-                  </xsl:if>
-                  <!-- Element/Attribute Form Defaults -->
+               </xsl:if>
+               <!-- Language -->
+               <xsl:if test="@xml:lang">
                   <tr>
-                     <th>Element and Attribute Namespaces</th>
+                     <th>Language</th>
+                     <td><xsl:value-of select="@xml:lang"/></td>
+                  </tr>
+               </xsl:if>
+               <!-- Element/Attribute Form Defaults -->
+               <tr>
+                  <th>Element and Attribute Namespaces</th>
+                  <td>
+                     <ul>
+                        <li>Global element and attribute declarations belong to this schema's target namespace.</li>
+                        <li>
+                           <xsl:choose>
+                              <xsl:when test="normalize-space(@elementFormDefault)='qualified'">
+                                 <xsl:text>By default, local element declarations belong to this schema's target namespace.</xsl:text>
+                              </xsl:when>
+                              <xsl:otherwise>
+                                 <xsl:text>By default, local element declarations have no namespace.</xsl:text>
+                              </xsl:otherwise>
+                           </xsl:choose>
+                        </li>
+                        <li>
+                           <xsl:choose>
+                              <xsl:when test="normalize-space(@attributeFormDefault)='qualified'">
+                                 <xsl:text>By default, local attribute declarations belong to this schema's target namespace.</xsl:text>
+                              </xsl:when>
+                              <xsl:otherwise>
+                                 <xsl:text>By default, local attribute declarations have no namespace.</xsl:text>
+                              </xsl:otherwise>
+                           </xsl:choose>
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+               <!-- Schema Composition, e.g. include, import, redefine -->
+               <xsl:if test="xsd:include or xsd:import or xsd:redefine">
+                  <tr>
+                     <th>Schema Composition</th>
                      <td>
                         <ul>
-                           <li>Global element and attribute declarations belong to this schema's target namespace.</li>
-                           <li>
-                              <xsl:choose>
-                                 <xsl:when test="normalize-space(@elementFormDefault)='qualified'">
-                                    <xsl:text>By default, local element declarations belong to this schema's target namespace.</xsl:text>
-                                 </xsl:when>
-                                 <xsl:otherwise>
-                                    <xsl:text>By default, local element declarations have no namespace.</xsl:text>
-                                 </xsl:otherwise>
-                              </xsl:choose>
-                           </li>
-                           <li>
-                              <xsl:choose>
-                                 <xsl:when test="normalize-space(@attributeFormDefault)='qualified'">
-                                    <xsl:text>By default, local attribute declarations belong to this schema's target namespace.</xsl:text>
-                                 </xsl:when>
-                                 <xsl:otherwise>
-                                    <xsl:text>By default, local attribute declarations have no namespace.</xsl:text>
-                                 </xsl:otherwise>
-                              </xsl:choose>
-                           </li>
+                           <!-- Import -->
+                           <xsl:if test="xsd:import">
+                              <li>
+                                 <xsl:text>This schema imports schema(s) from the following namespace(s):</xsl:text>
+                                 <ul>
+                                 <xsl:for-each select="xsd:import">
+                                    <li>
+                                       <em><xsl:value-of select="@namespace"/></em>
+                                       <xsl:if test="@schemaLocation">
+                                          <xsl:text> (at </xsl:text>
+                                          <xsl:call-template name="PrintSchemaLink">
+                                             <xsl:with-param name="uri" select="@schemaLocation"/>
+                                          </xsl:call-template>
+                                          <xsl:text>)</xsl:text>
+                                       </xsl:if>
+                                    </li>
+                                 </xsl:for-each>
+                                 </ul>
+                              </li>
+                           </xsl:if>
+                           <!-- Include -->
+                           <xsl:if test="xsd:include">
+                              <li>
+                                 <xsl:text>This schema includes components from the following schema document(s):</xsl:text>
+                                 <ul>
+                                 <xsl:for-each select="xsd:include">
+                                    <li>
+                                       <xsl:call-template name="PrintSchemaLink">
+                                          <xsl:with-param name="uri" select="@schemaLocation"/>
+                                       </xsl:call-template>
+                                    </li>
+                                 </xsl:for-each>
+                                 </ul>
+                              </li>
+                           </xsl:if>
+                           <!-- Redefine -->
+                           <xsl:if test="xsd:redefine">
+                              <li>
+                                 <xsl:text>This schema includes components from the following schema document(s), where some of the components have been redefined:</xsl:text>
+                                 <ul>
+                                    <xsl:for-each select="xsd:redefine">
+                                       <li>
+                                       <xsl:call-template name="PrintSchemaLink">
+                                          <xsl:with-param name="uri" select="@schemaLocation"/>
+                                       </xsl:call-template>
+                                       </li>
+                                    </xsl:for-each>
+                                 </ul>
+                              <xsl:text>See </xsl:text><a href="#Redefinitions">Redefined Schema Components</a><xsl:text> section.</xsl:text>
+                              </li>
+                           </xsl:if>
                         </ul>
                      </td>
                   </tr>
-                  <!-- Schema Composition, e.g. include, import, redefine -->
-                  <xsl:if test="xsd:include or xsd:import or xsd:redefine">
-                     <tr>
-                        <th>Schema Composition</th>
-                        <td>
-                           <ul>
-                              <!-- Import -->
-                              <xsl:if test="xsd:import">
-                                 <li>
-                                    <xsl:text>This schema imports schema(s) from the following namespace(s):</xsl:text>
-                                    <ul>
-                                    <xsl:for-each select="xsd:import">
-                                       <li>
-                                          <em><xsl:value-of select="@namespace"/></em>
-                                          <xsl:if test="@schemaLocation">
-                                             <xsl:text> (at </xsl:text>
-                                             <xsl:call-template name="PrintSchemaLink">
-                                                <xsl:with-param name="uri" select="@schemaLocation"/>
-                                             </xsl:call-template>
-                                             <xsl:text>)</xsl:text>
-                                          </xsl:if>
-                                       </li>
-                                    </xsl:for-each>
-                                    </ul>
-                                 </li>
-                              </xsl:if>
-                              <!-- Include -->
-                              <xsl:if test="xsd:include">
-                                 <li>
-                                    <xsl:text>This schema includes components from the following schema document(s):</xsl:text>
-                                    <ul>
-                                    <xsl:for-each select="xsd:include">
-                                       <li>
-                                          <xsl:call-template name="PrintSchemaLink">
-                                             <xsl:with-param name="uri" select="@schemaLocation"/>
-                                          </xsl:call-template>
-                                       </li>
-                                    </xsl:for-each>
-                                    </ul>
-                                 </li>
-                              </xsl:if>
-                              <!-- Redefine -->
-                              <xsl:if test="xsd:redefine">
-                                 <li>
-                                    <xsl:text>This schema includes components from the following schema document(s), where some of the components have been redefined:</xsl:text>
-                                    <ul>
-                                       <xsl:for-each select="xsd:redefine">
-                                          <li>
-                                          <xsl:call-template name="PrintSchemaLink">
-                                             <xsl:with-param name="uri" select="@schemaLocation"/>
-                                          </xsl:call-template>
-                                          </li>
-                                       </xsl:for-each>
-                                    </ul>
-                                 <xsl:text>See </xsl:text><a href="#Redefinitions">Redefined Schema Components</a><xsl:text> section.</xsl:text>
-                                 </li>
-                              </xsl:if>
-                           </ul>
-                        </td>
-                     </tr>
-                  </xsl:if>
-               </tbody>
-            </table>
-         </xsl:with-param>
-         <xsl:with-param name="isOpened">true</xsl:with-param>
-         <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
-      </xsl:call-template>
-      <!-- Annotation -->
-      <xsl:call-template name="CollapseableBox">
-         <xsl:with-param name="id">
-            <xsl:call-template name="GetComponentID">
-               <xsl:with-param name="component" select="."/>
+               </xsl:if>
+            </tbody>
+         </table>
+      </xsl:variable>
+      <xsl:choose>
+         <xsl:when test="$showCollapseableBox = 'true'">
+            <xsl:call-template name="CollapseableBox">
+               <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <xsl:with-param name="help" select="$HELP_PROPERTIES"/>
+               <xsl:with-param name="anchor">properties-table</xsl:with-param>
+               <xsl:with-param name="styleClass">sample</xsl:with-param>
+               <xsl:with-param name="caption">Properties</xsl:with-param>
+               <xsl:with-param name="contents">
+                  <xsl:copy-of select="$contents"/>
+               </xsl:with-param>
+               <xsl:with-param name="isOpened">true</xsl:with-param>
+               <xsl:with-param name="omitPanelContainer">true</xsl:with-param>
             </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="help" select="$HELP_DOCUMENTATION"/>
-         <xsl:with-param name="anchor">doc-panel</xsl:with-param>
-         <xsl:with-param name="styleClass">sample</xsl:with-param>
-         <xsl:with-param name="caption">Documentation</xsl:with-param>
-         <xsl:with-param name="contents">
-            <xsl:call-template name="PrintAnnotation">
-               <xsl:with-param name="component" select="."/>
+				
+				<!-- Annotation -->
+				<xsl:call-template name="CollapseableBox">
+					<xsl:with-param name="id">
+						<xsl:call-template name="GetComponentID">
+							<xsl:with-param name="component" select="."/>
+						</xsl:call-template>
+					</xsl:with-param>
+					<xsl:with-param name="help" select="$HELP_DOCUMENTATION"/>
+					<xsl:with-param name="anchor">doc-panel</xsl:with-param>
+					<xsl:with-param name="styleClass">sample</xsl:with-param>
+					<xsl:with-param name="caption">Documentation</xsl:with-param>
+					<xsl:with-param name="contents">
+						<xsl:call-template name="PrintAnnotation">
+							<xsl:with-param name="component" select="."/>
+						</xsl:call-template>
+					</xsl:with-param>
+					<xsl:with-param name="isOpened">true</xsl:with-param>
+					<xsl:with-param name="containsCode">false</xsl:with-param>
+				</xsl:call-template>
+				
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:call-template name="DLBlock">
+              <xsl:with-param name="id">
+                  <xsl:call-template name="GetComponentID">
+                     <xsl:with-param name="component" select="."/>
+                  </xsl:call-template>
+               </xsl:with-param>
+               <!-- <xsl:with-param name="caption">Properties</xsl:with-param> -->
+               <xsl:with-param name="contents">
+                  <xsl:apply-templates select="exslt:node-set($contents)" mode="table_to_dl"/>
+               </xsl:with-param>
             </xsl:call-template>
-         </xsl:with-param>
-         <xsl:with-param name="isOpened">true</xsl:with-param>
-         <xsl:with-param name="containsCode">false</xsl:with-param>
-      </xsl:call-template>
+				
+				<xsl:call-template name="AnnotationBlock">
+				  <xsl:with-param name="id">
+						<xsl:call-template name="GetComponentID">
+							<xsl:with-param name="component" select="."/>
+						</xsl:call-template>
+					</xsl:with-param>
+					<xsl:with-param name="caption">Documentation</xsl:with-param>
+					<xsl:with-param name="contents">
+						<xsl:call-template name="PrintAnnotation">
+							<xsl:with-param name="component" select="."/>
+						</xsl:call-template>
+					</xsl:with-param>
+					<xsl:with-param name="containsCode">false</xsl:with-param>
+				</xsl:call-template>
+				
+         </xsl:otherwise>
+      </xsl:choose>
+      
    </xsl:template>
 
    <!--
@@ -7871,7 +7897,10 @@ nav {
       <xsl:param name="id"/>
       <xsl:param name="caption"/>
       <xsl:param name="contents"/>
-      <xsl:if test="normalize-space($contents)">
+      <xsl:if test="normalize-space($caption) != ''">
+         <h4><xsl:copy-of select="$caption"/>:</h4>
+      </xsl:if>
+      <xsl:if test="normalize-space($contents) != ''">
         <xsl:copy-of select="$contents"/>
       </xsl:if>
    </xsl:template>
