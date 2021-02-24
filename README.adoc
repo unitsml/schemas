@@ -1,0 +1,27 @@
+= UnitsML Schema Repository
+
+image:https://github.com/unitsml/schemas/workflows/ubuntu/badge.svg["Build Status", link="https://github.com/unitsml/schemas/actions?query=workflow%3Aubuntu"]
+
+== Purpose
+
+This is the schemas repository for UnitsML schemas.
+
+== Access
+
+Documents in this repository are available through:
+
+* https://schemas.unitsml.org[UnitsML Schema site]
+* https://unitsml.github.io/schemas/[UnitsML Schemas mini-site]
+
+
+== Contents
+
+This repository includes the UnitsML and UnitsML-Lite schemas.
+
+List of schema changes are provided in:
+
+include::schema_changes.adoc[]
+
+== Copyright
+
+The content of this repository belongs to the UnitsML group.
