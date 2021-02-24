@@ -23,7 +23,7 @@ xsdvi/xsdvi.zip:
 	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > $@
 
 $(XSDVIPATH): xsdvi/xercesImpl.jar
-	curl -sSL https://github.com/Intelligent2013/xsdvi/raw/master/dist/xsdvi-1.0.jar > $@
+	curl -sSL https://github.com/metanorma/xsdvi/raw/master/dist/xsdvi-1.0.jar > $@
 	# unzip -p $< dist/lib/xsdvi.jar > $@
 
 xsdvi/xercesImpl.jar: xsdvi/xsdvi.zip
