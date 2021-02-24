@@ -14,13 +14,17 @@ DESTDIR := ${CURDIR}/doc/
 XSDVIDIR := xsdvi
 XSLT_FILE := xsl/xs3p.xsl
 
+#xsdvi/xsdvi.jar: $(XSDVIDIR)
+#	pushd $<; \
+#	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip; \
+#	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar; \
+#	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar; \
+#	popd
+
 xsdvi/xsdvi.jar: $(XSDVIDIR)
 	pushd $<; \
-	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip; \
-	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar; \
-	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar; \
+	curl -sSL https://github.com/Intelligent2013/xsdvi/raw/master/dist/xsdvi-1.0.jar > xsdvi.jar; \
 	popd
-
 
 all: clean schemasvg schemadoc cleanxsdvi
 
