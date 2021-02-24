@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+*.lock
+xsdvi/xsdvi.zip
+xsdvi/xsdvi.jar
+xsdvi/xercesImpl.jar
