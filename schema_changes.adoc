@@ -1,0 +1,506 @@
+== Changes to the UnitsML Schema [UnitsML-vn.n-csdnn.xsd]
+
+=== v1.0-csd04
+
+Version:: v1.0-csd04
+Date::  December 13, 2011
+
+* Added light_week, light_hour, light_minute, and light_second to the enumerated root unit list.
+* Prepended "av_" (for Avoirdupois) to pound, ounce, and dram in the enumerated root unit list.
+
+
+=== v1.0-csd03
+
+Version:: v1.0-csd03
+Date::  April 13, 2011
+
+* Changed the enumerated root unit "kilogram_force" to "gram_force".
+
+
+=== v1.0-csd02
+
+Version:: v1.0-csd02
+Date::  February 4, 2011
+
+* In the "CountedItem" element, the "ItemVersionHistory" child element
+  was moved to be after the "ItemSymbol" element.
+* In the "Unit" element, the "UnitVersionHistory" child element
+  was moved to be after the "QuantityReference" element.
+
+
+=== v1.0-csd01
+
+Version:: v1.0-csd01
+Date::  January 21, 2011
+
+* typo fixes in the RootUnits/EnumeratedRootUnit/@unit simple enumeration
+  type: "us_fill" -> "us_gill"; fix all "*polarizablity" to read "*polarizability" instead.
+
+
+
+== Changes to the UnitsML Schema [unitsmlSchema-n.n.n.xsd]
+
+
+=== 0.9.19
+
+Version:: 0.9.19
+Date::  April 13, 2010
+
+* Added an optional @xml:lang to the PrefixSet/Prefix/PrefixSymbol element.
+* Added PlaneAngleType with @symbol (no fixed value) and powerRational attributeGroup.
+* Added an optional PlaneAngle element (of PlaneAngleType) to the DimensionType.
+* Removed the four attributes containing "U95UncertaintyRadius" from the Float64ConversionFromType.
+
+
+=== 0.9.18
+
+Version:: 0.9.18
+Date::  June 16, 2009
+
+* Added "bit" and "byte" to the enumerated root unit list (December 8, 2009)
+* Created ReferenceType to replace UnitReferenceType & QuantityReferenceType
+** @url (required; type anyURI)
+** @name (optional; type token)
+** @xml:lang (optional)
+* Element UnitReference changed to be of type ReferenceType.
+** By doing so, essentially removed @symbolicID & @alphanumericID
+* Element QuantityReference changed to be of type ReferenceType.
+* Removed UnitReferenceType & QuantityReferenceType.
+* In UnitType, removed CodeListValues (0...1) (a container for CodeListValue).
+* In UnitType, added CodeListValue (0...inf).
+* Removed CodeListValuesType & CodeListValues element.
+
+
+=== 0.9.17
+
+Version:: 0.9.17
+Date::  January 14, 2009
+
+* Changed the xml schema schemaLocation from http://www.w3.org/2001/03/xml.xsd
+    to http://www.w3.org/2001/xml.xsd.
+* Changed the following attributes to be required:
+** Unit/@xml:id
+** Float64ConversionFrom/@xml:id
+** SpecialConversionFrom/@xml:id
+** WSDLConversionFrom/@xml:id
+** CountedItem/@xml:id
+** Quantity/@xml:id
+** Dimension/@xml:id
+* Removed Unit/@symbol.
+* Added "unicode" to the annotation for SymbolType/@type.
+* Set the default value for PrefixType/@prefixBase to be "10" (enumerations 10 & 2).
+* Removed PrefixType/@prefixSystem and modified the annotation for @prefixBase.
+* Added the prefix "us_" to the following units enumerated in EnumeratedRootUnitType/@unit:
+** U.S. Length and area units: survey_inch, survey_foot, survey_yard, survey_fathom,
+   survey_rod, survey_chain, survey_link, survey_furlong, survey_mile, acre
+** U.S. volume units: gallon, quart, pint, cup, fill, fluid_ounce, fluid_dram, minim,
+   tablespoon, teaspoon, bushel, peck, dry_quart, dry_pint
+** U.S. FDA label units: label_teaspoon, label_tablespoon, label_cup, label_fluid_ounce,
+   label_ounce
+* Changed the sequence element within the DimensionType element to be unbounded.
+* Changed the upper limit on the 7 base dimensions from "2" to "1";
+    the upper limit for the Item element remains unbounded.
+** Explanation for the 2 changes immediately above:
+*** This configuration allows any order of any number of elements; the Item element remains
+    unbounded since each Item can represent a different "dimension"; e.g., a single sequence
+    could be "length^1.mass^2.time^-2.electron^1.neutron^-1". However, multiple sequences
+    would allow "L^1·L^-1·T^2·T^-2" or "L^1·T^-2·L^-1·T^2".
+
+
+=== 0.9.16
+
+Version:: 0.9.16
+Date::  December 9, 2008
+
+* The Dimension elements (Length, Mass, etc.) were modified to have empty content, since the
+  only needed content is in the 3 attributes (symbol, powerNumerator, & powerDenominator).
+* In DimensionType, changed 7 dimensions from (0...1) to (0...2). This allows the user to
+  specify L^1.L^-1, which retains the measured quantity (length) in the dimensionless ratio.
+** Note that with this scheme, the order must be L^2.L^-2.M^1,  not L^2.M^1.L^-2.
+* Modified the use of anyType for Unit/UnitSymbol element.
+* Changed Unit/UnitSymbol element to be optional, with the @type required.
+* Global attributes were each put into attribute groups in order to be accessed globally, but
+  to remove being tied to the unitsml namespace. The powerNumerator & powerDenominator are
+  grouped together in the powerRational attribute group.
+* Changed QuantityReference/ @quantityID (type xsd:string) to @quantityURL (type xsd:anyURI).
+* Added ItemVersionHistory element (type NoteType) to CountedItem element.
+* WSDLConversionFrom/ @initialUnit is now required.
+* Changed all @IDs to be @xml:id:
+** Unit/ @unitID
+** Float64ConversionFrom/ @ID
+** SpecialConversionFrom/ @ID
+** WSDLConversionFrom/ @ID
+** CountedItem/ @itemID
+** Quantity/ @quantityID
+** Dimension/ @dimensionID
+* Changed CountedItem/ ItemName to be required.
+* To EnumeratedRootUnit element, added @sourceURL (optional).
+* Added an optioinal PrefixSet/Prefix element to the top level UnitsML element. Included are
+** Attributes: xml:id (req), prefixSystem (opt, SI or binary), prefixBase (opt, 10 or 2),
+  and prefixPower (opt)
+** Elements: PrefixName (req, NameType) & PrefixSymbol (opt, SymbolType)
+
+
+=== 0.9.15
+
+Version:: 0.9.15
+Date::  November 12, 2008
+
+* Removed DimensionChoiceType; was previously included to illustrate a method of dimensioning.
+* Changed CodeListValueType/ @version to @codeListVersion.
+* Changed all elements of type NoteType and DefinitionType from 0...1 to 0...inf,
+  since notes and definitions could be written in more than one language.
+** Elements changed are:
+*** UnitType/ UnitVersionHistory & UnitDefinition
+*** Float64ConversionFromType/ ConverionNote
+*** QuantityType/ QuantityVersionHistory & QuantityDefinition
+*** CountedItemType/ ItemDefinition
+* Changed SymbolType from xsd:string to xsd:anyType
+** allows tags to be included in the content without converting brackets,
+  e.g., <unitsml:ItemSymbol type="HTML">c<sup>o</sup></unitsml:ItemSymbol>
+* Since CountedItem is now available, the following changes were made to DimensionType/ Item/
+** changed @itemIdentifier to @ itemURL
+** removed @itemName and @xml:lang
+** kept itemSymbol, since it could be used in a dimension expression
+  and might not be included in the CountedItem element;
+  parallel structure to the symbols for the 7 base dimensions: L, M, T, etc.
+* Changed @dimensionReference in both UnitType & QuantityType to @dimensionURL
+* Added ItemHistory (HistoryType, 0...inf) and ItemRemark (RemarkType, 0...inf) to CountedItemType
+
+
+=== 0.9.14
+
+Version:: 0.9.14
+Date::  October 14, 2008
+
+* In WSDLConversionFrom, changed @wsdlMethod to @wsdlURL (type xsd:anyURI).
+* In WSDLConversionFrom, changed @unit to @initialUnit (type xsd:anyURI).
+* Made @initialUnit (type xsd:anyURI) global and required in the three conversion elements.
+* Changed the namespace for @lang to be xml; i.e., xml:lang.
+* In ExternalRootUnit, changed @unit to be of type xsd:anyURI.
+* In CodeListValueType, changed @locationURI to @locationURL.
+* In SpecialConversionFromType, changed @conversionURI to @conversionURL.
+* Added a global element ItemDefinition to CountedItem element.
+
+
+=== 0.9.13
+
+Version:: 0.9.13
+Date::  September 15, 2008
+
+* Changed default value from "1" to "0" for DimensionType/ @dimensionless
+* Modified comment for @prefix regarding the order of the enumerated list
+	and added two binary prefixes to list (Zi & Yi).
+* In CodeListValueType, changed @agencyName & @agencyURI to
+	@organizationName & @organizationURI, respectively.
+* Changed all @lang to be global and modifed annotation to include reference to RFC 3066 & ISO 639.
+* Changed all @source to global attribute @sourceName.
+* Changed all @href to global attribute @sourceURL.
+* Modified the WSDLConversionFromType to include:
+	@ID (optional), @unit (required), @wsdlMethod (required),
+	and element WSDLDescription (0...inf) (type NoteType).
+* Added CountedItemType, which contains @itemID (required),
+	and elements ItemName (0...inf) and ItemSymbol (0...inf).
+* Added CountedItemSetType, which contains element CountedItem (1...inf).
+* Modified UnitsMLType to include element CountedItemSet (0...inf).
+
+
+=== 0.9.12
+
+Version:: 0.9.12
+Date::  July 09, 2008
+
+* Added complexType MethodParameterType with @name
+* Added global elements ServiceMethod (simple) & MethodParameter (complex)
+* Added complexType WSDLConversionFromType which contains:
+	attributes @ID (optional), @WSDLURI (required), & WSDLMethod (required)
+	elements: Conversion Description (0···inf), ServiceMethod (1), MethodParameter (1···inf)
+* Added global elemet WSDLConversionFrom (complex)
+* Modified ConversionsType to include a child element WSDLConversionFrom (0···inf)
+* Added @lang to ItemType
+* Removed "item" from the enumerated list for EnumeratedRootUnitType/ @unit
+* Changed DimensionType/ AmountSubstance to AmountOfSubstance
+* Added @dimensionless (optional, default=1) to DimensionType
+* Added DimensionChoiceType for consideration; contains:
+	elements Dimensionless (simple) and Dimensioned (complex)
+
+
+=== 0.9.11
+
+Version:: 0.9.11
+Date::  June 24, 2008
+
+* Changed Unit/ UnitNote to Unit/ UnitVersionHistory
+* Changed Quantity/ QuantityNote to Quantity/ QuantityVersionHistory
+* Added ItemType with @itemIdentifier, @itemName, @itemSymbol, @powerNumerator, and @powerDenominator
+* Added Element Item (Type ItemType; optional, unbounded) as a child to the Dimension element.
+* Added SpecialConversionFrom/ @conversionURI to allow for an external description or convertor.
+* Changed SpecialConversionFrom/ ConversionDescription element to be optional.
+
+
+=== 0.9.10
+
+Version:: 0.9.10
+Date::  January 16, 2008
+
+* Created optional DimensionSet at the same level as UnitSet and QuantitySet
+** Moved Dimension from Quantity to DimensionSet
+** Dimension element is set to be required and unbounded
+** Added dimensional exponents (@powerNumerator & @powerDenominator) to each
+    specific dimension element; e.g., Length, Mass, etc.
+*** These 2 attributes are global (used in RootUnits) and both have default values of 1.
+* Changed Unit/ @unitID to be required.
+* Added Unit/ @dimensionReference (global; xsd:anyURI) to reference the dimension of a unit.
+* Added Quantity/ @dimensionReference to reference the dimension of a quantity.
+* Added 'Unit' to Unit/ Symbol, Note, Definition, History, & Remark.
+* Added 'Quantity' to Quantity/ Symbol.
+* Added Quantity/ QuantityNote (0-1), QuantityDefinition (0-1),
+  QuantityHistory (0-unbounded), & QuantityRemark (0-unbounded).
+* Changed Quantity/ @quantityType (enumerated: 'base' or 'derived') to be optional.
+* Removed unused elements: Prefix, PrefixName.
+* Rearranged order of elements and complex types; added comments.
+
+
+=== 0.9.9
+
+Version:: 0.9.9
+Date::  September 12, 2007
+
+* In the enumerated @unit list in EnumeratedRootUnitType:
+** changed 'celsius' to 'degree_Celsius';
+** changed 'fahrenheit' to 'degree_Fahrenheit';
+** changed 'rankine' to 'degree_Rankine';
+** changed 'electron_volt' to 'electronvolt';
+** changed 'KNT' to 'knot';
+** changed 'stoke' to 'stokes';
+** changed 'oint' to 'pint';
+** added 'torr';
+** changed 'atmosphere' to 'standard_atmosphere';
+** added 'unified atomic mass unit'.
+*** Note 'unified atomic mass unit' is defined to be one twelfth of the mass of an unbound
+    atom of the carbon-12 nuclide, at rest and in its ground state;
+    whereas the 'atomic unit of mass', m_e, is the mass of an electron.
+
+
+=== 0.9.8
+
+Version:: 0.9.8
+Date::  June 9, 2007
+
+* Changed Unit/ @alphanumericID to unitID and changed the type from token to ID.
+* Changed Unit/ @symbolicID to symbol.
+* Changed Unit/Conversion/SpecialConversion to SpecialConversionFrom;
+  and changed the SpecialConversionType to SpecialConversionFromType.
+* Added SpecialConversionFrom/ @initialUnit.
+* Changed Quantity/UnitReference from being required to be optional and unbounded.
+* Modified and/or added annotation where appropriate.
+
+
+=== 0.9.7
+
+Version:: 0.9.7
+Date::  May 8, 2007
+
+* Removed Unit/ @powerNumerator and @powerDenominator.
+* Removed Unit/ Prefix element.
+* Corrected annotation due to removal of Unit element within Quantity element.
+* Corrected Float64ConversionFrom/ @finalAddendDecimalPlace from unsignedByte to byte.
+* Changed CodeListValue/@locationUri to @locationURI.
+* Added CodeListValue/@agencyURI; rearranged attribute order.
+* Added an optional SpecialConversion element in ConversionsType.
+* The SpecialConversionType includes @ID, @lang, and Description element of NoteType.
+* In ConversionsType, changed Float64ConversionFrom element to be optional.
+* Added U95UncertaintyRadius attributes for conversion factors.
+* In the UnitType, added @timeStamp of type dateTime.
+** time-stamp change indicates substantive change in unit; e.g., change in conversion factor.
+** UnitsDB version change indicates non-substantive change; e.g., unit names in other languages added.
+* Added 22 atomic units and 10 natural units to the enumerated @unit list in EnumeratedRootUnitType.
+** Changed atomic_mass_unit to atomic_unit_of_mass.
+* Added @lang attributes where appropriate.
+
+
+=== 0.9.6
+
+Version:: 0.9.6
+Date::  April 10, 2007
+
+* Added optional ConversionNote to Unit/ConversionFromType.
+* Unit/System  & @type changed from required to optional.
+* Renamed ConversionFrom element to Float64ConversionFrom.
+* Float64ConversionFrom/ @unitDocument and @unitID were combined into @initialUnit,
+	which is a combination URI and ID.
+* Changed the type for the four value attributes of Float64ConversionFrom element from string to double.
+* Added two attributes (unsignedBytes) for significant Digits of the @multiplicand and @divisor
+	values of the Float64ConversionFrom element.
+* Added two attributes (bytes) for DecimalPlaces of the @initialAddend and @finalAddend values
+	of the Float64ConversionFrom element.
+* Changed occurrences of numeric to alphanumeric when appropriate.
+* Changed some types to be more restrictive, but more appropriate; e.g., string to token.
+* Removed the Unit/Representation element and its children; the funcionality of this element
+	has been replaced with the RootUnits and Conversions elements.
+* Added global elements (CodeListValues & CodeListValue) for listing unit code values from
+	multiple code lists.
+* Changed the ThermodynamicTemperatureType/@symbol fixed value from "Theta" to "&#920;".
+* Removed the Unit element as a child of the Quantity element; added a UnitReference element.
+* Rearranged order of some elements to be consistent throughout the schema.
+* Made minor typographical corrections.
+
+
+=== 0.9.5
+
+Version:: 0.9.5
+Date::  March 13, 2007
+
+* Changed BaseUnits, EnumeratedBaseUnit, ExternalBaseUnit to
+          RootUnits, EnumeratedRootUnit, ExternalRootUnit, respectively.
+* Changed the enumerated prefix value of micro from the Greek 'mu' to u.
+* Added the binary prefixes (Ki, Mi, etc.) to the enumerated list of prefixes.
+* Changed the 'label' attribute in the ExternalRootUnitType to 'annotation'.
+* Changed the enumerated list of units (in the EnumeratedRootUnitType) from the previous list
+  containing UN/CEFACT codes to a basically English list of unit names, mostly in lower case,
+  with a few uppercase exceptions, e.g., 32F, mmHg & pH.
+* In the EnumeratedRootUnitType, made the prefix, powerNumerator, and powerDenominator
+  attributes global.
+* Added the global attributes prefix, powerNumerator, and powerDenominator to the
+  ExternalRootUnitType.
+* The following two items are described in the "Revising the 'Representation' Element in UnitsML",
+  by Peter Linstrom; March 12, 2007.
+* Added the global elements Conversions and ConversionFrom and the associated complex types
+  ConversionsType and ConversionFromType. The Conversions element is a child of the Unit
+  element and the ConversionFrom element is a child of the Conversions element.
+* Added eight (8) attributes to the ConversionFrom element: id, unitDocument, unitID,
+  initialAddend, multiplicand, divisor, finalAddend, and exact.
+
+
+=== 0.9.4
+
+Version:: 0.9.4
+Date::  February 12, 2007
+
+* Enumerated unit attribute with list of 210 units provided by Peter Linstrom.
+* Enumerated prefix attribute to values: Y Z E P T G M k h da d c m µ n p f a z y
+* Added attributes unit, label & source to ExternalBaseUnit.
+* Added attributes unit, prefix, numerator & denominator to EnumeratedBaseUnit.
+* Added optional elements EnumeratedBaseUnit & ExternalBaseUnit into the BaseUnits element.
+* Added optional BaseUnits element into the Unit element.
+* Created Global Types: BaseUnitsType, EnumeratedBaseUnitType, and ExternalBaseUnitType.
+* Removed PrefixSetType, PrefixSet, and reference to PrefixSet in UnitsML.
+
+
+=== 0.9.3
+
+Version:: 0.9.3
+Date::  November 3, 2006
+* UnitRepresentationType
+** Attribute powerNumerator - default added = "1"
+** Attribute powerDenominator - default added = "1"
+* UnitType
+** Attribute powerNumerator - default added = "1"
+** Attribute powerDenominator - default added = "1"
+* PrefixType
+** Attribute prefixSystem - use changed from required to optional; default added = "SI"
+** Attribute base - use changed from required to optional; default added = "10"
+
+
+=== 0.9.2.1
+
+Version:: 0.9.2.1
+Date::  August 16, 2006
+
+* PrefixType
+** 1) prefixSystem changed from required to optional; default value set to SI
+** 2) base changed from required to optional; default value set to 10
+* UnitType & UnitRepresentationType
+** 3) powerNumerator default value set to 1
+** 4) powerDenominator default value set to 1
+
+
+=== 0.9.2
+
+Version:: 0.9.2
+Date::  July 24, 2006
+
+* Schema documentation added
+* Attribute prefixSymbol from the Unit element removed
+* Reference to Prefix in the Unit element added
+* Type asciisymbols (with prefix symbol enumuration) removed; it was not used
+* "QuantityReferenceType -> reference" changed to "QuantityReferenceType -> quantityID"
+
+
+=== 0.9.1
+
+Version:: 0.9.1
+Date::  June 23, 2006
+
+* changed ThermoTemp to ThermodynamicTemperature
+* changed ThermoTempType to ThermodynamicTemperatureType
+* powerNumerator is now required instead of optional
+* deleted the unused attribute quantSymRef
+* changed the attribute asciiSymbol to be the entity "Symbol" minOccurs="0" maxOccurs="unbounded"
+* for element <Quantity> renamed the attribute "type" to "quantityType"
+* for element <Prefix> renamed the attribute "system" to "prefixSystem"
+* for element <Prefix> renamed the attribute "asciiSymbol" to be the entity "Symbol" minOccurs="0"   maxOccurs="unbounded"
+* deleted the attribute "prefixSymbolReference"
+
+
+=== 0.9
+
+Version:: 0.9
+Date::  May 22, 2006
+
+* NoteType added
+* ConversionFactor -> "note" changed to "ConversionNote" from type Note
+* Element Unit -> UnitNote from type Note added
+
+
+=== 0.8.1
+
+Version:: 0.8.1
+Date::  May 11, 2006
+
+* enumeration removed from Unit -> System -> Type
+
+
+=== 0.8
+
+Version:: 0.8
+Date::  May 10, 2006
+
+* Attributes added to UnitsType
+* Element Symbol added to Units
+* Enumuration element "non-SI" from SystemType changed to "not acceptable"
+* Attribute name  "ref" in QuantityReferenceType changed to "reference"
+* Attribute "name" added to QuantityReferenceType
+* Datatype changed in "prefixReference", "unitReference", "prefixSymbolReference", "quantSymRef"
+  from "IDREF" to "string"
+
+
+=== 0.7.3
+
+Version:: 0.7.3
+Date::  May 09, 2006
+
+* changes on naming
+* declaring dimension elements own types
+* make dimension elements global
+
+
+=== 0.7.2
+
+Version:: 0.7.2
+Date::  May 08, 2006
+
+* minOccurs="0" maxOccurs="1" added to dimensionType elements
+* minOccurs="0" maxOccurs="1" added to ref="Dimension"
+* extension base="xsd:byte added to dimensionType elements
+
+
+=== 0.7
+
+Version:: 0.7
+Date::  May 05, 2006
+* Element QuantitySet/Quantity/UnitRef to a Reference to element Unit
+* Removed elements UnitReference and Type UnitReference
+* Attributes in element QuantitySet/Quantity/Dimension to elements with own symbol attributes
+
+
