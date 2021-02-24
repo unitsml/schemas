@@ -5,56 +5,45 @@ else
 SHELL := /bin/bash
 endif
 
-SRC := UnitsML-v1.0-csd04
+UNITSMLSRC := $(wildcard unitsml/*.xsd)
+UNITSMLLITESRC := $(wildcard unitsmllite/*.xsd)
+UNITSMLDOC := $(patsubst unitsml/%.xsd,doc/unitsml/%/index.html,$(UNITSMLSRC))
+UNITSMLLITEDOC := $(patsubst unitsmllite/%.xsd,doc/unitsmllite/%/index.html,$(UNITSMLLITESRC))
+TOTALDOCS := $(UNITSMLDOC) $(UNITSMLLITEDOC)
 
-XSDSRC := ${CURDIR}/$(SRC).xsd
-SVGDEST := $(SRC).svg
-DIAGRAMSDIR := ${CURDIR}/diagrams/
-DESTDIR := ${CURDIR}/doc/
-XSDVIDIR := xsdvi
-XSLT_FILE := xsl/xs3p.xsl
+XSDVIPATH := ${CURDIR}/xsdvi/xsdvi.jar
+XSLT_FILE := ${CURDIR}/xsl/xs3p.xsl
 
-#xsdvi/xsdvi.jar: $(XSDVIDIR)
-#	pushd $<; \
-#	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > xsdvi.zip; \
-#	unzip -p xsdvi.zip dist/lib/xsdvi.jar > xsdvi.jar; \
-#	unzip -p xsdvi.zip dist/lib/xercesImpl.jar > xercesImpl.jar; \
-#	popd
+all: $(TOTALDOCS)
 
-xsdvi/xsdvi.jar: $(XSDVIDIR)
-	pushd $<; \
-	curl -sSL https://github.com/Intelligent2013/xsdvi/raw/master/dist/xsdvi-1.0.jar > xsdvi.jar; \
-	popd
+setup: $(XSDVIPATH)
 
-all: clean schemasvg schemadoc cleanxsdvi
+xsdvi/xsdvi.zip:
+	mkdir -p $(dir $@)
+	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > $@
 
+$(XSDVIPATH): xsdvi/xercesImpl.jar
+	curl -sSL https://github.com/Intelligent2013/xsdvi/raw/master/dist/xsdvi-1.0.jar > $@
+	# unzip -p $< dist/lib/xsdvi.jar > $@
 
-schemasvg: xsdvi/xsdvi.jar $(DESTDIR)
-	cd $(XSDVIDIR); \
-	java -jar xsdvi.jar $(XSDSRC); \
-	mv $(SVGDEST) $(DESTDIR)
-	cp -R $(DIAGRAMSDIR) $(DESTDIR)
-	
+xsdvi/xercesImpl.jar: xsdvi/xsdvi.zip
+	unzip -p $< dist/lib/xercesImpl.jar > $@
 
-schemadoc: $(DESTDIR)
-	xsltproc --nonet --param title "'Units Markup language (UnitsML) Schema Documentation'" --output $(DESTDIR)index.html $(XSLT_FILE) $(XSDSRC)
+doc/%/index.html: %.xsd $(XSDVIPATH)
+	mkdir -p $(dir $@)diagrams; \
+	java -jar $(XSDVIPATH) $(CURDIR)/$< -rootNodeName all -oneNodeOnly -outputPath $(dir $@)diagrams; \
+	xsltproc --nonet --param title "'Units Markup language (UnitsML) Schema Documentation $(notdir $*)'" \
+		--output $@ $(XSLT_FILE) $<
 
-gitupdate: 
+gitupdate:
 	git add doc
 	git commit -m "XSD docs generated"
 	git push
-	
-$(DESTDIR):
-	mkdir -p $@
-	date > $@.date
-
-$(XSDVIDIR):
-	mkdir -p $@
 
 clean:
-	rm -rf $(DESTDIR)
+	rm -rf doc
 
-cleanxsdvi:
-	rm -rf $(XSDVIDIR)
+distclean: clean
+	rm -rf xsdvi
 
-.PHONY: all clean doc xsdvi/xsdvi.jar
+.PHONY: all clean setup distclean

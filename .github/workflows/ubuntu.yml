@@ -15,23 +15,15 @@ jobs:
 
       - name: XSD documentation generation
         run: |
-          make all
-
-      - name: Repository update          
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add doc
-          git commit -m "XSD docs generated"
-          git push
+          make
 
       - uses: actions/upload-artifact@v2
         with:
           name: published-ubuntu
           path: doc
-          
+
   deploy-gh-pages:
-    if: github.ref == 'refs/heads/doc'
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -40,14 +32,13 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: published-ubuntu
-        path: published
+        path: doc
 
-    - name: GitHub Pages action
-      uses: docker://peaceiris/gh-pages:v2
+    - uses: peaceiris/actions-gh-pages@v3
       with:
-        emptyCommits: false
-        forceOrphan: true
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.GH_DEPLOY_KEY }}
-        PUBLISH_BRANCH: doc
-        PUBLISH_DIR: ./doc
+        deploy_key: ${{ secrets.GH_DEPLOY_KEY }}
+        publish_dir: ./doc
+        force_orphan: true
+        user_name: ${{ github.actor }}
+        user_email: ${{ format('{0}@users.noreply.github.com', github.actor) }}
+        commit_message: "${{ format('Deploy to GitHub Pages: {0}', github.sha) }}"
