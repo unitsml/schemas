@@ -1,7 +1,7 @@
 require "yaml"
 require "open-uri"
 
-yaml_content = open(ARGV[0]) {|f| f.read}; 
+yaml_content = URI.open(ARGV[0]) {|f| f.read}; 
 puts '<items>'; 
 items = YAML::load(yaml_content); 
 items.each do |key, value| 
