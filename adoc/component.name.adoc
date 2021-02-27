@@ -1,0 +1,19 @@
+{%- capture noun -%}
+{% if include.component_type == 'element' or include.component_type == 'attribute' %}declaration
+{% else %}definition
+{% endif %}
+{%- endcapture -%}
+
+{%- capture component_prefix -%}
+	{%- case include.component_type -%}
+	  {% when "attribute" %}attribute_
+	  {% when "attribute group" %}attributeGroup_
+	  {% when "element group" %}element_
+	  {% when "group" %}group_
+	  {% when "type" %}type_
+	  {% when "uniqueness/key constraint" %}key_
+	  {% else %}
+	{%- endcase -%}
+{%- endcapture -%}
+
+<<{{ component_prefix }}{{ include.name }}, {{ include.name}}>>

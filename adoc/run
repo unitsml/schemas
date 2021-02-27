@@ -1,1 +1,0 @@
-bundle exec liquidoc -d UnitsML.xsd.xml -t xsddoc.adoc  -o sample.adoc --verbose

@@ -1,0 +1,6 @@
+{%- capture noun -%}
+{% if include.component_type == 'element' or include.component_type == 'attribute' %}declaration
+{% else %}definition
+{% endif %}
+{%- endcapture -%}
+{%- include_relative component.name.adoc name=include.ref -%}

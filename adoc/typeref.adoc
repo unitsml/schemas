@@ -1,1 +1,8 @@
-Test
+{%- capture result -%}
+	{% if include.name != nil %} PrintCompName
+	{% elsif include.ref != nil %} {%- include_relative component.reference.adoc ref=include.ref component_type='type' -%}
+	{% endif %}
+{%- endcapture -%}
+
+
+{{ result }}

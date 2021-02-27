@@ -1,0 +1,4 @@
+{%- for documentation in include.elem.['xsd:annotation']['xsd:documentation'] -%}
+{{- documentation -}}
+{% if ['@source'] %}Linked documentation: {{ ['@source'] }}{% endif %}
+{% endfor %}

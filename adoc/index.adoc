@@ -1,0 +1,50 @@
+---
+---
+{% assign schema = site.data.UnitsML['xsd:schema'] %}
+= Units Markup language (UnitsML) Schema Documentation
+
+[[SchemaProperties]]
+== Schema Document Properties
+
+???
+
+{% if schema['xsd:element'].size > 0 %}[[SchemaElements]]
+== Elements
+{% assign elements_sorted = schema['xsd:element'] | sort: "@name" %}{% for el in elements_sorted %}
+{% assign curr_name = el['@name'] %}
+=== Element: [[element_{{ curr_name }}]]{{ curr_name }}
+
+image::diagrams/{{ curr_name }}.svg
+
+Type:: {% if el['xsd:simpleType'] != nil %}Locally-defined simple type
+{% elsif el['xsd:complexType'] != nil %}Locally-defined complex type
+{% elsif el['@type'] != nil %}{% assign type = el['@type']  %}{% include_relative typeref.adoc ref=type %}
+{% else %}anyType
+{% endif %}
+
+{% comment %}
+<xsl:for-each select="/xsd:schema//xsd:element[@ref = current()/@name]"> 
+	 <xsl:call-template name="PrintTypeRef">
+		<xsl:with-param name="ref" select="ancestor::xsd:complexType/@name"/>
+	</xsl:call-template>
+{% endcomment %}
+{%- capture usedBy -%}
+{% for e in schema['xsd:element'] %}
+	{% if  e['@ref'] == curr_name %}
+		{% include_relative typeref.adoc ref=type %}
+	{% endif %}
+{% endfor  %}
+{%- endcapture -%}
+{%- assign userBy2 = 'Type1 Type2 Type3' -%}
+Used By:: {{ userBy2  | split: ' ' |  join: ", "  }}
+
+{% capture documentation %}{% include_relative documentation.adoc elem=el %}{% endcapture %}
+{% if documentation !=''  %}
+Documentation:: {{ documentation }}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+Total: {{ schema['xsd:element'].size }}
+
