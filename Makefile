@@ -19,13 +19,8 @@ UNITS_PATH := https://github.com/unitsml/unitsdb/raw/master/units.yaml
 SCHEMA_VERSION := 1.0
 CURR_SCHEMA := UnitsML-v${SCHEMA_VERSION}
 
-xsdgen:
-	cd template; \
-	ruby prefixes_yaml_parse.rb $(PREFIXES_PATH) > prefixes.xml; \
-	ruby units_yaml_parse.rb $(UNITS_PATH) > units.xml; \
-	xsltproc --nonet --output $(CURR_SCHEMA).xsd xsdprocess.xsl $(CURR_SCHEMA).template
 
-all: $(TOTALDOCS)
+all: $(TOTALDOCS) xsdgen
 
 setup: $(XSDVIPATH)
 
@@ -45,6 +40,13 @@ doc/%/index.html: %.xsd $(XSDVIPATH)
 	java -jar $(XSDVIPATH) $(CURDIR)/$< -rootNodeName all -oneNodeOnly -outputPath $(dir $@)diagrams; \
 	xsltproc --nonet --param title "'Units Markup language (UnitsML) Schema Documentation $(notdir $*)'" \
 		--output $@ $(XSLT_FILE) $<
+
+xsdgen:
+	cd template; \
+	ruby prefixes_yaml_parse.rb $(PREFIXES_PATH) > prefixes.xml; \
+	ruby units_yaml_parse.rb $(UNITS_PATH) > units.xml; \
+	xsltproc --nonet --output $(CURR_SCHEMA).xsd xsdprocess.xsl $(CURR_SCHEMA).template
+
 
 gitupdate:
 	git add doc
