@@ -14,6 +14,17 @@ TOTALDOCS := $(UNITSMLDOC) $(UNITSMLLITEDOC)
 XSDVIPATH := ${CURDIR}/xsdvi/xsdvi.jar
 XSLT_FILE := ${CURDIR}/xsl/xs3p.xsl
 
+PREFIXES_PATH := https://github.com/unitsml/unitsdb/raw/master/prefixes.yaml
+UNITS_PATH := https://github.com/unitsml/unitsdb/raw/master/units.yaml
+SCHEMA_VERSION := 1.0
+CURR_SCHEMA := UnitsML-v${SCHEMA_VERSION}
+
+xsdgen:
+	cd template; \
+	ruby prefixes_yaml_parse.rb $(PREFIXES_PATH) > prefixes.xml; \
+	ruby units_yaml_parse.rb $(UNITS_PATH) > units.xml; \
+	xsltproc --nonet --output $(CURR_SCHEMA).xsd xsdprocess.xsl $(CURR_SCHEMA).template
+
 all: $(TOTALDOCS)
 
 setup: $(XSDVIPATH)

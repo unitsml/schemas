@@ -11,7 +11,7 @@ jobs:
 
       - name: Setup prerequisites
         run: |
-          sudo apt-get install xsltproc
+          sudo apt-get install xsltproc ruby
 
       - name: XSD documentation generation
         run: |
