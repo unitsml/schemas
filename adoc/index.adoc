@@ -1,5 +1,6 @@
 ---
 ---
+:page-liquid:
 {% assign schema = site.data.UnitsML['xsd:schema'] %}
 = Units Markup language (UnitsML) Schema Documentation
 
@@ -14,7 +15,7 @@
 {% assign curr_name = el['@name'] %}
 === Element: [[element_{{ curr_name }}]]{{ curr_name }}
 
-image::diagrams/{{ curr_name }}.svg
+image::diagrams/{{ curr_name }}.svg[]
 
 Type:: {% if el['xsd:simpleType'] != nil %}Locally-defined simple type
 {% elsif el['xsd:complexType'] != nil %}Locally-defined complex type
@@ -23,7 +24,7 @@ Type:: {% if el['xsd:simpleType'] != nil %}Locally-defined simple type
 {% endif %}
 
 {% comment %}
-<xsl:for-each select="/xsd:schema//xsd:element[@ref = current()/@name]"> 
+<xsl:for-each select="/xsd:schema//xsd:element[@ref = current()/@name]">
 	 <xsl:call-template name="PrintTypeRef">
 		<xsl:with-param name="ref" select="ancestor::xsd:complexType/@name"/>
 	</xsl:call-template>
