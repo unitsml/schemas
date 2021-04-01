@@ -113,7 +113,21 @@
 
    <!-- Title of HTML document. -->
    <xsl:param name="title"></xsl:param>
-
+  
+    <!-- XSD file name -->
+    <xsl:param name="rootxsd"/>
+    
+    <xsl:variable name="rootxsd_includes">
+      <xsl:value-of select="$rootxsd"/>
+      <xsl:text> </xsl:text>
+      <xsl:for-each select="//xsd:include">
+        <xsl:call-template name="getFileName">
+          <xsl:with-param name="path" select="@schemaLocation"/>
+        </xsl:call-template>
+        <xsl:text> </xsl:text>
+      </xsl:for-each>
+    </xsl:variable>
+    
    <!-- If 'true', sorts the top-level schema components by type,
         then name. Otherwise, displays the components by the order that
         they appear in the schema. -->
@@ -243,7 +257,89 @@
    
    <xsl:variable name="nav-width">270px</xsl:variable>
    
+   <!-- Merge XSDs into one -->
+   
+     <xsl:template match="node()|@*" mode="merge">
+      <xsl:param name="schemas"/>
+      <xsl:param name="internal"/>
+      <xsl:choose>
+        <xsl:when test="$internal = 'true' and local-name() = 'schema'">
+          <xsl:apply-templates mode="merge">
+              <xsl:with-param name="schemas" select="concat($schemas, ' ', $rootxsd)"/>
+            </xsl:apply-templates>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:copy>
+            <xsl:apply-templates select="node()|@*" mode="merge">
+              <xsl:with-param name="schemas" select="concat($schemas, ' ', $rootxsd)"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="xsd:include" mode="merge">
+      <xsl:param name="schemas"/>
+      <xsl:variable name="schemaFile">
+        <xsl:call-template name="getFileName">
+          <xsl:with-param name="path" select="@schemaLocation"/>
+        </xsl:call-template>
+      </xsl:variable>
+      <!-- schemas=<xsl:value-of select="$schemas"/> -->
+      
+      <xsl:if test="not(contains($schemas, $schemaFile))">
+        <xsl:apply-templates select="document(@schemaLocation)" mode="merge">
+          <xsl:with-param name="schemas" select="concat($schemas, ' ', $schemaFile, ' ', $rootxsd_includes)"/>
+          <xsl:with-param name="internal" select="'true'"/>
+        </xsl:apply-templates>
+      </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="getFileName">
+      <xsl:param name="path"/>
+      <xsl:choose>
+        <xsl:when test="contains($path, '/')">
+          <xsl:call-template name="substring-after-last">
+            <xsl:with-param name="value" select="$path"/>
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test="contains($path, '\')">
+          <xsl:call-template name="substring-after-last">
+            <xsl:with-param name="value" select="$path"/>
+            <xsl:with-param name="delimiter" select="'\'"/>
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="$path"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:template>
+
+    <xsl:template name="substring-after-last">
+      <xsl:param name="value"/>
+      <xsl:param name="delimiter" select="'/'"/>
+      <xsl:choose>
+        <xsl:when test="contains($value, $delimiter)">
+          <xsl:call-template name="substring-after-last">
+            <xsl:with-param name="value" select="substring-after($value, $delimiter)" />
+            <xsl:with-param name="delimiter" select="$delimiter" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$value" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:template>
+    
+   <!-- END Merge XSDs into one -->
+   
    <!-- ******** Main Document ******** -->
+
+    <xsl:template match="/">
+      <xsl:variable name="mergedDoc">
+        <xsl:apply-templates mode="merge"/>
+      </xsl:variable>
+      <xsl:apply-templates select="exslt:node-set($mergedDoc)/node()"/>
+    </xsl:template>
 
    <!--
      Main template that starts the process
