@@ -1652,7 +1652,8 @@ nav {
                   </xsl:with-param>
                   <xsl:with-param name="caption">Type hierarchy</xsl:with-param>
                   <xsl:with-param name="contents">
-                     <xsl:apply-templates select="exslt:node-set($contents)" mode="table_to_dl"/>
+                     <!-- <xsl:apply-templates select="exslt:node-set($contents)" mode="table_to_dl"/> -->
+                     <xsl:copy-of select="$contents"/>
                   </xsl:with-param>
                </xsl:call-template>
             </xsl:otherwise>
