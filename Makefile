@@ -14,7 +14,7 @@ UNITSMLDOC := $(patsubst unitsml/%.xsd,docs/unitsml/%/index.html,$(UNITSMLSRC))
 UNITSMLLITEDOC := $(patsubst unitsmllite/%.xsd,docs/unitsmllite/%/index.html,$(UNITSMLLITESRC))
 TOTALDOCS := $(UNITSMLDOC) $(UNITSMLLITEDOC)
 
-XERCESURL := https://apache.website-solution.net/xerces/j/binaries/Xerces-J-bin.2.12.1.tar.gz
+XERCESURL := https://downloads.apache.org/xerces/j/binaries/Xerces-J-bin.2.12.1.tar.gz
 XSDVIURL := https://github.com/metanorma/xsdvi/releases/download/v1.0/xsdvi-1.0.jar
 XS3PURL := https://github.com/metanorma/xs3p/archive/refs/tags/v3.0.tar.gz
 
