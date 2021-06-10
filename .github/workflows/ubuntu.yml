@@ -12,7 +12,13 @@ jobs:
       - name: Setup prerequisites
         run: |
           sudo apt-get update
-          sudo apt-get install xsltproc ruby
+          sudo apt-get install xsltproc
+
+      - name: Use Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+          bundler-cache: true
 
       - name: XSD documentation generation
         run: |
@@ -33,7 +39,7 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: published-ubuntu
-        path: doc
+        path: docs
 
     - uses: peaceiris/actions-gh-pages@v3
       with:
