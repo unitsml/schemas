@@ -6,21 +6,62 @@ image:https://github.com/unitsml/schemas/workflows/ubuntu/badge.svg["Build Statu
 
 This is the schemas repository for UnitsML schemas.
 
-== Access
-
-Documents in this repository are available through:
+Documentation created from this repository are made available at:
 
 * https://schemas.unitsml.org[UnitsML Schema site]
 * https://unitsml.github.io/schemas/[UnitsML Schemas mini-site]
+  (developmental purposes)
 
 
 == Contents
 
 This repository includes the UnitsML and UnitsML-Lite schemas.
 
-List of schema changes are provided in:
+* UnitsML XSDs are placed under `unitsml/*.xsd`
+* UnitsML-Lite XSDs are placed under `unitsmllite/*.xsd`
+
+
+List of schema changes described in:
 
 include::schema_changes.adoc[]
+
+
+== Usage
+
+=== Generate latest UnitsML XSD (`unitsml/unitsml-v{version}.xsd`)
+
+UnitsML XSD schema incorporates data from
+https://github.com/unitsml/unitsdb[UnitsDB],
+including prefixes and units.
+
+When necessary, the latest UnitsML XSD should be re-generated
+with the corresponding version of the UnitsDB.
+
+NOTE: Version definition of the latest UnitsML XSD is defined in the `Makefile`.
+
+[source,sh]
+----
+make unitsml/unitsml-v1.0.xsd
+----
+
+
+=== Generate XSD documentation (under `docs/`)
+
+Generation of XSD documentation depends on the following tools:
+
+* https://github.com/metanorma/xs3p[xs3p] for generating documentation
+* https://github.com/metanorma/xsdvi[xsdvi] for the generation of diagrams,
+  which depends on http://xerces.apache.org[Apache Xerces]
+
+Command to generate documentation under `docs/`:
+
+[source,sh]
+----
+make docs
+----
+
+This command will download all necessary dependencies under `.archives/`
+and place them in corresponding paths.
 
 == Copyright
 
