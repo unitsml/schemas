@@ -2,7 +2,7 @@
 *.log
 *.lock
 xsdvi/
-# xsl/
+xsl/
 .archive/
 templates/prefixes.xml
 templates/units.xml
