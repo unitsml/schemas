@@ -5,48 +5,76 @@ else
 SHELL := /bin/bash
 endif
 
-UNITSMLSRC := $(wildcard unitsml/*.xsd)
+SCHEMA_VERSION := 1.0
+CURR_SCHEMA := unitsml-v${SCHEMA_VERSION}
+
+UNITSMLSRC := $(wildcard unitsml/*.xsd) unitsml/$(CURR_SCHEMA).xsd
 UNITSMLLITESRC := $(wildcard unitsmllite/*.xsd)
-UNITSMLDOC := $(patsubst unitsml/%.xsd,doc/unitsml/%/index.html,$(UNITSMLSRC))
-UNITSMLLITEDOC := $(patsubst unitsmllite/%.xsd,doc/unitsmllite/%/index.html,$(UNITSMLLITESRC))
+UNITSMLDOC := $(patsubst unitsml/%.xsd,docs/unitsml/%/index.html,$(UNITSMLSRC))
+UNITSMLLITEDOC := $(patsubst unitsmllite/%.xsd,docs/unitsmllite/%/index.html,$(UNITSMLLITESRC))
 TOTALDOCS := $(UNITSMLDOC) $(UNITSMLLITEDOC)
 
-XSDVIPATH := ${CURDIR}/xsdvi/xsdvi.jar
-XSLT_FILE := ${CURDIR}/xsl/xs3p.xsl
+XERCESURL := https://apache.website-solution.net/xerces/j/binaries/Xerces-J-bin.2.12.1.tar.gz
+XSDVIURL := https://github.com/metanorma/xsdvi/releases/download/v1.0/xsdvi-1.0.jar
+XS3PURL := https://github.com/metanorma/xs3p/archive/refs/tags/v3.0.tar.gz
+
+XERCESPATH := xsdvi/xercesImpl.jar
+XSDVIPATH := xsdvi/xsdvi.jar
+XS3PPATH := xsl/xs3p.xsl
 
 PREFIXES_PATH := https://github.com/unitsml/unitsdb/raw/master/prefixes.yaml
 UNITS_PATH := https://github.com/unitsml/unitsdb/raw/master/units.yaml
-SCHEMA_VERSION := 1.0
-CURR_SCHEMA := UnitsML-v${SCHEMA_VERSION}
 
+all: unitsml/$(CURR_SCHEMA).xsd docs
 
-all: $(TOTALDOCS) xsdgen
+docs: $(TOTALDOCS)
 
-setup: $(XSDVIPATH)
+setup: $(XSDVIPATH) $(XERCESPATH) $(XS3PPATH)
 
-xsdvi/xsdvi.zip:
+.archive/Xerces-J-bin.2.12.1.tar.gz:
 	mkdir -p $(dir $@)
-	curl -sSL https://sourceforge.net/projects/xsdvi/files/latest/download > $@
+	curl -sSL -o $@ $(XERCESURL)
 
-$(XSDVIPATH): xsdvi/xercesImpl.jar
-	curl -sSL https://github.com/metanorma/xsdvi/releases/download/v1.0/xsdvi-1.0.jar > $@
-	# unzip -p $< dist/lib/xsdvi.jar > $@
+.archive/xsdvi-1.0.jar:
+	mkdir -p $(dir $@)
+	curl -sSL -o $@ $(XSDVIURL)
 
-xsdvi/xercesImpl.jar: xsdvi/xsdvi.zip
-	unzip -p $< dist/lib/xercesImpl.jar > $@
+.archive/xs3p.tar.gz:
+	mkdir -p $(dir $@)
+	curl -sSL -o $@ $(XS3PURL)
 
-doc/%/index.html: %.xsd $(XSDVIPATH)
+$(XSDVIPATH): .archive/xsdvi-1.0.jar
+	mkdir -p $(dir $@)
+	cp $< $@
+
+$(XERCESPATH): .archive/Xerces-J-bin.2.12.1.tar.gz
+	mkdir -p $(dir $@)
+	tar -zxvf $< -C xsdvi --strip-components=1 xerces-2_12_1/xercesImpl.jar
+	touch $@
+
+$(XS3PPATH): .archive/xs3p.tar.gz
+	mkdir -p $(dir $@)
+	tar -zxvf $< -C xsl --strip-components=2 xs3p-3.0/xsl
+	touch $@
+
+docs/%/index.html: %.xsd $(XSDVIPATH) $(XERCESPATH) $(XS3PPATH)
 	mkdir -p $(dir $@)diagrams; \
-	java -jar $(XSDVIPATH) $(CURDIR)/$< -rootNodeName all -oneNodeOnly -outputPath $(dir $@)diagrams; \
-	xsltproc --nonet --param title "'Units Markup language (UnitsML) Schema Documentation $(notdir $*)'" \
-		--output $@ $(XSLT_FILE) $<
+	java -jar $(XSDVIPATH) $(CURDIR)/$< \
+		-rootNodeName all \
+		-oneNodeOnly \
+		-outputPath $(dir $@)diagrams; \
+	xsltproc --nonet \
+		--param title "'Units Markup language (UnitsML) Schema Documentation $(notdir $*)'" \
+		--output $@ $(XS3PPATH) $<
 
-xsdgen:
-	cd template; \
-	ruby prefixes_yaml_parse.rb $(PREFIXES_PATH) > prefixes.xml; \
-	ruby units_yaml_parse.rb $(UNITS_PATH) > units.xml; \
-	xsltproc --nonet --output $(CURR_SCHEMA).xsd xsdprocess.xsl $(CURR_SCHEMA).template
+templates/prefixes.xml:
+	ruby templates/prefixes_yaml_parse.rb $(PREFIXES_PATH) > $@
 
+templates/units.xml:
+	ruby templates/units_yaml_parse.rb $(UNITS_PATH) > $@
+
+unitsml/$(CURR_SCHEMA).xsd: templates/prefixes.xml templates/units.xml
+	xsltproc --nonet --output $@ templates/xsdprocess.xsl templates/$(CURR_SCHEMA).template
 
 gitupdate:
 	git add doc
@@ -54,9 +82,9 @@ gitupdate:
 	git push
 
 clean:
-	rm -rf doc
+	rm -rf doc xsl xsdvi
 
 distclean: clean
-	rm -rf xsdvi
+	rm -rf .archive
 
 .PHONY: all clean setup distclean
