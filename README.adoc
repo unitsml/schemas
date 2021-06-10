@@ -21,9 +21,8 @@ This repository includes the UnitsML and UnitsML-Lite schemas.
 * UnitsML-Lite XSDs are placed under `unitsmllite/*.xsd`
 
 
-List of schema changes described in:
-
-include::schema_changes.adoc[]
+List of schema changes described in the 
+link:schema_changes.adoc[schema change log].
 
 
 == Usage
