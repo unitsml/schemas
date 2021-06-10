@@ -22,8 +22,8 @@ XERCESPATH := xsdvi/xercesImpl.jar
 XSDVIPATH := xsdvi/xsdvi.jar
 XS3PPATH := xsl/xs3p.xsl
 
-PREFIXES_PATH := https://github.com/unitsml/unitsdb/raw/master/prefixes.yaml
-UNITS_PATH := https://github.com/unitsml/unitsdb/raw/master/units.yaml
+PREFIXES_PATH := https://github.com/unitsml/unitsdb/raw/main/prefixes.yaml
+UNITS_PATH := https://github.com/unitsml/unitsdb/raw/main/units.yaml
 
 all: unitsml/$(CURR_SCHEMA).xsd docs
 
