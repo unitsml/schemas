@@ -5,7 +5,7 @@ else
 SHELL := /bin/bash
 endif
 
-SCHEMA_VERSION := 1.0
+SCHEMA_VERSION := 2.0
 CURR_SCHEMA := unitsml-v${SCHEMA_VERSION}
 
 UNITSMLSRC := $(wildcard unitsml/*.xsd) unitsml/$(CURR_SCHEMA).xsd
