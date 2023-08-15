@@ -50,10 +50,12 @@ PURPOSE.
 	targetNamespace="https://schema.unitsml.org/unitsml/2.0"
 	xmlns:ver="http://www.w3.org/2007/XMLSchema-versioning"
 	xmlns:vc="urn:ietf:params:xml:ns:vcard-4.0"
+	xmlns:mathml="http://www.w3.org/1998/Math/MathML"
 	elementFormDefault="qualified"
 	attributeFormDefault="unqualified" version="2.0" ver:minVersion="1.1">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
     <xsd:import namespace="urn:ietf:params:xml:ns:vcard-4.0" schemaLocation="https://www.iana.org/assignments/xml-registry/schema/vcard-4.0.xsd"/>
+	<xsd:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="https://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd"/>
 	<!--=== Root-Node of an UnitsML document ===-->
 	<xsd:element name="UnitsML" type="unitsml:UnitsMLType">
 		<xsd:annotation>
@@ -363,20 +365,31 @@ PURPOSE.
 			<xsd:documentation>Element containing the unit name.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	<xsd:element name="UnitSymbol" type="unitsml:SymbolType">
+	<xsd:element name="UnitSymbol">
 		<xsd:annotation>
 			<xsd:documentation>Element containing various unit symbols.  Examples include Aring (ASCII), Å (HTML).</xsd:documentation>
 		</xsd:annotation>
+		<xsd:alternative test="@type eq 'ASCII'" type="unitsml:ASCIIContent"/>
+		<xsd:alternative test="@type eq 'Unicode'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'LaTeX'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'HTML'" type="unitsml:HTMLContent"/>
+		<xsd:alternative test="@type eq 'MathML'" type="unitsml:MathMLContent"/>
+		<xsd:alternative test="@type eq 'SVG'" type="unitsml:HTMLContent"/> <!-- Maybe use the offical DTD or convert it to XSD -->
+		<xsd:alternative test="@type eq 'D-SI'" type="unitsml:D-SI"/>
+		<xsd:alternative test="@type eq 'UCUM'" type="unitsml:ASCIIType"/>
+		<xsd:alternative type="unitsml:UnicodeContent"/>
 	</xsd:element>
 	<xsd:element name="UnitVersionHistory" type="unitsml:NoteType">
 		<xsd:annotation>
 			<xsd:documentation>Element for descriptive information, including version changes to the unit.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	<xsd:element name="CodeListValue" type="unitsml:CodeListValueType">
+	<xsd:element name="CodeListValue">
 		<xsd:annotation>
-			<xsd:documentation>Element for listing the unit code value from a specific code list.</xsd:documentation>
+			<xsd:documentation>Element for listing the code value from a specific code list.</xsd:documentation>
 		</xsd:annotation>
+		<xsd:alternative test="@IRDI" type="unitsml:IRDICodeListValueType"/>
+		<xsd:alternative type="unitsml:CodeListValueType"/>
 	</xsd:element>
 	<xsd:element name="RootUnits" type="unitsml:RootUnitsType">
 		<xsd:annotation>
@@ -467,10 +480,19 @@ PURPOSE.
 			<xsd:documentation>Element containing the item name(s).</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	<xsd:element name="ItemSymbol" type="unitsml:SymbolType">
+	<xsd:element name="ItemSymbol">
 		<xsd:annotation>
 			<xsd:documentation>Element containing symbols for the item.</xsd:documentation>
 		</xsd:annotation>
+		<xsd:alternative test="@type eq 'ASCII'" type="unitsml:ASCIIContent"/>
+		<xsd:alternative test="@type eq 'Unicode'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'LaTeX'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'HTML'" type="unitsml:HTMLContent"/>
+		<xsd:alternative test="@type eq 'MathML'" type="unitsml:MathMLContent"/>
+		<xsd:alternative test="@type eq 'SVG'" type="unitsml:HTMLContent"/> <!-- Maybe use the offical DTD or convert it to XSD -->
+		<xsd:alternative test="@type eq 'D-SI'" type="unitsml:D-SI"/>
+		<xsd:alternative test="@type eq 'UCUM'" type="unitsml:ASCIIType"/>
+		<xsd:alternative type="unitsml:UnicodeContent"/>
 	</xsd:element>
 	<xsd:element name="ItemVersionHistory" type="unitsml:NoteType">
 		<xsd:annotation>
@@ -514,10 +536,19 @@ PURPOSE.
 			<xsd:documentation>Element containing the quantity name.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	<xsd:element name="QuantitySymbol" type="unitsml:SymbolType">
+	<xsd:element name="QuantitySymbol">
 		<xsd:annotation>
 			<xsd:documentation>Element containing various quantity symbols.</xsd:documentation>
 		</xsd:annotation>
+		<xsd:alternative test="@type eq 'ASCII'" type="unitsml:ASCIIContent"/>
+		<xsd:alternative test="@type eq 'Unicode'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'LaTeX'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'HTML'" type="unitsml:HTMLContent"/>
+		<xsd:alternative test="@type eq 'MathML'" type="unitsml:MathMLContent"/>
+		<xsd:alternative test="@type eq 'SVG'" type="unitsml:HTMLContent"/> <!-- Maybe use the offical DTD or convert it to XSD -->
+		<xsd:alternative test="@type eq 'D-SI'" type="unitsml:D-SI"/>
+		<xsd:alternative test="@type eq 'UCUM'" type="unitsml:ASCIIType"/>
+		<xsd:alternative type="unitsml:UnicodeContent"/>
 	</xsd:element>
 	<xsd:element name="QuantityVersionHistory" type="unitsml:NoteType">
 		<xsd:annotation>
@@ -611,13 +642,47 @@ PURPOSE.
 			<xsd:documentation>Element containing the prefix name.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	<xsd:element name="PrefixSymbol" type="unitsml:SymbolType">
+	<xsd:element name="PrefixSymbol">
 		<xsd:annotation>
 			<xsd:documentation>Element containing prefix symbols.</xsd:documentation>
 		</xsd:annotation>
+		<xsd:alternative test="@type eq 'ASCII'" type="unitsml:ASCIIContent"/>
+		<xsd:alternative test="@type eq 'Unicode'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'LaTeX'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'HTML'" type="unitsml:HTMLContent"/>
+		<xsd:alternative test="@type eq 'MathML'" type="unitsml:MathMLContent"/>
+		<xsd:alternative test="@type eq 'SVG'" type="unitsml:HTMLContent"/> <!-- Maybe use the offical DTD or convert it to XSD -->
+		<xsd:alternative test="@type eq 'D-SI'" type="unitsml:D-SI"/>
+		<xsd:alternative test="@type eq 'UCUM'" type="unitsml:ASCIIType"/>
+		<xsd:alternative type="unitsml:UnicodeContent"/>
 	</xsd:element>
 	<!--=== Attribute groups (global) ===-->
-    <xsd:attributeGroup name="timestamp">
+    <xsd:attributeGroup name="type">
+		<xsd:annotation>
+			<xsd:documentation>Type of symbol representation. Examples include ASCII, unicode,
+				HTML, and MathML.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="type" use="required">
+			<xsd:simpleType>
+				<xsd:union memberTypes="xsd:token">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:token">
+							<xsd:enumeration value="ASCII"/>
+							<xsd:enumeration value="Unicode"/>
+							<xsd:enumeration value="LaTeX"/>
+							<xsd:enumeration value="HTML"/>
+							<xsd:enumeration value="MathML"/>
+							<xsd:enumeration value="SVG"/>
+							<xsd:enumeration value="D-SI"/>
+							<xsd:enumeration value="UCUM"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:union>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute ref="xml:lang"/>
+	</xsd:attributeGroup>
+	<xsd:attributeGroup name="timestamp">
         <xsd:attribute name="timeStamp" type="xsd:dateTime">
             <xsd:annotation>
                 <xsd:documentation>Used to indicate the timepoint from which onward this element may be referenced.</xsd:documentation>
@@ -847,11 +912,11 @@ PURPOSE.
 	</xsd:complexType>
 	<xsd:complexType name="CodeListValueType">
 		<xsd:annotation>
-			<xsd:documentation>Type for the element for listing the unit code value from a specific code list.</xsd:documentation>
+			<xsd:documentation>Type for the element for listing the code value from a specific code list.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:attribute name="unitCodeValue" type="xsd:string" use="required">
 			<xsd:annotation>
-				<xsd:documentation>The code associated for this unit in a specific code list.</xsd:documentation>
+				<xsd:documentation>The code associated for this element in a specific code list.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 		<xsd:attribute name="codeListName" type="xsd:normalizedString">
@@ -861,7 +926,7 @@ PURPOSE.
 		</xsd:attribute>
 		<xsd:attribute name="codeListVersion" type="xsd:token">
 			<xsd:annotation>
-				<xsd:documentation>The version of the code list containing the unit code.</xsd:documentation>
+				<xsd:documentation>The version of the code list containing the code.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 		<xsd:attribute name="locationURL" type="xsd:anyURI">
@@ -883,6 +948,60 @@ PURPOSE.
 		<xsd:attribute ref="xml:lang">
 			<xsd:annotation>
 				<xsd:documentation>Primary language of the element and/or its attributes. [See RFC 4646, RFC 4647 and ISO 639.]</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="IRDICodeListValueType">
+		<xsd:annotation>
+			<xsd:documentation>Type for the element for listing the unit code value from a specific
+				code list.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="IRDI" type="unitsml:ASCIIType" use="required">
+			<!-- TODO: add validation -->
+			<xsd:annotation>
+				<xsd:documentation>The code associated for this unit in a specific code
+					list.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="revision" type="xsd:positiveInteger" use="optional">
+			<!-- TODO: add validation -->
+			<xsd:annotation>
+				<xsd:documentation>The revision of the IRDI element.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="codeListName" type="xsd:normalizedString" fixed="IEC CDD">
+			<xsd:annotation>
+				<xsd:documentation>The name of the code list.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="codeListVersion" type="xsd:token">
+			<xsd:annotation>
+				<xsd:documentation>The version of the code list containing the unit
+					code.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="locationURL" type="xsd:anyURI" fixed="https://cdd.iec.ch/">
+			<xsd:annotation>
+				<xsd:documentation>Suggested retrieval location for this version of the code
+					list.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="organizationName" type="xsd:normalizedString" fixed="International Electrotechnical Commission">
+			<xsd:annotation>
+				<xsd:documentation>Organization responsible for publication and/or maintenance of
+					the code list.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="organizationURI" type="xsd:anyURI" fixed="https://iec.ch">
+			<xsd:annotation>
+				<xsd:documentation>URI for organization responsible for the code
+					list.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute ref="xml:lang">
+			<xsd:annotation>
+				<xsd:documentation>Primary language of the element and/or its attributes. [See RFC
+					4646, RFC 4647 and ISO 639.]</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 	</xsd:complexType>
@@ -1139,6 +1258,7 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:sequence>
 			<xsd:element ref="unitsml:ItemName" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ItemSymbol" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:CodeListValue" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ItemVersionHistory" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:ItemDefinition" minOccurs="0" maxOccurs="unbounded"/>
@@ -1205,6 +1325,7 @@ additive inverse of this number.</xsd:documentation>
 					<xsd:documentation>Element containing various quantity symbols.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element ref="unitsml:CodeListValue" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:choice>
 				<xsd:sequence>
 					<xsd:element ref="unitsml:UnitReference" minOccurs="0" maxOccurs="unbounded">
@@ -1329,6 +1450,7 @@ additive inverse of this number.</xsd:documentation>
 					<xsd:documentation>Element containing the dimension of any item. Note: this element is meant to be used to allow counted items to be included in the dimensioning of a derived quantity, e.g., electrons per time; usage of this element does not conform to the SI description of the dimension of a quantity in terms of seven base quantities.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element ref="unitsml:CodeListValue" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 		<xsd:attribute ref="xml:id" use="optional"/>
 		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
@@ -1476,6 +1598,7 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:sequence>
 			<xsd:element ref="unitsml:PrefixName" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:PrefixSymbol" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:CodeListValue" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 		<xsd:attribute ref="xml:id" use="optional"/>
 		<xsd:attribute name="domain" type="xsd:token" default="SI"/>
@@ -1510,6 +1633,72 @@ additive inverse of this number.</xsd:documentation>
 		</xsd:assert>
 	</xsd:complexType>
 	<!--     === General Types ===-->
+	<xsd:complexType name="ASCIIContent">
+		<xsd:simpleContent>
+			<xsd:extension base="unitsml:ASCIIType">
+				<xsd:attributeGroup ref="unitsml:type"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="UnicodeContent">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attributeGroup ref="unitsml:type"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="MathMLContent">
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:element ref="mathml:math"/>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:group minOccurs="0" maxOccurs="unbounded" ref="mathml:MathExpression"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attributeGroup ref="unitsml:type"/>
+	</xsd:complexType>
+	<xsd:complexType name="HTMLContent" mixed="true">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:any processContents="skip" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="unitsml:type"/>
+	</xsd:complexType>
+	<xsd:complexType name="D-SI">
+		<xsd:simpleContent>
+			<xsd:extension base="unitsml:D-SIType">
+				<xsd:attributeGroup ref="unitsml:type"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="ASCIIType">
+		<xsd:annotation>
+			<xsd:documentation>This type can only contain ASCII characters.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:assertion test="matches($value, '^\p{IsBasicLatin}+$')"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="D-SIType">
+		<xsd:annotation>
+			<xsd:documentation>This type can only contain D-SI.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<!-- 
+				^((prefix)?(bipm_unit)(exponent)?)+$
+				where
+				prefix:
+				(\\(deca|hecto|kilo|mega|giga|tera|peta|exa|zetta|yotta|deci|centi|milli|micro|nano|pico|femto|atto|zepto|yocto))
+				
+				bipm_unit:
+				(\\(metre|kilogram|second|ampere|kelvin|mole|candela|one|day|hour|minute|degree|arcminute|arcsecond|gram|radian|steradian|hertz|newton|pascal|joule|watt|coulomb|volt|farad|ohm|siemens|weber|tesla|henry|degreecelsius|lumen|lux|becquerel|sievert|gray|katal|hectare|litre|tonne|electronvolt|dalton|astronomicalunit|neper|bel|decibel))
+				
+				exponent:
+				(\\tothe\{[+-]?([1-9][0-9]*|0\.5)})
+			-->
+			<xsd:assertion test="matches($value, '^((\\(deca|hecto|kilo|mega|giga|tera|peta|exa|zetta|yotta|deci|centi|milli|micro|nano|pico|femto|atto|zepto|yocto))?\\(metre|kilogram|second|ampere|kelvin|mole|candela|one|day|hour|minute|degree|arcminute|arcsecond|gram|radian|steradian|hertz|newton|pascal|joule|watt|coulomb|volt|farad|ohm|siemens|weber|tesla|henry|degreecelsius|lumen|lux|becquerel|sievert|gray|katal|hectare|litre|tonne|electronvolt|dalton|astronomicalunit|neper|bel|decibel)(\\tothe\{[+-]?([1-9][0-9]*|0\.5)})?)+$')"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 	<xsd:complexType name="NameType">
 		<xsd:annotation>
 			<xsd:documentation>Type for name.  Used for names in units, quantities, and prefixes.</xsd:documentation>
@@ -1535,34 +1724,6 @@ additive inverse of this number.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 		<xsd:attribute ref="xml:lang"/>
-	</xsd:complexType>
-	<xsd:complexType name="SymbolType" mixed="true">
-		<xsd:annotation>
-			<xsd:documentation>Type for symbols.  Used in units, quantities, and prefixes.</xsd:documentation>
-		</xsd:annotation>
-		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
-			<xsd:any processContents="skip" maxOccurs="unbounded"/>
-		</xsd:sequence>
-		<xsd:attribute ref="xml:lang"/>
-		<xsd:attribute name="type" use="required">
-			<xsd:annotation>
-				<xsd:documentation>Type of symbol representation.  Examples include ASCII, unicode, HTML, and MathML.</xsd:documentation>
-			</xsd:annotation>
-			<xsd:simpleType>
-				<xsd:union memberTypes="xsd:token">
-					<xsd:simpleType>
-						<xsd:restriction base="xsd:token">
-							<xsd:enumeration value="ASCII"/>
-							<xsd:enumeration value="Unicode"/>
-							<xsd:enumeration value="LaTeX"/>
-							<xsd:enumeration value="HTML"/>
-							<xsd:enumeration value="MathML"/>
-							<xsd:enumeration value="SVG"/>
-						</xsd:restriction>
-					</xsd:simpleType>
-				</xsd:union>
-			</xsd:simpleType>
-		</xsd:attribute>
 	</xsd:complexType>
 	<xsd:complexType name="NoteType">
 		<xsd:annotation>
