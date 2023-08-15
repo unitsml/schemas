@@ -1429,6 +1429,16 @@ additive inverse of this number.</xsd:documentation>
 			<!-- REVISE -->
 		</xsd:attribute>
 		<xsd:attributeGroup ref="unitsml:dimensionURL"/>
+		<xsd:attribute name="scale">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="ratio"/>
+					<xsd:enumeration value="interval"/>
+					<xsd:enumeration value="ordinal"/>
+					<xsd:enumeration value="cardinal"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
 		<xsd:assert test="(@xml:id or (@domain and @key and @version))">
 			<xsd:annotation>
 				<xsd:documentation>Require at least one identification type via xml:id or domain,
