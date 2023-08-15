@@ -1808,7 +1808,7 @@ additive inverse of this number.</xsd:documentation>
 					DimensionReference element but not both.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:assert>
-		<xsd:assert test="exists(./unitsml:CountableItemReference) and not(exists(./unitsml:ComplexValue))">
+		<xsd:assert test="(not(exists(./unitsml:CountableItemReference) or (exists(./unitsml:CountableItemReference) and not(exists(./unitsml:ComplexValue)))))">
 			<xsd:annotation>
 				<xsd:documentation>The cannot be a complex value with a countable item reference.</xsd:documentation>
 			</xsd:annotation>
