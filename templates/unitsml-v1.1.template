@@ -51,11 +51,13 @@ PURPOSE.
 	xmlns:ver="http://www.w3.org/2007/XMLSchema-versioning"
 	xmlns:vc="urn:ietf:params:xml:ns:vcard-4.0"
 	xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
 	elementFormDefault="qualified"
 	attributeFormDefault="unqualified" version="2.0" ver:minVersion="1.1">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
     <xsd:import namespace="urn:ietf:params:xml:ns:vcard-4.0" schemaLocation="https://www.iana.org/assignments/xml-registry/schema/vcard-4.0.xsd"/>
 	<xsd:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="https://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd"/>
+	<xsd:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="https://www.w3.org/TR/2008/REC-xmldsig-core-20080610/xmldsig-core-schema.xsd"/>
 	<!--=== Root-Node of an UnitsML document ===-->
 	<xsd:element name="UnitsML" type="unitsml:UnitsMLType">
 		<xsd:annotation>
@@ -188,6 +190,7 @@ PURPOSE.
 		    <xsd:element ref="unitsml:DimensionSet" minOccurs="0" maxOccurs="unbounded"/>
 		    <xsd:element ref="unitsml:PrefixSet" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ConstantSet" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="ds:Signature" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	    <xsd:assert test="
 	        every $var in unitsml:UnitSet/unitsml:Unit[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
