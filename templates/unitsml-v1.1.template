@@ -49,9 +49,11 @@ PURPOSE.
 	xmlns:unitsml="https://schema.unitsml.org/unitsml/2.0"
 	targetNamespace="https://schema.unitsml.org/unitsml/2.0"
 	xmlns:ver="http://www.w3.org/2007/XMLSchema-versioning"
+	xmlns:vc="urn:ietf:params:xml:ns:vcard-4.0"
 	elementFormDefault="qualified"
 	attributeFormDefault="unqualified" version="2.0" ver:minVersion="1.1">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
+    <xsd:import namespace="urn:ietf:params:xml:ns:vcard-4.0" schemaLocation="https://www.iana.org/assignments/xml-registry/schema/vcard-4.0.xsd"/>
 	<!--=== Root-Node of an UnitsML document ===-->
 	<xsd:element name="UnitsML" type="unitsml:UnitsMLType">
 		<xsd:annotation>
@@ -63,14 +65,26 @@ PURPOSE.
 			<xsd:documentation>ComplexType for the root element of an UnitsML document.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
-			<xsd:element ref="unitsml:UnitSet" minOccurs="0"/>
-			<xsd:element ref="unitsml:CountedItemSet" minOccurs="0"/>
-			<xsd:element ref="unitsml:QuantitySet" minOccurs="0"/>
-			<xsd:element ref="unitsml:DimensionSet" minOccurs="0"/>
-			<xsd:element ref="unitsml:PrefixSet" minOccurs="0"/>
+		    <xsd:element ref="unitsml:RegulatoryBody" minOccurs="0" maxOccurs="unbounded"/>
+		    <xsd:element ref="unitsml:UnitSet" minOccurs="0" maxOccurs="unbounded"/>
+		    <xsd:element ref="unitsml:CountedItemSet" minOccurs="0" maxOccurs="unbounded"/>
+		    <xsd:element ref="unitsml:QuantitySet" minOccurs="0" maxOccurs="unbounded"/>
+		    <xsd:element ref="unitsml:DimensionSet" minOccurs="0" maxOccurs="unbounded"/>
+		    <xsd:element ref="unitsml:PrefixSet" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<!--=== Global document elements ===-->
+    <!--     === Regulatory body elements ===-->
+    <xsd:element name="RegulatoryBody" type="unitsml:RegulatoryBodyType">
+        <xsd:annotation>
+            <xsd:documentation>Data of the referenced regulatory bodies specifying an element describable by an instance document compliant with this schema.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="NameOfEntity" type="unitsml:NameType">
+        <xsd:annotation>
+            <xsd:documentation>Element containing the unit name.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
 	<!--     === Unit elements ===-->
 	<xsd:element name="UnitSet" type="unitsml:UnitSetType">
 		<xsd:annotation>
@@ -413,6 +427,18 @@ PURPOSE.
 		</xsd:attribute>
 	</xsd:attributeGroup>
 	<!--=== Type definitions ===-->
+    <!--=== Regulatory Body specific Types ===-->
+    <xsd:complexType name="RegulatoryBodyType">
+        <xsd:annotation>
+            <xsd:documentation>Type for the regulatory body container.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element ref="unitsml:NameOfEntity" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="vc:vcard" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="Description" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="domainKey" type="xsd:token" use="optional"/>
+    </xsd:complexType>
 	<!--     === Unit specific Types ===-->
 	<xsd:complexType name="UnitSetType">
 		<xsd:annotation>
