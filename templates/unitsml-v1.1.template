@@ -187,6 +187,7 @@ PURPOSE.
 		    <xsd:element ref="unitsml:QuantitySet" minOccurs="0" maxOccurs="unbounded"/>
 		    <xsd:element ref="unitsml:DimensionSet" minOccurs="0" maxOccurs="unbounded"/>
 		    <xsd:element ref="unitsml:PrefixSet" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:ConstantSet" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	    <xsd:assert test="
 	        every $var in unitsml:UnitSet/unitsml:Unit[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
@@ -655,6 +656,61 @@ PURPOSE.
 		<xsd:alternative test="@type eq 'D-SI'" type="unitsml:D-SI"/>
 		<xsd:alternative test="@type eq 'UCUM'" type="unitsml:ASCIIType"/>
 		<xsd:alternative type="unitsml:UnicodeContent"/>
+	</xsd:element>
+	<!--=== Constant elements ===-->
+	<xsd:element name="ConstantSet" type="unitsml:ConstantSetType">
+		<xsd:annotation>
+			<xsd:documentation>Container for constants. Use in UnitsML container or directly incorporate
+				into a host schema.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Constant" type="unitsml:ConstantType">
+		<xsd:annotation>
+			<xsd:documentation>Element for describing units. Use in containers UnitSet or directly
+				incorporate into a host schema.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConstantName" type="unitsml:NameType">
+		<xsd:annotation>
+			<xsd:documentation>Element containing the constants name.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConstantSymbol">
+		<xsd:annotation>
+			<xsd:documentation>Element containing various symbols representing the constant. Examples include e, pi.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:alternative test="@type eq 'ASCII'" type="unitsml:ASCIIContent"/>
+		<xsd:alternative test="@type eq 'Unicode'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'LaTeX'" type="unitsml:UnicodeContent"/>
+		<xsd:alternative test="@type eq 'HTML'" type="unitsml:HTMLContent"/>
+		<xsd:alternative test="@type eq 'MathML'" type="unitsml:MathMLContent"/>
+		<xsd:alternative test="@type eq 'SVG'" type="unitsml:HTMLContent"/> <!-- Maybe use the offical DTD or convert it to XSD -->
+		<xsd:alternative test="@type eq 'D-SI'" type="unitsml:D-SI"/>
+		<xsd:alternative test="@type eq 'UCUM'" type="unitsml:ASCIIType"/>
+		<xsd:alternative type="unitsml:UnicodeContent"/>
+	</xsd:element>
+	<xsd:element name="ConstantVersionHistory" type="unitsml:NoteType">
+		<xsd:annotation>
+			<xsd:documentation>Element for descriptive information, including version changes to the
+				constant.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConstantDefinition" type="unitsml:DefinitionType">
+		<xsd:annotation>
+			<xsd:documentation>Element to describe the definition of the constant.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConstantHistory" type="unitsml:HistoryType">
+		<xsd:annotation>
+			<xsd:documentation>Element to describe the historical development of the
+				constant.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConstantRemark" type="unitsml:RemarkType">
+		<xsd:annotation>
+			<xsd:documentation>Element as a placeholder for additional
+				information.</xsd:documentation>
+		</xsd:annotation>
 	</xsd:element>
 	<!--=== Attribute groups (global) ===-->
     <xsd:attributeGroup name="type">
@@ -1629,6 +1685,119 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:assert test="not(@key) or (@domain and @key)">
 			<xsd:annotation>
 				<xsd:documentation>Do not allow a partial reference</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+	</xsd:complexType>
+	<!--=== Constant Types ===-->
+	<xsd:complexType name="ConstantSetType">
+		<xsd:annotation>
+			<xsd:documentation>Type for constant container.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="unitsml:Constant" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Element for describing constans. Use in containers ConstantSet or
+						directly incorporate into a host schema.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="domain" type="xsd:token" use="optional" inheritable="true">
+			<xsd:annotation>
+				<xsd:documentation>Sets the restricted domain for the entire
+					set.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:assert test="
+			if (exists(@domain)) then
+				empty(./unitsml:Quantity[@domain ne ../@domain])
+			else
+				true()">
+			<xsd:annotation>
+				<xsd:documentation>If a domain is given for a set, every member of the set must belong to the same domain.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+	</xsd:complexType>
+	<xsd:complexType name="ConstantType">
+		<xsd:annotation>
+			<xsd:documentation>Type for the constant.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:choice>
+				<xsd:element name="RealValue">
+					<xsd:alternative test="exists(./unitsml:UnitReference)" type="xsd:double"/>
+					<xsd:alternative test="exists(./unitsml:CountableItemReference)" type="xsd:positiveInteger"/>
+					<xsd:alternative type="xsd:double"/>
+				</xsd:element>
+				<xsd:element name="ComplexValue">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Value" type="xsd:double" maxOccurs="unbounded"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+			<xsd:choice>
+				<xsd:annotation>
+					<xsd:documentation>
+						Allows a choice between a unit reference and a reference to
+						countable items. For example the Avogadro constant could be
+						defined as a constant of countable items.
+					</xsd:documentation>
+				</xsd:annotation>
+				<xsd:element ref="unitsml:UnitReference"/>
+				<xsd:element ref="unitsml:CountableItemReference"/>
+			</xsd:choice>
+			<xsd:element ref="unitsml:ConstantName" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:ConstantSymbol" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:CodeListValue" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:ConstantVersionHistory" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Element for descriptive information, including version
+						changes to the constant.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0"
+				maxOccurs="1"/>
+			<xsd:element ref="unitsml:ConstantDefinition" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:ConstantHistory" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="unitsml:ConstantRemark" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute ref="xml:id" use="optional"/>
+		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
+		<xsd:attributeGroup ref="unitsml:timestamp"/>
+		<xsd:assert test="(@xml:id or (@domain and @key and @version))">
+			<xsd:annotation>
+				<xsd:documentation>Require at least one identification type via xml:id or domain,
+					key, version triplet or both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(not(@domain) and not(@key) and not(@version)) or (@domain and @key and @version)">
+			<xsd:annotation>
+				<xsd:documentation>Do not allow a partial reference</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert test="
+			if (@version and (@version > 1)) then
+				(exists(./unitsml:PreviousVersion) and (./unitsml:PreviousVersion/@version eq @version - 1) and (@key eq ./unitsml:PreviousVersion/@key) and (@domain eq ./unitsml:PreviousVersion/@domain))
+			else
+				not(exists(./unitsml:PreviousVersion))">
+			<xsd:annotation>
+				<xsd:documentation>If a version is specified then this constraint ensures a linear
+					version history of the unit. Does not allow for a PreviousVersion element when
+					version &lt; 2.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(@dimensionURL and not(exists(./unitsml:DimensionReference))) or (not(@dimensionURL) and exists(./unitsml:DimensionReference)) or (not(@dimensionURL) and not(exists(./unitsml:DimensionReference))) ">
+			<xsd:annotation>
+				<xsd:documentation>Allow a reference to a Dimension via the dimensionURL or a
+					DimensionReference element but not both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert test="exists(./unitsml:CountableItemReference) and not(exists(./unitsml:ComplexValue))">
+			<xsd:annotation>
+				<xsd:documentation>The cannot be a complex value with a countable item reference.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:assert>
 	</xsd:complexType>
