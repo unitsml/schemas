@@ -59,6 +59,120 @@ PURPOSE.
 		<xsd:annotation>
 			<xsd:documentation>Container for UnitsML units, quantities, and prefixes.</xsd:documentation>
 		</xsd:annotation>
+	    <xsd:unique name="UniqueUnitSet">
+	        <xsd:annotation>
+	            <xsd:documentation>The uniqueness constraint allows to aggregate multiple objects from different authorities within a single UnitsML element.</xsd:documentation>
+	        </xsd:annotation>
+	        <xsd:selector xpath="unitsml:UnitSet/unitsml:Unit"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:unique>
+	    <xsd:unique name="UniqueCountedItemSet">
+	        <xsd:annotation>
+	            <xsd:documentation>The uniqueness constraint allows to aggregate multiple objects from different authorities within a single UnitsML element.</xsd:documentation>
+	        </xsd:annotation>
+	        <xsd:selector xpath="unitsml:CountedItemSet/unitsml:CountedItem"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:unique>
+	    <xsd:unique name="UniqueQuantitySet">
+	        <xsd:annotation>
+	            <xsd:documentation>The uniqueness constraint allows to aggregate multiple objects from different authorities within a single UnitsML element.</xsd:documentation>
+	        </xsd:annotation>
+	        <xsd:selector xpath="unitsml:QuantitySet/unitsml:Quantity"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:unique>
+	    <xsd:unique name="UniqueDimensionSet">
+	        <xsd:annotation>
+	            <xsd:documentation>The uniqueness constraint allows to aggregate multiple objects from different authorities within a single UnitsML element.</xsd:documentation>
+	        </xsd:annotation>
+	        <xsd:selector xpath="unitsml:DimensionSet/unitsml:Dimension"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:unique>
+	    <xsd:unique name="UniquePrefixSet">
+	        <xsd:annotation>
+	            <xsd:documentation>The uniqueness constraint allows to aggregate multiple objects from different authorities within a single UnitsML element.</xsd:documentation>
+	        </xsd:annotation>
+	        <xsd:selector xpath="unitsml:PrefixSet/unitsml:Prefix"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	    </xsd:unique>
+	    <xsd:unique name="UniqueConstantSet">
+	        <xsd:annotation>
+	            <xsd:documentation>The uniqueness constraint allows to aggregate multiple objects from different authorities within a single UnitsML element.</xsd:documentation>
+	        </xsd:annotation>
+	        <xsd:selector xpath="unitsml:ConstantSet/unitsml:Constant"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:unique>
+	    <xsd:unique name="UniqueRegulatoryBodies">
+	        <xsd:selector xpath="unitsml:RegulatoryBody"/>
+	        <xsd:field xpath="@domainKey"/>
+	    </xsd:unique>
+	    <xsd:keyref name="UniqueUnitSetRef" refer="unitsml:UniqueUnitSet">
+	        <xsd:selector xpath=".//unitsml:UnitReference"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="UnitUniqueUnitSetRef" refer="unitsml:UniqueUnitSet">
+	        <xsd:selector xpath="unitsml:UnitSet/unitsml:Unit/unitsml:PreviousVersion"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="UniqueCountedItemSetRef" refer="unitsml:UniqueCountedItemSet">
+	        <xsd:selector xpath=".//unitsml:CountableItemReference"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="CountedItemUniqueCountedItemSetRef" refer="unitsml:UniqueCountedItemSet">
+	        <xsd:selector xpath="unitsml:CountedItemSet/unitsml:CountedItem/unitsml:PreviousVersion"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="UniqueQuantitySetRef" refer="unitsml:UniqueQuantitySet">
+	        <xsd:selector xpath=".//unitsml:QuantityReference"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="QuantityUniqueQuantitySetRef" refer="unitsml:UniqueQuantitySet">
+	        <xsd:selector xpath="unitsml:QuantitySet/unitsml:Quantity/unitsml:PreviousVersion"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="UniqueDimensionSetRef" refer="unitsml:UniqueDimensionSet">
+	        <xsd:selector xpath=".//unitsml:DimensionReference"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="UniquePrefixSetRef" refer="unitsml:UniquePrefixSet">
+	        <xsd:selector xpath=".//unitsml:PrefixReference"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="ConstantUniqueConstantSetRef" refer="unitsml:UniqueConstantSet">
+	        <xsd:selector xpath="unitsml:ConstantSet/unitsml:Constant/unitsml:PreviousVersion"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:keyref>
+	    <xsd:keyref name="UniqueRegulatoryBodiesRef" refer="unitsml:UniqueRegulatoryBodies">
+	        <xsd:selector xpath="./unitsml:UnitSet | ./unitsml:CountedItemSet | ./unitsml:QuantitySet | ./unitsml:DimensionSet | ./unitsml:PrefixSet | ./unitsml:ConstantSet | ./unitsml:UnitSet/unitsml:Unit | ./unitsml:CountedItemSet/unitsml:CountedItem | ./unitsml:QuantitySet/unitsml:Quantity | ./unitsml:DimensionSet/unitsml:Dimension | ./unitsml:PrefixSet/unitsml:Prefix | ./unitsml:ConstantSet/unitsml:Constant"/>
+	        <xsd:field xpath="@domain"/>
+	    </xsd:keyref>
 	</xsd:element>
 	<xsd:complexType name="UnitsMLType">
 		<xsd:annotation>
@@ -72,8 +186,145 @@ PURPOSE.
 		    <xsd:element ref="unitsml:DimensionSet" minOccurs="0" maxOccurs="unbounded"/>
 		    <xsd:element ref="unitsml:PrefixSet" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
+	    <xsd:assert test="
+	        every $var in unitsml:UnitSet/unitsml:Unit[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
+	           if (exists(unitsml:UnitSet/unitsml:Unit[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               if (exists(unitsml:UnitSet/unitsml:Unit[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp)) then
+	                   unitsml:UnitSet/unitsml:Unit[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp lt $var/@timeStamp
+	               else
+            	        true()
+                else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>If a PreviousVersion element is used to reference a parent, check that the descendent does not predate the parent.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:CountedItemSet/unitsml:CountedItem[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
+	           if (exists(unitsml:CountedItemSet/unitsml:CountedItem[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               if (exists(unitsml:CountedItemSet/unitsml:CountedItem[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp)) then
+	                   unitsml:CountedItemSet/unitsml:CountedItem[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp lt $var/@timeStamp
+	               else
+	                   true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>If a PreviousVersion element is used to reference a parent, check that the descendent does not predate the parent.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:QuantitySet/unitsml:Quantity[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
+	           if (exists(unitsml:QuantitySet/unitsml:Quantity[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               if (exists(unitsml:QuantitySet/unitsml:Quantity[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp)) then
+	                   unitsml:QuantitySet/unitsml:Quantity[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp lt $var/@timeStamp
+	               else
+	                   true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>If a PreviousVersion element is used to reference a parent, check that the descendent does not predate the parent.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:DimensionSet/unitsml:Dimension[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
+	           if (exists(unitsml:DimensionSet/unitsml:Dimension[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               if (exists(unitsml:DimensionSet/unitsml:Dimension[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp)) then
+	                   unitsml:DimensionSet/unitsml:Dimension[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp lt $var/@timeStamp
+	               else
+	                   true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>If a PreviousVersion element is used to reference a parent, check that the descendent does not predate the parent.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:ConstantSet/unitsml:Constant[exists(@timeStamp) and exists(unitsml:PreviousVersion)] satisfies (
+	           if (exists(unitsml:ConstantSet/unitsml:Constant[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               if (exists(unitsml:ConstantSet/unitsml:Constant[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp)) then
+	                   unitsml:ConstantSet/unitsml:Constant[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)]/@timeStamp lt $var/@timeStamp
+	               else
+	                   true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>If a PreviousVersion element is used to reference a parent, check that the descendent does not predate the parent.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <!-- Global assert for previous version references allows for cross set history references(if one would like to separate versions into sets) -->
+	    <xsd:assert test="
+	        every $var in unitsml:UnitSet/unitsml:Unit[exists(unitsml:PreviousVersion) and exists(@version)] satisfies (
+	           if (exists(unitsml:UnitSet/unitsml:Unit[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>Require that a linear version history is maintained. This does not allow branching.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:CountedItemSet/unitsml:CountedItem[exists(unitsml:PreviousVersion) and exists(@version)] satisfies (
+	           if (exists(unitsml:CountedItemSet/unitsml:CountedItem[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>Require that a linear version history is maintained. This does not allow branching.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:QuantitySet/unitsml:Quantity[exists(unitsml:PreviousVersion) and exists(@version)] satisfies (
+	           if (exists(unitsml:QuantitySet/unitsml:Quantity[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               true()
+               else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>Require that a linear version history is maintained. This does not allow branching.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:DimensionSet/unitsml:Dimension[exists(unitsml:PreviousVersion) and exists(@version)] satisfies (
+	           if (exists(unitsml:DimensionSet/unitsml:Dimension[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>Require that a linear version history is maintained. This does not allow branching.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
+	    <xsd:assert test="
+	        every $var in unitsml:ConstantSet/unitsml:Constant[exists(unitsml:PreviousVersion) and exists(@version)] satisfies (
+	           if (exists(unitsml:ConstantSet/unitsml:Constant[(@domain eq $var/unitsml:PreviousVersion/@domain) and (@key eq $var/unitsml:PreviousVersion/@key) and (@version eq $var/unitsml:PreviousVersion/@version)])) then
+	               true()
+	           else
+	               false())">
+	        <xsd:annotation>
+	            <xsd:documentation>Require that a linear version history is maintained. This does not allow branching.</xsd:documentation>
+	        </xsd:annotation>
+	    </xsd:assert>
 	</xsd:complexType>
 	<!--=== Global document elements ===-->
+    <xsd:element name="DimensionReference" type="unitsml:KeyedReferenceType">
+        <xsd:annotation>
+            <xsd:documentation>Element referencing a Dimension entity.</xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="UnitReference">
+        <xsd:annotation>
+            <xsd:documentation>Element for referencing a unit of measure from within the Quantity element.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:alternative test="@url" type="unitsml:ReferenceType"/>
+        <xsd:alternative test="@domain" type="unitsml:KeyedReferenceType"/>
+        <xsd:alternative type="unitsml:ReferenceType"/>
+    </xsd:element>
+    <xsd:element name="CountableItemReference">
+        <xsd:annotation>
+            <xsd:documentation>Element for referencing a countable item from.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:alternative test="@url" type="unitsml:ReferenceType"/>
+        <xsd:alternative test="@domain" type="unitsml:KeyedReferenceType"/>
+        <xsd:alternative type="unitsml:ReferenceType"/>
+    </xsd:element>
     <!--     === Regulatory body elements ===-->
     <xsd:element name="RegulatoryBody" type="unitsml:RegulatoryBodyType">
         <xsd:annotation>
@@ -95,6 +346,12 @@ PURPOSE.
 		<xsd:annotation>
 			<xsd:documentation>Element for describing units. Use in containers UnitSet or directly incorporate into a host schema.</xsd:documentation>
 		</xsd:annotation>
+	    <xsd:unique name="UniqueQuantityReferenceInUnit">
+	        <xsd:selector xpath="unitsml:QuantityReference"/>
+	        <xsd:field xpath="@domain"/>
+	        <xsd:field xpath="@key"/>
+	        <xsd:field xpath="@version"/>
+	    </xsd:unique>
 	</xsd:element>
 	<xsd:element name="UnitSystem" type="unitsml:SystemType">
 		<xsd:annotation>
@@ -171,11 +428,14 @@ PURPOSE.
 			<xsd:documentation>Element for a description of the SpecialConversionFrom.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
-	<xsd:element name="QuantityReference" type="unitsml:ReferenceType">
-		<xsd:annotation>
-			<xsd:documentation>Element for all quantities that can be expressed using this unit.</xsd:documentation>
-		</xsd:annotation>
-	</xsd:element>
+    <xsd:element name="QuantityReference">
+        <xsd:annotation>
+            <xsd:documentation>Element for all quantities that can be expressed using this unit.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:alternative test="@url" type="unitsml:ReferenceType"/>
+        <xsd:alternative test="@domain" type="unitsml:KeyedReferenceType"/>
+        <xsd:alternative type="unitsml:ReferenceType"/>
+    </xsd:element>
 	<xsd:element name="UnitDefinition" type="unitsml:DefinitionType">
 		<xsd:annotation>
 			<xsd:documentation>Element to describe the definition of the unit.</xsd:documentation>
@@ -242,6 +502,12 @@ PURPOSE.
 		<xsd:annotation>
 			<xsd:documentation>Element for describing quantities and referencing corresponding units. Use in container or directly incorporate into a host schema.</xsd:documentation>
 		</xsd:annotation>
+		<xsd:unique name="UniqueUnitReferenceInQuantity">
+			<xsd:selector xpath="unitsml:UnitReference"/>
+			<xsd:field xpath="@domain"/>
+			<xsd:field xpath="@unitKey"/>
+			<xsd:field xpath="@version"/>
+		</xsd:unique>
 	</xsd:element>
 	<xsd:element name="QuantityName" type="unitsml:NameType">
 		<xsd:annotation>
@@ -251,11 +517,6 @@ PURPOSE.
 	<xsd:element name="QuantitySymbol" type="unitsml:SymbolType">
 		<xsd:annotation>
 			<xsd:documentation>Element containing various quantity symbols.</xsd:documentation>
-		</xsd:annotation>
-	</xsd:element>
-	<xsd:element name="UnitReference" type="unitsml:ReferenceType">
-		<xsd:annotation>
-			<xsd:documentation>Element for referencing a unit of measure from within the Quantity element.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:element name="QuantityVersionHistory" type="unitsml:NoteType">
@@ -356,6 +617,53 @@ PURPOSE.
 		</xsd:annotation>
 	</xsd:element>
 	<!--=== Attribute groups (global) ===-->
+    <xsd:attributeGroup name="timestamp">
+        <xsd:attribute name="timeStamp" type="xsd:dateTime">
+            <xsd:annotation>
+                <xsd:documentation>Used to indicate the timepoint from which onward this element may be referenced.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:attributeGroup>
+    <xsd:attributeGroup name="keyedReferenceAttributeGroup">
+        <xsd:annotation>
+            <xsd:documentation>Attributes required for all reference elements.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="domain" type="xsd:token" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Domain of the referenced object.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="key" type="xsd:token" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Key of the referenced object.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="version" type="xsd:positiveInteger" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Version of the referenced object.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:attributeGroup>
+    <xsd:attributeGroup name="optionalKeyedReferenceAttributeGroup">
+        <xsd:annotation>
+            <xsd:documentation>Attributes required for all reference elements.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="domain" type="xsd:token" use="optional">
+            <xsd:annotation>
+                <xsd:documentation>Domain of the referenced object.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="key" type="xsd:token" use="optional">
+            <xsd:annotation>
+                <xsd:documentation>Key of the referenced object.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="version" type="xsd:positiveInteger" use="optional">
+            <xsd:annotation>
+                <xsd:documentation>Version of the referenced object.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:attributeGroup>
 	<xsd:attributeGroup name="initialUnit">
 		<xsd:annotation>
 			<xsd:documentation>URI indicating the unitID of the starting unit for the conversion. For units which are defined in the same document, the URI should consist of a pound sign (#) followed by the ID value.</xsd:documentation>
@@ -451,12 +759,28 @@ PURPOSE.
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
+		<xsd:attribute name="domain" type="xsd:token" use="optional" inheritable="true">
+			<xsd:annotation>
+				<xsd:documentation>Sets the restricted domain for the entire
+					set.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:assert test="
+			if (exists(@domain)) then
+			empty(./unitsml:Unit[@domain ne ../@domain])
+			else
+			true()">
+			<xsd:annotation>
+				<xsd:documentation>If a domain is given for a set, every member of the set must belong to the same domain.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<xsd:complexType name="UnitType">
 		<xsd:annotation>
 			<xsd:documentation>Type for the unit.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
+			<xsd:element ref="unitsml:DimensionReference" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:UnitSystem" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Container for describing the system(s) of units.</xsd:documentation>
@@ -477,21 +801,49 @@ PURPOSE.
 					<xsd:documentation>Element for descriptive information, including version changes to the unit.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:UnitDefinition" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:UnitHistory" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:UnitRemark" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute ref="xml:id" use="required"/>
-		<xsd:attribute name="timeStamp" type="xsd:dateTime">
-			<xsd:annotation>
-				<xsd:documentation>Used to indicate the version of the unit output from the Units Database. Changes in the time-stamp are made if a substantive change has been made to the unit, such as a change in the unit definition or changes in conversion factors.</xsd:documentation>
-			</xsd:annotation>
-		</xsd:attribute>
+		<xsd:attribute ref="xml:id" use="optional"/>
+		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
+		<xsd:attributeGroup ref="unitsml:timestamp"/>
 		<xsd:attributeGroup ref="unitsml:dimensionURL">
 			<xsd:annotation>
 				<xsd:documentation>Reference to a representation of the unit or quantity in terms of the 7 SI base dimensions.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attributeGroup>
+		<xsd:assert test="(@xml:id or (@domain and @key and @version))">
+			<xsd:annotation>
+				<xsd:documentation>Require at least one identification type via xml:id or domain,
+					key, version triplet or both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(not(@domain) and not(@key) and not(@version)) or (@domain and @key and @version)">
+			<xsd:annotation>
+				<xsd:documentation>Do not allow a partial reference</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert test="
+			if (@version and (@version > 1)) then
+				(exists(./unitsml:PreviousVersion) and (./unitsml:PreviousVersion/@version eq @version - 1) and (@key eq ./unitsml:PreviousVersion/@key) and (@domain eq ./unitsml:PreviousVersion/@domain))
+			else
+				not(exists(./unitsml:PreviousVersion))">
+			<xsd:annotation>
+				<xsd:documentation>If a version is specified then this constraint ensures a linear
+					version history of the unit. Does not allow for a PreviousVersion element when
+					version &lt; 2.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(@dimensionURL and not(exists(./unitsml:DimensionReference))) or (not(@dimensionURL) and exists(./unitsml:DimensionReference)) or (not(@dimensionURL) and not(exists(./unitsml:DimensionReference)))">
+			<xsd:annotation>
+				<xsd:documentation>Allow a reference to a Dimension via the dimensionURL or a
+					DimensionReference element but not both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<xsd:complexType name="CodeListValueType">
 		<xsd:annotation>
@@ -517,6 +869,7 @@ PURPOSE.
 				<xsd:documentation>Suggested retrieval location for this version of the code list.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
+		<!-- TODO: could possibly be a vcard -->
 		<xsd:attribute name="organizationName" type="xsd:normalizedString">
 			<xsd:annotation>
 				<xsd:documentation>Organization responsible for publication and/or maintenance of the code list.</xsd:documentation>
@@ -537,18 +890,55 @@ PURPOSE.
 		<xsd:annotation>
 			<xsd:documentation>Type for the container for defining derived units in terms of their root units. This allows a precise definition of a wide range of units. The goal is to improve interoperability among applications and databases which use derived units based on commonly encountered base units.</xsd:documentation>
 		</xsd:annotation>
-		<xsd:sequence>
-			<xsd:element ref="unitsml:EnumeratedRootUnit" minOccurs="0" maxOccurs="unbounded">
-				<xsd:annotation>
-					<xsd:documentation>Element for a root unit (from an extensive enumerated list) allowing an optional prefix and power. E.g., mm^2</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
-			<xsd:element ref="unitsml:ExternalRootUnit" minOccurs="0" maxOccurs="unbounded">
-				<xsd:annotation>
-					<xsd:documentation>Element for those special cases where the root unit needed is not included in the enumerated list in the above element.</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
-		</xsd:sequence>
+		<xsd:choice>
+			<xsd:sequence>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="unitsml:EnumeratedRootUnit">
+						<xsd:annotation>
+							<xsd:documentation>Element for a root unit (from an extensive enumerated
+								list) allowing an optional prefix and power. E.g.,
+								mm^2</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element ref="unitsml:ExternalRootUnit">
+						<xsd:annotation>
+							<xsd:documentation>Element for those special cases where the root unit
+								needed is not included in the enumerated list in the above
+								element.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:sequence>
+			<xsd:sequence>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="UnitReference"
+						type="unitsml:KeyedReferenceUnitWithPowerRationalType">
+						<xsd:annotation>
+							<xsd:documentation>Element for specifying particular units associated
+								with the quantity.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="PrefixReference">
+						<xsd:complexType>
+							<xsd:complexContent>
+								<xsd:extension base="unitsml:KeyedReferencePrefixType">
+									<xsd:sequence>
+										<xsd:element name="UnitReference"
+											type="unitsml:KeyedReferenceUnitWithPowerRationalType">
+											<xsd:annotation>
+												<xsd:documentation>Element for specifying particular
+													units associated with the
+													quantity.</xsd:documentation>
+											</xsd:annotation>
+										</xsd:element>
+									</xsd:sequence>
+								</xsd:extension>
+							</xsd:complexContent>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:choice>
 	</xsd:complexType>
 	<xsd:complexType name="EnumeratedRootUnitType">
 		<xsd:annotation>
@@ -726,6 +1116,21 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:sequence>
 			<xsd:element ref="unitsml:CountedItem" maxOccurs="unbounded"/>
 		</xsd:sequence>
+	<xsd:attribute name="domain" type="xsd:token" use="optional" inheritable="true">
+			<xsd:annotation>
+				<xsd:documentation>Sets the restricted domain for the entire
+					set.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:assert test="
+				if (exists(@domain)) then
+					empty(./unitsml:CountedItem[@domain ne ../@domain])
+				else
+					true()">
+			<xsd:annotation>
+				<xsd:documentation>If a domain is given for a set, every member of the set must belong to the same domain.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<xsd:complexType name="CountedItemType">
 		<xsd:annotation>
@@ -735,11 +1140,34 @@ additive inverse of this number.</xsd:documentation>
 			<xsd:element ref="unitsml:ItemName" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ItemSymbol" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ItemVersionHistory" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:ItemDefinition" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ItemHistory" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ItemRemark" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute ref="xml:id" use="required"/>
+		<xsd:attribute ref="xml:id" use="optional"/>
+		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
+		<xsd:attributeGroup ref="unitsml:timestamp"/>
+		<xsd:assert test="(@xml:id or (@domain and @key and @version))">
+			<xsd:annotation>
+				<xsd:documentation>Require at least one identification type via xml:id or domain, key, version triplet or both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(not(@domain) and not(@key) and not(@version)) or (@domain and @key and @version)">
+			<xsd:annotation>
+				<xsd:documentation>Do not allow a partial reference</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert test="
+			if (@version and (@version > 1)) then
+				(exists(./unitsml:PreviousVersion) and (./unitsml:PreviousVersion/@version eq @version - 1) and (@key eq ./unitsml:PreviousVersion/@key) and (@domain eq ./unitsml:PreviousVersion/@domain))
+			else
+				not(exists(./unitsml:PreviousVersion))">
+			<xsd:annotation>
+				<xsd:documentation>If a version is specified then this constraint ensures a linear version history of the unit. Does not allow for a PreviousVersion element when version &lt; 2.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<!--     === Quantity specific Types ===-->
 	<xsd:complexType name="QuantitySetType">
@@ -749,33 +1177,65 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:sequence>
 			<xsd:element ref="unitsml:Quantity" maxOccurs="unbounded"/>
 		</xsd:sequence>
+	<xsd:attribute name="domain" type="xsd:token" use="optional" inheritable="true">
+			<xsd:annotation>
+				<xsd:documentation>Sets the restricted domain for the entire
+					set.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:assert test="
+				if (exists(@domain)) then
+					empty(./unitsml:Quantity[@domain ne ../@domain])
+				else
+					true()">
+			<xsd:annotation>
+				<xsd:documentation>If a domain is given for a set, every member of the set must belong to the same domain.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<xsd:complexType name="QuantityType">
 		<xsd:annotation>
 			<xsd:documentation>Type for the quantity.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
+			<xsd:element ref="unitsml:DimensionReference" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:QuantityName" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:QuantitySymbol" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Element containing various quantity symbols.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element ref="unitsml:UnitReference" minOccurs="0" maxOccurs="unbounded">
-				<xsd:annotation>
-					<xsd:documentation>Element for specifying particular units associated with the quantity.</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element ref="unitsml:UnitReference" minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>Element for specifying particular units associated with the
+								quantity.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>					
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element ref="unitsml:CountableItemReference" minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>Element for specifying particular countable items associated with the
+								quantity.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:choice>
 			<xsd:element ref="unitsml:QuantityVersionHistory" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Element for descriptive information, including version changes to the quantity.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:QuantityDefinition" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:QuantityHistory" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:QuantityRemark" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute ref="xml:id" use="required"/>
+		<xsd:attribute ref="xml:id" use="optional"/>
+		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
+		<xsd:attributeGroup ref="unitsml:timestamp"/>
 		<xsd:attribute name="quantityType" use="optional">
 			<xsd:annotation>
 				<xsd:documentation>Type of the quantity.  For example base or derived.</xsd:documentation>
@@ -789,6 +1249,36 @@ additive inverse of this number.</xsd:documentation>
 			<!-- REVISE -->
 		</xsd:attribute>
 		<xsd:attributeGroup ref="unitsml:dimensionURL"/>
+		<xsd:assert test="(@xml:id or (@domain and @key and @version))">
+			<xsd:annotation>
+				<xsd:documentation>Require at least one identification type via xml:id or domain,
+					key, version triplet or both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(not(@domain) and not(@key) and not(@version)) or (@domain and @key and @version)">
+			<xsd:annotation>
+				<xsd:documentation>Do not allow a partial reference.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert test="
+			if (@version and (@version > 1)) then
+				(exists(./unitsml:PreviousVersion) and (./unitsml:PreviousVersion/@version eq @version - 1) and (@key eq ./unitsml:PreviousVersion/@key) and (@domain eq ./unitsml:PreviousVersion/@domain))
+			else
+				not(exists(./unitsml:PreviousVersion))">
+			<xsd:annotation>
+				<xsd:documentation>If a version is specified then this constraint ensures a linear
+					version history of the unit. Does not allow for a PreviousVersion element when
+					version &lt; 2.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert
+			test="(@dimensionURL and not(exists(./unitsml:DimensionReference))) or (not(@dimensionURL) and exists(./unitsml:DimensionReference)) or (not(@dimensionURL) and not(exists(./unitsml:DimensionReference))) ">
+			<xsd:annotation>
+				<xsd:documentation>Allow a reference to a Dimension via the dimensionURL or a
+					DimensionReference element but not both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<!--     === Dimension specific Types ===-->
 	<xsd:complexType name="DimensionSetType">
@@ -802,6 +1292,21 @@ additive inverse of this number.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
+	<xsd:attribute name="domain" type="xsd:token" use="optional" inheritable="true">
+			<xsd:annotation>
+				<xsd:documentation>Sets the restricted domain for the entire
+					set.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:assert test="
+				if (exists(@domain)) then
+					empty(./unitsml:Dimension[@domain ne ../@domain])
+				else
+					true()">
+			<xsd:annotation>
+				<xsd:documentation>If a domain is given for a set, every member of the set must belong to the same domain.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<xsd:complexType name="DimensionType">
 		<xsd:annotation>
@@ -825,12 +1330,16 @@ additive inverse of this number.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
-		<xsd:attribute ref="xml:id" use="required"/>
+		<xsd:attribute ref="xml:id" use="optional"/>
+		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
+		<xsd:attributeGroup ref="unitsml:timestamp"/>
 		<xsd:attribute name="dimensionless" type="xsd:boolean" use="optional" default="0">
 			<xsd:annotation>
 				<xsd:documentation>Boolean to designate that a quantity or unit is dimensionless.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
+	<xsd:assert test="(@xml:id or (@domain and @key and @version))"/>
+		<xsd:assert test="(not(@domain) and not(@key) and not(@version)) or (@domain and @key and @version)"/>
 	</xsd:complexType>
 	<xsd:complexType name="LengthType">
 		<xsd:annotation>
@@ -944,6 +1453,21 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:sequence>
 			<xsd:element ref="unitsml:Prefix" maxOccurs="unbounded"/>
 		</xsd:sequence>
+	<xsd:attribute name="domain" type="xsd:token" use="optional" inheritable="true">
+			<xsd:annotation>
+				<xsd:documentation>Sets the restricted domain for the entire
+					set.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:assert test="
+				if (exists(@domain)) then
+					empty(./unitsml:Prefix[@domain ne ../@domain])
+				else
+					true()">
+			<xsd:annotation>
+				<xsd:documentation>If a domain is given for a set, every member of the set must belong to the same domain.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<xsd:complexType name="PrefixType">
 		<xsd:annotation>
@@ -953,7 +1477,10 @@ additive inverse of this number.</xsd:documentation>
 			<xsd:element ref="unitsml:PrefixName" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:PrefixSymbol" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute ref="xml:id" use="required"/>
+		<xsd:attribute ref="xml:id" use="optional"/>
+		<xsd:attribute name="domain" type="xsd:token" default="SI"/>
+		<xsd:attribute name="key" type="xsd:token" use="optional"/>
+		<xsd:attributeGroup ref="unitsml:timestamp"/>
 		<xsd:attribute name="prefixBase" default="10">
 			<xsd:annotation>
 				<xsd:documentation>The base of the prefix system, i.e., 10 (SI) or 2 (binary).</xsd:documentation>
@@ -970,6 +1497,17 @@ additive inverse of this number.</xsd:documentation>
 				<xsd:documentation>The exponential power of the prefix with relation to the base.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
+	<xsd:assert test="(@xml:id or (@domain and @key))">
+			<xsd:annotation>
+				<xsd:documentation>Require at least one identification type via xml:id or domain
+					and key duplett or both.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
+		<xsd:assert test="not(@key) or (@domain and @key)">
+			<xsd:annotation>
+				<xsd:documentation>Do not allow a partial reference</xsd:documentation>
+			</xsd:annotation>
+		</xsd:assert>
 	</xsd:complexType>
 	<!--     === General Types ===-->
 	<xsd:complexType name="NameType">
@@ -1096,4 +1634,42 @@ additive inverse of this number.</xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 	</xsd:complexType>
+    <xsd:complexType name="KeyedReferenceType">
+        <xsd:annotation>
+            <xsd:documentation>Type for reference to an indexed object.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attributeGroup ref="unitsml:keyedReferenceAttributeGroup"/>
+    </xsd:complexType>
+    <xsd:complexType name="KeyedReferenceUnitWithPowerRationalType">
+        <xsd:complexContent>
+            <xsd:extension base="unitsml:KeyedReferenceType">
+                <xsd:attributeGroup ref="unitsml:powerRational"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="KeyedReferencePrefixType">
+        <xsd:annotation>
+            <xsd:documentation>Type for reference to a unit or quantity.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute name="domain" type="xsd:token" default="SI">
+            <xsd:annotation>
+                <xsd:documentation>Domain of the referenced quantity.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="key" type="xsd:token" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Key of the referenced quantity.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="version" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Version of the referenced quantity.</xsd:documentation>
+            </xsd:annotation>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:positiveInteger">
+                    <xsd:minInclusive value="1"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
 </xsd:schema>
