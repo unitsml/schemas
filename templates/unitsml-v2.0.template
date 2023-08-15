@@ -1769,8 +1769,7 @@ additive inverse of this number.</xsd:documentation>
 						changes to the constant.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0"
-				maxOccurs="1"/>
+			<xsd:element name="PreviousVersion" type="unitsml:KeyedReferenceType" minOccurs="0" maxOccurs="1"/>
 			<xsd:element ref="unitsml:ConstantDefinition" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ConstantHistory" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="unitsml:ConstantRemark" minOccurs="0" maxOccurs="unbounded"/>
@@ -1778,6 +1777,7 @@ additive inverse of this number.</xsd:documentation>
 		<xsd:attribute ref="xml:id" use="optional"/>
 		<xsd:attributeGroup ref="unitsml:optionalKeyedReferenceAttributeGroup"/>
 		<xsd:attributeGroup ref="unitsml:timestamp"/>
+		<xsd:attribute name="exact" type="xsd:boolean" default="false"/>
 		<xsd:assert test="(@xml:id or (@domain and @key and @version))">
 			<xsd:annotation>
 				<xsd:documentation>Require at least one identification type via xml:id or domain,
