@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unitsml:UnitsML xmlns:unitsml="https://schema.unitsml.org/unitsml/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <unitsml:RegulatoryBody domainKey="NMI">
+        <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+            <fn>
+                <text>NMI</text>
+            </fn>
+        </vcard>
+        <unitsml:Description>An example for an NMI</unitsml:Description>
+    </unitsml:RegulatoryBody>
+    <unitsml:RegulatoryBody domainKey="NMI2">
+        <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+            <fn>
+                <text>NMI2</text>
+            </fn>
+        </vcard>
+        <unitsml:Description>An example for an NMI</unitsml:Description>
+    </unitsml:RegulatoryBody>
+    <unitsml:UnitSet>
+        <unitsml:Unit xml:id="Unit1" key="meter" domain="NMI" version="1" timeStamp="2023-01-01T00:00:00Z">
+            <unitsml:UnitSystem type="SI_base" name="SI"/>
+            <unitsml:UnitName xml:lang="en-US">meter</unitsml:UnitName>
+            <unitsml:UnitSymbol type="ASCII">meter</unitsml:UnitSymbol>
+            <unitsml:UnitSymbol type="HTML"><b>m</b></unitsml:UnitSymbol>
+            <unitsml:UnitSymbol type="D-SI">\metre</unitsml:UnitSymbol>
+            <unitsml:QuantityReference xml:lang="en-US" name="length" url="#Length"/>
+            <unitsml:QuantityReference xml:lang="en-US" name="distance" url="#Distance"/>
+            <unitsml:QuantityReference domain="NMI" key="length" version="1"/>
+        </unitsml:Unit>
+        <unitsml:Unit xml:id="Unit2" key="meter" version="2" domain="NMI" timeStamp="2023-01-01T00:00:01Z">
+            <unitsml:UnitSystem type="SI_base" name="SI"/>
+            <unitsml:UnitName xml:lang="en-US">meter</unitsml:UnitName>
+            <unitsml:UnitSymbol type="ASCII">m</unitsml:UnitSymbol>
+            <unitsml:UnitSymbol type="HTML">m</unitsml:UnitSymbol>
+            <unitsml:UnitSymbol type="D-SI">\metre</unitsml:UnitSymbol>
+            <unitsml:CodeListValue IRDI="0112/2///62720#UAA726#002"/>
+            <unitsml:RootUnits>
+                <unitsml:PrefixReference key="M" version="1" domain="NMI">
+                    <unitsml:UnitReference domain="NMI" key="meter" version="1"/>
+                </unitsml:PrefixReference>
+                <unitsml:UnitReference key="meter" version="1" domain="NMI"/>
+            </unitsml:RootUnits>
+            <unitsml:QuantityReference xml:lang="en-US" name="length" url="#Quantity1"/>
+            <unitsml:QuantityReference xml:lang="en-US" name="distance" url="#Quantity2"/>
+            <unitsml:QuantityReference domain="NMI" key="length" version="1"/>
+            <unitsml:UnitVersionHistory>Some history</unitsml:UnitVersionHistory>
+            <unitsml:PreviousVersion domain="NMI" key="meter" version="1"/>
+            <unitsml:UnitHistory>More history</unitsml:UnitHistory>
+            <unitsml:UnitRemark>A remark</unitsml:UnitRemark>
+        </unitsml:Unit>
+        <unitsml:Unit xml:id="Unit5" key="mixedRefmeter" version="2" domain="NMI" timeStamp="2023-01-01T00:00:01Z">
+            <unitsml:UnitSystem type="SI_base" name="SI"/>
+            <unitsml:UnitName xml:lang="en-US">unrealisticUnit</unitsml:UnitName>
+            <unitsml:UnitSymbol type="D-SI">\mega\metre\metre</unitsml:UnitSymbol>
+            <unitsml:RootUnits>
+                <unitsml:PrefixReference key="M" version="1" domain="NMI">
+                    <unitsml:UnitReference domain="NMI" key="meter" version="1"/>
+                </unitsml:PrefixReference>
+                <unitsml:UnitReference key="meter" version="1" domain="NMI"/>
+            </unitsml:RootUnits>
+        </unitsml:Unit>
+        <unitsml:Unit key="one" version="1" domain="NMI" timeStamp="2023-01-01T00:00:01Z">
+            <unitsml:UnitSystem type="SI_base" name="SI"/>
+            <unitsml:UnitName xml:lang="en-US">1</unitsml:UnitName>
+            <unitsml:UnitSymbol type="D-SI">\one</unitsml:UnitSymbol>
+        </unitsml:Unit>
+    </unitsml:UnitSet>
+    <unitsml:UnitSet domain="NMI2">
+        <unitsml:Unit xml:id="Unit3" key="meter" version="1" domain="NMI2" timeStamp="2023-01-01T00:00:00Z">
+            <unitsml:UnitSystem type="SI_base" name="SI"/>
+            <unitsml:UnitName xml:lang="en-US">meter</unitsml:UnitName>
+            <unitsml:UnitSymbol type="ASCII">meter</unitsml:UnitSymbol>
+            <unitsml:UnitSymbol type="HTML">m</unitsml:UnitSymbol>
+            <unitsml:UnitSymbol type="D-SI">\metre</unitsml:UnitSymbol>
+            <unitsml:QuantityReference xml:lang="en-US" name="length" url="#Quantity1"/>
+            <unitsml:QuantityReference xml:lang="en-US" name="distance" url="#Quantity2"/>
+        </unitsml:Unit>
+    </unitsml:UnitSet>
+    <unitsml:CountedItemSet>
+        <unitsml:CountedItem domain="NMI" key="particles" version="1">
+            <unitsml:ItemName>particles</unitsml:ItemName>
+            <unitsml:ItemSymbol type="ASCII">particles</unitsml:ItemSymbol>
+            <unitsml:CodeListValue IRDI="INVALID"/>
+            <unitsml:ItemDefinition>Number of particles</unitsml:ItemDefinition>
+            <unitsml:ItemHistory>The items history</unitsml:ItemHistory>
+            <unitsml:ItemRemark>A remark</unitsml:ItemRemark>
+        </unitsml:CountedItem>
+        <unitsml:CountedItem domain="NMI" key="particles" version="2">
+            <unitsml:ItemName>particles</unitsml:ItemName>
+            <unitsml:ItemSymbol type="ASCII">particles</unitsml:ItemSymbol>
+            <unitsml:CodeListValue IRDI="INVALID"/>
+            <unitsml:PreviousVersion version="1" domain="NMI" key="particles"/>
+            <unitsml:ItemDefinition>Number of particles</unitsml:ItemDefinition>
+            <unitsml:ItemHistory>The items history</unitsml:ItemHistory>
+            <unitsml:ItemRemark>A remark</unitsml:ItemRemark>
+        </unitsml:CountedItem>
+    </unitsml:CountedItemSet>
+    <unitsml:QuantitySet>
+        <unitsml:Quantity domain="NMI" key="length" version="1" quantityType="base">
+            <unitsml:QuantityName>Length</unitsml:QuantityName>
+            <unitsml:UnitReference domain="NMI" key="meter" version="1"/>
+            <unitsml:UnitReference domain="NMI" key="meter" version="2"/>
+            <unitsml:UnitReference url="None"/>
+        </unitsml:Quantity>
+        <unitsml:Quantity domain="NMI" key="roughness" version="1" quantityType="base">
+            <unitsml:DimensionReference domain="NMI" key="length" version="1"/>
+            <unitsml:QuantityName>Length</unitsml:QuantityName>
+            <unitsml:UnitReference domain="NMI" key="meter" version="1"/>
+            <unitsml:UnitReference domain="NMI" key="meter" version="2"/>
+            <unitsml:UnitReference url="None"/>
+        </unitsml:Quantity>
+        <unitsml:Quantity domain="NMI" key="roughness" version="2" quantityType="base">
+            <unitsml:DimensionReference domain="NMI" key="length" version="1"/>
+            <unitsml:QuantityName>Length</unitsml:QuantityName>
+            <unitsml:UnitReference domain="NMI" key="meter" version="1"/>
+            <unitsml:UnitReference url="None"/>
+            <unitsml:PreviousVersion domain="NMI" key="roughness" version="1"/>
+        </unitsml:Quantity>
+    </unitsml:QuantitySet>
+    <unitsml:DimensionSet>
+        <unitsml:Dimension domain="NMI" key="length" version="1">
+            <unitsml:Length/>
+        </unitsml:Dimension>
+        <unitsml:Dimension domain="NMI" key="one" version="1" dimensionless="true"/>
+    </unitsml:DimensionSet>
+    <unitsml:PrefixSet>
+        <unitsml:Prefix key="M" prefixPower="6" domain="NMI">
+            <unitsml:PrefixName>Mega</unitsml:PrefixName>
+            <unitsml:PrefixSymbol type="ASCII">M</unitsml:PrefixSymbol>
+        </unitsml:Prefix>
+    </unitsml:PrefixSet>
+    <unitsml:ConstantSet>
+        <unitsml:Constant domain="NMI" key="pi" version="1">
+            <unitsml:RealValue>3.14159265359</unitsml:RealValue>
+            <unitsml:UnitReference domain="NMI" key="one" version="1"/>
+            <unitsml:ConstantName>PI</unitsml:ConstantName>
+        </unitsml:Constant>
+        <unitsml:Constant domain="NMI" key="pi" version="2">
+            <unitsml:RealValue>3.1415926536</unitsml:RealValue>
+            <unitsml:UnitReference domain="NMI" key="one" version="1"/>
+            <unitsml:ConstantName>PI</unitsml:ConstantName>
+            <unitsml:PreviousVersion domain="NMI" key="pi" version="1"/>
+        </unitsml:Constant>
+    </unitsml:ConstantSet>
+</unitsml:UnitsML>
