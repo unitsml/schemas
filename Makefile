@@ -14,7 +14,7 @@ UNITSMLDOC := $(patsubst unitsml/%.xsd,docs/unitsml/%/index.html,$(UNITSMLSRC))
 UNITSMLLITEDOC := $(patsubst unitsmllite/%.xsd,docs/unitsmllite/%/index.html,$(UNITSMLLITESRC))
 TOTALDOCS := $(UNITSMLDOC) $(UNITSMLLITEDOC)
 
-XERCESURL := https://downloads.apache.org/xerces/j/binaries/Xerces-J-bin.2.12.1.tar.gz
+XERCESURL := https://downloads.apache.org/xerces/j/binaries/Xerces-J-bin.2.12.2.tar.gz
 XSDVIURL := https://github.com/metanorma/xsdvi/releases/download/v1.0/xsdvi-1.0.jar
 XS3PURL := https://github.com/metanorma/xs3p/archive/refs/tags/v3.0.tar.gz
 
@@ -31,7 +31,7 @@ docs: $(TOTALDOCS)
 
 setup: $(XSDVIPATH) $(XERCESPATH) $(XS3PPATH)
 
-.archive/Xerces-J-bin.2.12.1.tar.gz:
+.archive/Xerces-J-bin.2.12.2.tar.gz:
 	mkdir -p $(dir $@)
 	curl -sSL -o $@ $(XERCESURL)
 
@@ -47,9 +47,9 @@ $(XSDVIPATH): .archive/xsdvi-1.0.jar
 	mkdir -p $(dir $@)
 	cp $< $@
 
-$(XERCESPATH): .archive/Xerces-J-bin.2.12.1.tar.gz
+$(XERCESPATH): .archive/Xerces-J-bin.2.12.2.tar.gz
 	mkdir -p $(dir $@)
-	tar -zxvf $< -C xsdvi --strip-components=1 xerces-2_12_1/xercesImpl.jar
+	tar -zxvf $< -C xsdvi --strip-components=1 xerces-2_12_2/xercesImpl.jar
 	touch $@
 
 $(XS3PPATH): .archive/xs3p.tar.gz
