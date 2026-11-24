@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-   Units Markup language (UnitsML) Schema
-    Website: http://unitsml.nist.gov
-    Version History: http://unitsml.nist.gov/Schema/schema_changes.txt
+   Units Markup Language (UnitsML) Schema
+    Website: https://unitsml.org
+    Series: CalConnect UnitsML specifications (parts 36812-36819)
+    Version history: https://github.com/unitsml/schemas/releases
 
-Copyright (C) OASIS Open 2006 - 2011. All Rights Reserved.
+Copyright (C) CalConnect 2026. All Rights Reserved.
 
-All capitalized terms in the following text have the meanings
-assigned to them in the OASIS Intellectual Property Rights Policy
-(the "OASIS IPR Policy"). The full Policy may be found at the OASIS
-website.
+This schema is distributed under the CalConnect Intellectual Property
+Rights Policy (https://www.calconnect.org/ipr). The schema may be used,
+copied, and distributed freely in support of implementations of the
+CalConnect UnitsML specification series; derivative works must retain
+this notice and attribute the source.
 
-This document and translations of it may be copied and furnished
-to others, and derivative works that comment on or otherwise explain
-it or assist in its implementation may be prepared, copied, published,
-and distributed, in whole or in part, without restriction of any
-kind, provided that the above copyright notice and this section
-are included on all such copies and derivative works. However, this
-document itself may not be modified in any way, including by removing
-the copyright notice or references to OASIS, except as needed for
-the purpose of developing any document or deliverable produced by
-an OASIS Technical Committee (in which case the rules applicable
-to copyrights, as set forth in the OASIS IPR Policy, must be
-followed) or as required to translate it into languages other than
-English.
-
-The limited permissions granted above are perpetual and will not
-be revoked by OASIS or its successors or assigns.
-
-This document and the information contained herein is provided on
-an "AS IS" basis and OASIS DISCLAIMS ALL WARRANTIES, EXPRESS OR
+This document and the information contained herein is provided on an
+"AS IS" basis and CalConnect DISCLAIMS ALL WARRANTIES, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
 THE INFORMATION HEREIN WILL NOT INFRINGE ANY OWNERSHIP RIGHTS OR
 ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
@@ -37,7 +22,7 @@ PURPOSE.
 
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://schema.unitsml.org/unitsml/1.0" targetNamespace="https://schema.unitsml.org/unitsml/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
-	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 	<!--=== Root-Node of an UnitsML document ===-->
 	<xsd:element name="UnitsML" type="UnitsMLType">
 		<xsd:annotation>
@@ -383,26 +368,31 @@ PURPOSE.
 			</xsd:annotation>
 			<xsd:simpleType>
 				<xsd:restriction base="xsd:token">
-					<xsd:enumeration value="Y"/>
-					<xsd:enumeration value="Z"/>
-					<xsd:enumeration value="E"/>
-					<xsd:enumeration value="P"/>
-					<xsd:enumeration value="T"/>
-					<xsd:enumeration value="G"/>
-					<xsd:enumeration value="M"/>
-					<xsd:enumeration value="k"/>
-					<xsd:enumeration value="h"/>
-					<xsd:enumeration value="da"/>
 					<xsd:enumeration value="d"/>
-					<xsd:enumeration value="c"/>
-					<xsd:enumeration value="m"/>
-					<xsd:enumeration value="u"/>
-					<xsd:enumeration value="n"/>
 					<xsd:enumeration value="p"/>
 					<xsd:enumeration value="f"/>
 					<xsd:enumeration value="a"/>
+					<xsd:enumeration value="c"/>
 					<xsd:enumeration value="z"/>
 					<xsd:enumeration value="y"/>
+					<xsd:enumeration value="r"/>
+					<xsd:enumeration value="m"/>
+					<xsd:enumeration value="q"/>
+					<xsd:enumeration value="u"/>
+					<xsd:enumeration value="n"/>
+					<xsd:enumeration value="1"/>
+					<xsd:enumeration value="da"/>
+					<xsd:enumeration value="T"/>
+					<xsd:enumeration value="P"/>
+					<xsd:enumeration value="E"/>
+					<xsd:enumeration value="h"/>
+					<xsd:enumeration value="Z"/>
+					<xsd:enumeration value="Y"/>
+					<xsd:enumeration value="R"/>
+					<xsd:enumeration value="k"/>
+					<xsd:enumeration value="Q"/>
+					<xsd:enumeration value="M"/>
+					<xsd:enumeration value="G"/>
 					<xsd:enumeration value="Ki"/>
 					<xsd:enumeration value="Mi"/>
 					<xsd:enumeration value="Gi"/>
@@ -548,96 +538,42 @@ PURPOSE.
 			<xsd:simpleType>
 				<xsd:restriction base="xsd:token">
 					<xsd:enumeration value="meter"/>
-					<xsd:enumeration value="candela"/>
-					<xsd:enumeration value="second"/>
-					<xsd:enumeration value="mole"/>
-					<xsd:enumeration value="ampere"/>
-					<xsd:enumeration value="kelvin"/>
-					<xsd:enumeration value="inch"/>
-					<xsd:enumeration value="radian"/>
 					<xsd:enumeration value="steradian"/>
-					<xsd:enumeration value="newton"/>
-					<xsd:enumeration value="pascal"/>
-					<xsd:enumeration value="joule"/>
-					<xsd:enumeration value="watt"/>
-					<xsd:enumeration value="coulomb"/>
-					<xsd:enumeration value="volt"/>
-					<xsd:enumeration value="farad"/>
-					<xsd:enumeration value="ohm"/>
-					<xsd:enumeration value="siemens"/>
-					<xsd:enumeration value="weber"/>
-					<xsd:enumeration value="tesla"/>
-					<xsd:enumeration value="henry"/>
-					<xsd:enumeration value="degree_Celsius"/>
-					<xsd:enumeration value="becquerel"/>
-					<xsd:enumeration value="fermi"/>
-					<xsd:enumeration value="gram"/>
-					<xsd:enumeration value="gray"/>
-					<xsd:enumeration value="sievert"/>
-					<xsd:enumeration value="katal"/>
-					<xsd:enumeration value="hertz"/>
-					<xsd:enumeration value="lumen"/>
-					<xsd:enumeration value="lux"/>
-					<xsd:enumeration value="minute"/>
-					<xsd:enumeration value="hour"/>
-					<xsd:enumeration value="day"/>
-					<xsd:enumeration value="angstrom"/>
-					<xsd:enumeration value="are"/>
-					<xsd:enumeration value="barn"/>
-					<xsd:enumeration value="hectare"/>
-					<xsd:enumeration value="foot"/>
-					<xsd:enumeration value="inch"/>
-					<xsd:enumeration value="abampere"/>
-					<xsd:enumeration value="abcoulomb"/>
-					<xsd:enumeration value="abfarad"/>
-					<xsd:enumeration value="abhenry"/>
-					<xsd:enumeration value="abmho"/>
-					<xsd:enumeration value="abohm"/>
-					<xsd:enumeration value="abvolt"/>
-					<xsd:enumeration value="biot"/>
-					<xsd:enumeration value="maxwell"/>
-					<xsd:enumeration value="erg"/>
-					<xsd:enumeration value="table_calorie"/>
-					<xsd:enumeration value="table_kg_calorie"/>
-					<xsd:enumeration value="thermo_kg_calorie"/>
-					<xsd:enumeration value="dyne"/>
-					<xsd:enumeration value="foot"/>
-					<xsd:enumeration value="mile"/>
-					<xsd:enumeration value="yard"/>
-					<xsd:enumeration value="phot"/>
-					<xsd:enumeration value="grain"/>
-					<xsd:enumeration value="metric_ton"/>
-					<xsd:enumeration value="bar"/>
-					<xsd:enumeration value="curie"/>
-					<xsd:enumeration value="rad"/>
 					<xsd:enumeration value="rem"/>
 					<xsd:enumeration value="year_365"/>
+					<xsd:enumeration value="newton"/>
 					<xsd:enumeration value="ec_therm"/>
 					<xsd:enumeration value="roentgen"/>
 					<xsd:enumeration value="gauss"/>
+					<xsd:enumeration value="pascal"/>
 					<xsd:enumeration value="kayser"/>
 					<xsd:enumeration value="stilb"/>
 					<xsd:enumeration value="electric_horsepower"/>
 					<xsd:enumeration value="poise"/>
 					<xsd:enumeration value="rhe"/>
+					<xsd:enumeration value="joule"/>
 					<xsd:enumeration value="liter"/>
 					<xsd:enumeration value="nautical_mile"/>
-					<xsd:enumeration value="tons_of_tnt"/>
+					<xsd:enumeration value="degree_Fahrenheit"/>
 					<xsd:enumeration value="standard_atmosphere"/>
 					<xsd:enumeration value="technical_atmosphere"/>
+					<xsd:enumeration value="watt"/>
 					<xsd:enumeration value="stokes"/>
 					<xsd:enumeration value="gal"/>
 					<xsd:enumeration value="oersted"/>
-					<xsd:enumeration value="arc_degree"/>
-					<xsd:enumeration value="arc_second"/>
 					<xsd:enumeration value="arc_minute"/>
+					<xsd:enumeration value="arc_second"/>
+					<xsd:enumeration value="arc_degree"/>
+					<xsd:enumeration value="coulomb"/>
 					<xsd:enumeration value="knot"/>
 					<xsd:enumeration value="neper"/>
 					<xsd:enumeration value="bel"/>
 					<xsd:enumeration value="mm_Hg"/>
 					<xsd:enumeration value="darcy"/>
 					<xsd:enumeration value="gon"/>
-					<xsd:enumeration value="0C_cm_Hg"/>
+					<xsd:enumeration value="volt"/>
+					<xsd:enumeration value="tons_of_tnt"/>
+					<xsd:enumeration value="farad"/>
 					<xsd:enumeration value="imperial_gallon"/>
 					<xsd:enumeration value="imperial_pint"/>
 					<xsd:enumeration value="imperial_ounce"/>
@@ -646,21 +582,25 @@ PURPOSE.
 					<xsd:enumeration value="us_fluid_ounce"/>
 					<xsd:enumeration value="petro_barrel"/>
 					<xsd:enumeration value="us_bushel"/>
+					<xsd:enumeration value="ohm"/>
 					<xsd:enumeration value="us_dry_pint"/>
 					<xsd:enumeration value="light_year"/>
 					<xsd:enumeration value="astronomical_unit"/>
 					<xsd:enumeration value="parsec"/>
-					<xsd:enumeration value="gram_force"/>
+					<xsd:enumeration value="siemens"/>
+					<xsd:enumeration value="weber"/>
 					<xsd:enumeration value="av_pound"/>
 					<xsd:enumeration value="av_ounce"/>
 					<xsd:enumeration value="gross_hundredweight"/>
 					<xsd:enumeration value="pound_force"/>
+					<xsd:enumeration value="tesla"/>
 					<xsd:enumeration value="carat"/>
 					<xsd:enumeration value="tex"/>
 					<xsd:enumeration value="torr"/>
 					<xsd:enumeration value="mm_water"/>
-					<xsd:enumeration value="cm_Hg"/>
+					<xsd:enumeration value="thermo_btu"/>
 					<xsd:enumeration value="metric_horsepower"/>
+					<xsd:enumeration value="henry"/>
 					<xsd:enumeration value="lambert"/>
 					<xsd:enumeration value="gilbert"/>
 					<xsd:enumeration value="debye"/>
@@ -669,7 +609,7 @@ PURPOSE.
 					<xsd:enumeration value="thermo_calorie"/>
 					<xsd:enumeration value="short_ton"/>
 					<xsd:enumeration value="long_ton"/>
-					<xsd:enumeration value="hundredweight"/>
+					<xsd:enumeration value="degree_Celsius"/>
 					<xsd:enumeration value="troy_ounce"/>
 					<xsd:enumeration value="troy_pound"/>
 					<xsd:enumeration value="pennyweight"/>
@@ -689,6 +629,7 @@ PURPOSE.
 					<xsd:enumeration value="atomic_unit_of_mass"/>
 					<xsd:enumeration value="atomic_unit_of_action"/>
 					<xsd:enumeration value="atomic_unit_of_length"/>
+					<xsd:enumeration value="becquerel"/>
 					<xsd:enumeration value="atomic_unit_of_energy"/>
 					<xsd:enumeration value="atomic_unit_of_time"/>
 					<xsd:enumeration value="atomic_unit_of_magnetizability"/>
@@ -709,6 +650,7 @@ PURPOSE.
 					<xsd:enumeration value="statampere"/>
 					<xsd:enumeration value="statvolt"/>
 					<xsd:enumeration value="stathenry"/>
+					<xsd:enumeration value="gram"/>
 					<xsd:enumeration value="statmho"/>
 					<xsd:enumeration value="statcoulomb"/>
 					<xsd:enumeration value="statweber"/>
@@ -719,6 +661,7 @@ PURPOSE.
 					<xsd:enumeration value="footlambert"/>
 					<xsd:enumeration value="computer_pica"/>
 					<xsd:enumeration value="printers_pica"/>
+					<xsd:enumeration value="gray"/>
 					<xsd:enumeration value="computer_point"/>
 					<xsd:enumeration value="us_survey_rod"/>
 					<xsd:enumeration value="us_survey_fathom"/>
@@ -728,6 +671,7 @@ PURPOSE.
 					<xsd:enumeration value="water_horsepower"/>
 					<xsd:enumeration value="uk_horsepower"/>
 					<xsd:enumeration value="degree_Rankine"/>
+					<xsd:enumeration value="sievert"/>
 					<xsd:enumeration value="natural_unit_of_length"/>
 					<xsd:enumeration value="atomic_unit_of_1st_hyperpolarizability"/>
 					<xsd:enumeration value="atomic_unit_of_2nd_hyperpolarizability"/>
@@ -738,6 +682,8 @@ PURPOSE.
 					<xsd:enumeration value="natural_unit_of_action_in_eV_s"/>
 					<xsd:enumeration value="natural_unit_of_energy_in_MeV"/>
 					<xsd:enumeration value="natural_unit_of_momentum_in_MeV_per_c"/>
+					<xsd:enumeration value="second"/>
+					<xsd:enumeration value="katal"/>
 					<xsd:enumeration value="imperial_quart"/>
 					<xsd:enumeration value="us_dry_quart"/>
 					<xsd:enumeration value="us_quart"/>
@@ -748,6 +694,7 @@ PURPOSE.
 					<xsd:enumeration value="us_label_cup"/>
 					<xsd:enumeration value="us_label_fluid_ounce"/>
 					<xsd:enumeration value="us_label_ounce"/>
+					<xsd:enumeration value="hertz"/>
 					<xsd:enumeration value="us_survey_chain"/>
 					<xsd:enumeration value="us_survey_link"/>
 					<xsd:enumeration value="us_survey_furlong"/>
@@ -756,6 +703,9 @@ PURPOSE.
 					<xsd:enumeration value="us_survey_foot"/>
 					<xsd:enumeration value="us_survey_inch"/>
 					<xsd:enumeration value="us_acre"/>
+					<xsd:enumeration value="cm_Hg"/>
+					<xsd:enumeration value="0C_cm_Hg"/>
+					<xsd:enumeration value="lumen"/>
 					<xsd:enumeration value="4C_cm_water"/>
 					<xsd:enumeration value="cm_water"/>
 					<xsd:enumeration value="in_water"/>
@@ -766,12 +716,11 @@ PURPOSE.
 					<xsd:enumeration value="32F_in_Hg"/>
 					<xsd:enumeration value="60F_in_Hg"/>
 					<xsd:enumeration value="in_Hg"/>
+					<xsd:enumeration value="lux"/>
 					<xsd:enumeration value="ft_Hg"/>
 					<xsd:enumeration value="us_therm"/>
 					<xsd:enumeration value="pH"/>
-					<xsd:enumeration value="degree_Fahrenheit"/>
 					<xsd:enumeration value="table_btu"/>
-					<xsd:enumeration value="thermo_btu"/>
 					<xsd:enumeration value="mean_btu"/>
 					<xsd:enumeration value="39F_btu"/>
 					<xsd:enumeration value="59F_btu"/>
@@ -796,15 +745,53 @@ PURPOSE.
 					<xsd:enumeration value="us_fluid_dram"/>
 					<xsd:enumeration value="us_gill"/>
 					<xsd:enumeration value="imperial_gill"/>
-					<xsd:enumeration value="mile_per_gallon"/>
-					<xsd:enumeration value="gallon_per_minute"/>
-					<xsd:enumeration value="milliliter"/>
-					<xsd:enumeration value="mole_per_liter"/>
+					<xsd:enumeration value="minute"/>
+					<xsd:enumeration value="hour"/>
 					<xsd:enumeration value="light_week"/>
 					<xsd:enumeration value="light_hour"/>
 					<xsd:enumeration value="light_minute"/>
 					<xsd:enumeration value="light_second"/>
-					<xsd:enumeration value="var"/>
+					<xsd:enumeration value="day"/>
+					<xsd:enumeration value="decibel_milliwatt"/>
+					<xsd:enumeration value="relative_humidity"/>
+					<xsd:enumeration value="octave"/>
+					<xsd:enumeration value="decade"/>
+					<xsd:enumeration value="erlang"/>
+					<xsd:enumeration value="baud"/>
+					<xsd:enumeration value="shannon"/>
+					<xsd:enumeration value="hartley"/>
+					<xsd:enumeration value="angstrom"/>
+					<xsd:enumeration value="ampere"/>
+					<xsd:enumeration value="are"/>
+					<xsd:enumeration value="barn"/>
+					<xsd:enumeration value="hectare"/>
+					<xsd:enumeration value="abampere"/>
+					<xsd:enumeration value="abcoulomb"/>
+					<xsd:enumeration value="abfarad"/>
+					<xsd:enumeration value="kelvin"/>
+					<xsd:enumeration value="abhenry"/>
+					<xsd:enumeration value="abmho"/>
+					<xsd:enumeration value="abohm"/>
+					<xsd:enumeration value="abvolt"/>
+					<xsd:enumeration value="maxwell"/>
+					<xsd:enumeration value="mole"/>
+					<xsd:enumeration value="table_calorie"/>
+					<xsd:enumeration value="erg"/>
+					<xsd:enumeration value="table_kg_calorie"/>
+					<xsd:enumeration value="thermo_kg_calorie"/>
+					<xsd:enumeration value="candela"/>
+					<xsd:enumeration value="dyne"/>
+					<xsd:enumeration value="foot"/>
+					<xsd:enumeration value="inch"/>
+					<xsd:enumeration value="mile"/>
+					<xsd:enumeration value="yard"/>
+					<xsd:enumeration value="phot"/>
+					<xsd:enumeration value="grain"/>
+					<xsd:enumeration value="metric_ton"/>
+					<xsd:enumeration value="radian"/>
+					<xsd:enumeration value="bar"/>
+					<xsd:enumeration value="curie"/>
+					<xsd:enumeration value="rad"/>
 				</xsd:restriction>
 			</xsd:simpleType>
 		</xsd:attribute>
