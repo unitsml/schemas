@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-   Units Markup language (UnitsML) Schema
-    Website: http://unitsml.nist.gov
-    Version History: http://unitsml.nist.gov/Schema/schema_changes.txt
+   Units Markup Language (UnitsML) Schema
+    Website: https://unitsml.org
+    Series: CalConnect UnitsML specifications (parts 36812-36819)
+    Version history: https://github.com/unitsml/schemas/releases
 
-Copyright (C) OASIS Open 2006 - 2011. All Rights Reserved.
+Copyright (C) CalConnect 2026. All Rights Reserved.
 
-All capitalized terms in the following text have the meanings
-assigned to them in the OASIS Intellectual Property Rights Policy
-(the "OASIS IPR Policy"). The full Policy may be found at the OASIS
-website.
+This schema is distributed under the CalConnect Intellectual Property
+Rights Policy (https://www.calconnect.org/ipr). The schema may be used,
+copied, and distributed freely in support of implementations of the
+CalConnect UnitsML specification series; derivative works must retain
+this notice and attribute the source.
 
-This document and translations of it may be copied and furnished
-to others, and derivative works that comment on or otherwise explain
-it or assist in its implementation may be prepared, copied, published,
-and distributed, in whole or in part, without restriction of any
-kind, provided that the above copyright notice and this section
-are included on all such copies and derivative works. However, this
-document itself may not be modified in any way, including by removing
-the copyright notice or references to OASIS, except as needed for
-the purpose of developing any document or deliverable produced by
-an OASIS Technical Committee (in which case the rules applicable
-to copyrights, as set forth in the OASIS IPR Policy, must be
-followed) or as required to translate it into languages other than
-English.
-
-The limited permissions granted above are perpetual and will not
-be revoked by OASIS or its successors or assigns.
-
-This document and the information contained herein is provided on
-an "AS IS" basis and OASIS DISCLAIMS ALL WARRANTIES, EXPRESS OR
+This document and the information contained herein is provided on an
+"AS IS" basis and CalConnect DISCLAIMS ALL WARRANTIES, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF
 THE INFORMATION HEREIN WILL NOT INFRINGE ANY OWNERSHIP RIGHTS OR
 ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
@@ -37,7 +22,7 @@ PURPOSE.
 
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://schema.unitsml.org/unitsml/1.0" targetNamespace="https://schema.unitsml.org/unitsml/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
-	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 	<!--=== Root-Node of an UnitsML document ===-->
 	<xsd:element name="UnitsML" type="UnitsMLType">
 		<xsd:annotation>
